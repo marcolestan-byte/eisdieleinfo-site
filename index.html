@@ -527,12 +527,6 @@
   <p class="brand-sub" data-i18n="brandSub">piattaforma indipendente, senza sponsorizzazioni</p>
   </div>
   </div>
-  <div class="lang-switch" id="langSwitch">
-    <button class="lang-btn active" id="btnLangIT" onclick="setLang('it')" type="button">🇮🇹 IT</button>
-    <button class="lang-btn" id="btnLangDE" onclick="setLang('de')" type="button">🇩🇪 DE</button>
-    <button class="lang-btn" id="btnLangEN" onclick="setLang('en')" type="button">🇬🇧 EN</button>
-    <button class="lang-btn" id="btnLangES" onclick="setLang('es')" type="button">🇪🇸 ES</button>
-  </div>
  </div>
   <p data-i18n="subtitle">Scegli una categoria, poi confronta due prodotti — azienda, prodotto, caratteristiche e la tua valutazione, fianco a fianco.</p>
   <div class="stat-row">
@@ -881,64 +875,7 @@
     <h2 data-i18n="docTitle">📄 Regole di igiene per la produzione di gelato</h2>
     <p class="hint" style="margin-top:0;" data-i18n="docHint">Regole per la prevenzione dei batteri nella produzione di gelato artigianale — disponibile in italiano e in tedesco.</p>
     <div class="actions-row">
-      <button class="btn outline" id="btnDocIT" onclick="toggleDocPanel('it')">📄 Apri in italiano</button>
-      <button class="btn outline" id="btnDocDE" onclick="toggleDocPanel('de')">📄 Auf Deutsch öffnen</button>
-    </div>
-
-    <div class="doc-panel" id="docPanelIT">
-      <h3>1. Utilizzare materie prime sicure</h3>
-      <ul>
-        <li>Acquistare latte, panna, uova e altri ingredienti solo da fornitori certificati.</li>
-        <li>Controllare regolarmente le date di scadenza e le condizioni di conservazione.</li>
-        <li>Non utilizzare ingredienti deteriorati o confezioni danneggiate.</li>
-      </ul>
-      <h3>2. Corretta pastorizzazione della miscela</h3>
-      <ul>
-        <li>Rispettare i tempi e le temperature di pastorizzazione prescritti.</li>
-        <li>La pastorizzazione riduce notevolmente la carica batterica ed è uno dei passaggi più importanti.</li>
-      </ul>
-      <h3>3. Raffreddamento rapido</h3>
-      <ul>
-        <li>Raffreddare rapidamente la miscela a circa 4 °C dopo la pastorizzazione.</li>
-        <li>Evitare che il prodotto rimanga a lungo nella fascia di temperatura tra 5 °C e 60 °C.</li>
-      </ul>
-      <h3>4. Rispettare la catena del freddo</h3>
-      <ul>
-        <li>Conservare sempre le miscele e il gelato finito alle temperature prescritte.</li>
-        <li>Controllare e documentare regolarmente le temperature.</li>
-      </ul>
-      <h3>5. Igiene personale del personale</h3>
-      <ul>
-        <li>Lavarsi le mani regolarmente e accuratamente.</li>
-        <li>Indossare abiti da lavoro puliti e copricapo.</li>
-        <li>Il personale malato non deve lavorare a contatto con gli alimenti.</li>
-      </ul>
-      <h3>6. Pulizia e disinfezione delle attrezzature</h3>
-      <ul>
-        <li>Pulire e disinfettare quotidianamente le attrezzature.</li>
-        <li>Rispettare i piani di pulizia HACCP.</li>
-      </ul>
-      <h3>7. Evitare la contaminazione crociata</h3>
-      <ul>
-        <li>Tenere separati gli ingredienti crudi dai prodotti pronti al consumo.</li>
-        <li>Utilizzare utensili separati.</li>
-        <li>Conservare separatamente gli allergeni.</li>
-      </ul>
-      <h3>8. Controllare la qualità dell'acqua</h3>
-      <ul>
-        <li>Utilizzare esclusivamente acqua potabile.</li>
-        <li>Effettuare la manutenzione regolare di tubazioni e filtri.</li>
-      </ul>
-      <h3>9. Effettuare controlli microbiologici</h3>
-      <ul>
-        <li>Analisi di laboratorio periodiche su gelato, superfici, attrezzature e acqua.</li>
-      </ul>
-      <h3>10. Applicare il sistema HACCP</h3>
-      <ul>
-        <li>Monitorare i punti critici di controllo.</li>
-        <li>Documentare temperature, pulizie e controlli.</li>
-        <li>Formare regolarmente il personale.</li>
-      </ul>
+      <button class="btn outline" id="btnDocDE" onclick="toggleDocPanel()">📄 Anzeigen / Ausblenden</button>
     </div>
 
     <div class="doc-panel" id="docPanelDE">
@@ -2773,12 +2710,8 @@ function translateStatic(){
 }
 let currentYear = 2026;
 function setLang(lang){
-  LANG = (lang === 'de' || lang === 'en' || lang === 'es') ? lang : 'it';
+  LANG = 'de';
   try { localStorage.setItem('preferredLang', LANG); } catch (e) {}
-  document.getElementById('btnLangIT').classList.toggle('active', LANG === 'it');
-  document.getElementById('btnLangDE').classList.toggle('active', LANG === 'de');
-  document.getElementById('btnLangEN').classList.toggle('active', LANG === 'en');
-  document.getElementById('btnLangES').classList.toggle('active', LANG === 'es');
   translateStatic();
   const resultCard = document.getElementById('resultCard');
   const wasCompareVisible = resultCard && resultCard.style.display !== 'none';
@@ -2830,10 +2763,8 @@ function openSection(id){
 }
 window.openSection = openSection;
 
-function toggleDocPanel(lang){
-  const panel = document.getElementById(lang === 'it' ? 'docPanelIT' : 'docPanelDE');
-  const other = document.getElementById(lang === 'it' ? 'docPanelDE' : 'docPanelIT');
-  if (other) other.classList.remove('open');
+function toggleDocPanel(){
+  const panel = document.getElementById('docPanelDE');
   if (panel) panel.classList.toggle('open');
   if (panel && panel.classList.contains('open')) panel.scrollIntoView({ behavior:'smooth', block:'nearest' });
 }
@@ -3847,20 +3778,8 @@ renderArchiveTable();
 renderAziende();
 refreshStats();
 (function initLang(){
-  const supported = ['it','de','en','es'];
-  let fromUrl = null;
-  try { fromUrl = new URLSearchParams(window.location.search).get('lang'); } catch (e) {}
-  let stored = null;
-  try { stored = localStorage.getItem('preferredLang'); } catch (e) {}
-  const rawBrowserLangs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ''];
-  const browserLangs = rawBrowserLangs.map(l => (l || '').slice(0,2).toLowerCase());
-  const fromBrowser = browserLangs.find(l => supported.includes(l));
-  const domainDefault = 'de'; // eisdieleinfo.com: lingua di riferimento del brand
-  const initial = (fromUrl && supported.includes(fromUrl)) ? fromUrl
-    : (stored && supported.includes(stored)) ? stored
-    : fromBrowser ? fromBrowser
-    : domainDefault;
-  setLang(initial);
+  // eisdieleinfo.com: sito solo in tedesco, nessuna altra lingua selezionabile
+  setLang('de');
 })();
 
 // ---------- PWA: service worker + installazione ----------
