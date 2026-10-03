@@ -253,7 +253,7 @@ footer a{color:var(--brand);}
 
   <section class="card" id="torteSearchSection">
     <h2>🔎 Suche nach Halbfertigprodukten für Halbgefrorenes, Dekorationen und Glasuren</h2>
-    <p>Eigenes Archiv mit <strong>130 Produkten</strong> von 27 Unternehmen für Halbgefrorenes-Basen, Dekorationen und Glasuren für Eistorten — gleiche Logik wie der Hauptvergleich, aber nur für diese Kategorie.</p>
+    <p>Eigenes Archiv mit <strong>137 Produkten</strong> von 27 Unternehmen für Halbgefrorenes-Basen, Dekorationen und Glasuren für Eistorten — gleiche Logik wie der Hauptvergleich, aber nur für diese Kategorie.</p>
     <div class="torte-search-bar">
       <input type="text" id="torteSearchInput" placeholder="Suche nach Unternehmen oder Produkt...">
       <select id="torteCategoryFilter">
@@ -263,6 +263,9 @@ footer a{color:var(--brand);}
         <option value="Decorazione Torte">Decorazione Torte</option>
         <option value="Contenitori per Torte">Contenitori per Torte</option>
         <option value="Preparati da Forno">Preparati da Forno</option>
+      </select>
+      <select id="torteAziendaFilter">
+        <option value="">Alle Unternehmen</option>
       </select>
     </div>
     <div class="torte-count" id="torteCount"></div>
@@ -274,16 +277,30 @@ footer a{color:var(--brand);}
     var data = JSON.parse(document.getElementById('torte-archive-data').textContent);
     var input = document.getElementById('torteSearchInput');
     var filter = document.getElementById('torteCategoryFilter');
+    var aziendaFilter = document.getElementById('torteAziendaFilter');
     var results = document.getElementById('torteResults');
     var count = document.getElementById('torteCount');
     function escapeHtml(s){
       return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; });
     }
+    (function populateAziende(){
+      var aziende = [];
+      data.forEach(function(p){ if(p.azienda && aziende.indexOf(p.azienda) === -1) aziende.push(p.azienda); });
+      aziende.sort(function(a,b){ return a.localeCompare(b, 'de'); });
+      aziende.forEach(function(a){
+        var opt = document.createElement('option');
+        opt.value = a;
+        opt.textContent = a;
+        aziendaFilter.appendChild(opt);
+      });
+    })();
     function render(){
       var q = input.value.trim().toLowerCase();
       var cat = filter.value;
+      var azienda = aziendaFilter.value;
       var filtered = data.filter(function(p){
         if(cat && p.categoria !== cat) return false;
+        if(azienda && p.azienda !== azienda) return false;
         if(!q) return true;
         var hay = (p.azienda+' '+p.prodotto+' '+p.categoria).toLowerCase();
         return hay.indexOf(q) !== -1;
@@ -298,6 +315,7 @@ footer a{color:var(--brand);}
     }
     input.addEventListener('input', render);
     filter.addEventListener('change', render);
+    aziendaFilter.addEventListener('change', render);
     render();
   })();
   </script>
@@ -344,6 +362,18 @@ footer a{color:var(--brand);}
       <li>Ich lasse die Torte bis zum vollständigen Durchfrieren im Schockfroster und bewahre sie danach in einem statischen, nicht umluftbetriebenen Gefrierschrank auf (in einem Umluftgerät verliert die Torte an Volumen).</li>
     </ul>
     <p class="hint"><strong>Zwei praktische Tipps:</strong> statt drei flacher, übereinandergelegter Schichten wirkt es oft besser, in der Mitte eine "Insel" mit einer anderen Sorte zu schaffen — das macht optisch und beim Anschneiden viel her. Und wenn du den Mixer benutzt, um ein Aroma oder eine Farbe in die Glasur einzuarbeiten, halte den Mixerkopf immer ruhig am Boden des Behälters: so vermeidest du, Luft einzuarbeiten — dasselbe Prinzip wie beim langsamen Aufschlagen der Sahne.</p>
+  </section>
+
+  <section class="card">
+    <h2>Variante: farbige Spiegelglasur aus weißer Schokolade</h2>
+    <p>Von einer einfachen, leeren Silikonform zu einer fertigen Eistorte, bereit für die Vitrine: beim oben beschriebenen Schichtverfahren liegt der zusätzliche Schritt im Finish. Man geht von der Silikonform (Rohform) aus, durchläuft Schicht für Schicht den Schockfroster und kommt am Ende zu einer fertigen Torte mit einer <strong>farbigen Spiegelglasur auf Basis weißer Schokolade</strong>, kombiniert mit frei wählbaren essbaren Dekorationen.</p>
+    <ul>
+      <li><strong>Basis der Glasur:</strong> man geht von einer Spiegelglasur aus weißer Schokolade aus (Glukosesirup, Gelatine/Verdickungsmittel, Kondensmilch oder Wasser je nach Rezept), erwärmt bis zur vom Hersteller angegebenen Verarbeitungstemperatur — meist 30–35 °C.</li>
+      <li><strong>Einfärben:</strong> fettlösliche Lebensmittelfarben (Gel oder Pulver, keine wasserbasierten — damit "bricht" die Glasur und verliert ihren Glanz), nach und nach zugeben und mit dem Stabmixer einarbeiten, dessen Kopf ruhig am Boden gehalten wird, um keine Luft einzuarbeiten.</li>
+      <li><strong>Übergießen der Torte:</strong> die Torte muss gut durchgekühlt aus dem Schockfroster kommen (-18/-20 °C im Kern), die Glasur bei der richtigen Temperatur aufgegossen werden — zu heiß schmilzt die Oberfläche an und die Schichten verlieren ihre Kontur, zu kalt fließt sie nicht gut und hinterlässt Streifen.</li>
+      <li><strong>Essbare Dekorationen nach Wunsch:</strong> sobald die Glasur angezogen ist (wenige Minuten), kommen die Dekorationen dazu — Blüten aus Zuckerpaste, Waffeln, getrocknete Früchte, Schokoladenraspeln, essbares Blattgold — wobei man Elemente wählt, die der Kälte standhalten und beim Kontakt mit der Glasur nicht schmelzen.</li>
+    </ul>
+    <p class="hint">Das Ergebnis: eine farbige Spiegeloberfläche und individuelle Dekorationen — ein Finish, das das Produkt in der Vitrine deutlich mehr aufwertet als eine einfache, neutrale oder glänzend-transparente Glasur.</p>
   </section>
 
   <section class="card">
