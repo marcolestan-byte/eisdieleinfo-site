@@ -298,6 +298,11 @@ footer a{color:var(--brand);}
       var q = input.value.trim().toLowerCase();
       var cat = filter.value;
       var azienda = aziendaFilter.value;
+      if(!q && !cat && !azienda){
+        count.innerHTML = '';
+        results.innerHTML = '<p class="hint">Gib einen Suchbegriff ein oder wähle eine Kategorie bzw. ein Unternehmen aus dem Menü, um Produkte zu sehen.</p>';
+        return;
+      }
       var filtered = data.filter(function(p){
         if(cat && p.categoria !== cat) return false;
         if(azienda && p.azienda !== azienda) return false;
@@ -367,15 +372,19 @@ footer a{color:var(--brand);}
   <section class="card">
     <h2>Variante: farbige Spiegelglasur aus weißer Schokolade</h2>
     <p>Von einer einfachen, leeren Silikonform zu einer fertigen Eistorte, bereit für die Vitrine: beim oben beschriebenen Schichtverfahren liegt der zusätzliche Schritt im Finish. Man geht von der Silikonform (Rohform) aus, durchläuft Schicht für Schicht den Schockfroster und kommt am Ende zu einer fertigen Torte mit einer <strong>farbigen Spiegelglasur auf Basis weißer Schokolade</strong>, kombiniert mit frei wählbaren essbaren Dekorationen.</p>
-    <p class="hint"><strong>Von der einfachen Silikonform zur fertigen Eistorte:</strong></p>
+    <p class="hint"><strong>Von der einfachen Silikonform zur fertigen Eistorte, der Prozess in Bildern:</strong></p>
     <div class="gallery">
       <figure>
-        <img src="torta-gelato-10.jpg" alt="Eistorte mit weißer Spiegelglasur, rosa Macarons und dekorierten Schokoladenscheiben" loading="lazy">
-        <figcaption>Beispiel einer weißen Spiegelglasur mit Macarons und Schokoladendekor</figcaption>
+        <img src="torta-gelato-processo-01-base-grezza.jpg" alt="Herzförmige Rohform direkt aus der Silikonform, vor dem Schockfrosten und der Glasur" loading="lazy">
+        <figcaption>1. Rohform: direkt aus der Silikonform</figcaption>
       </figure>
       <figure>
-        <img src="torta-gelato-02.jpg" alt="Herzförmige Eistorte mit weißer Basis, Blüten aus Zuckerpaste, Schokoladenlocken und gestreifter farbiger Glasur" loading="lazy">
-        <figcaption>Weiße Basis mit farbiger Glasur, Blüten und essbaren Dekorationen nach Wunsch</figcaption>
+        <img src="torta-gelato-processo-02-abbattimento.jpg" alt="Mehrere herzförmige Torten im Schockfroster bei -35°C" loading="lazy">
+        <figcaption>2. Schockfrosten: schnelles Durchkühlen bei -35 °C</figcaption>
+      </figure>
+      <figure>
+        <img src="torta-gelato-processo-03-finita.jpg" alt="Fertige herzförmige Eistorte mit roter Spiegelglasur, Zuckerblüten und Dekorationen" loading="lazy">
+        <figcaption>3. Fertiges Produkt: farbige Spiegelglasur und Dekorationen nach Wunsch</figcaption>
       </figure>
     </div>
     <ul>
