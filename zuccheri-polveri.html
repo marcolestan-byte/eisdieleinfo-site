@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zucker, Milch- und Sahnepulver: PAC, POD und 77 Produkte</title>
+<meta name="description" content="Zucker, Sirupe, Ballaststoffe, Milch- und Sahnepulver: PAC/POD-Tabelle, Austauschrechner und Archiv mit 77 Produkten von 31 Unternehmen.">
+<link rel="canonical" href="https://eisdieleinfo.com/zuccheri-polveri.html">
+<style>
+:root{
+  --ink:#2b2320; --ink-soft:#6b5f58; --paper:#fffaf3; --line:#e7dccd;
+  --brand:#c0392b; --brand-soft:#f7e9df; --ok:#2e7d32; --warn:#b8860b; --bad:#c0392b;
+}
+*{box-sizing:border-box;}
+body{margin:0; font-family:"Segoe UI", system-ui, -apple-system, sans-serif; background:var(--paper); color:var(--ink); line-height:1.55;}
+.wrap{max-width:900px; margin:0 auto; padding:20px 16px 60px;}
+.top-link{display:inline-block; margin-bottom:18px; color:var(--brand); text-decoration:none; font-weight:600; font-size:0.95rem;}
+.top-link:hover{text-decoration:underline;}
+h1{font-size:1.5rem; margin:0 0 14px;}
+h2{font-size:1.15rem; margin:0 0 10px;}
+.card{background:#fff; border:1px solid var(--line); border-radius:14px; padding:20px 22px; box-shadow:0 2px 10px rgba(0,0,0,0.04); margin-bottom:20px;}
+.hint{font-size:0.82rem; color:var(--ink-soft); margin-top:10px; line-height:1.45;}
+p{margin:0 0 12px;}
+ul{margin:0 0 12px; padding-left:22px;}
+li{margin-bottom:6px;}
+.company-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:14px; margin-top:10px;}
+.company-card{border:1px solid var(--line); border-radius:10px; padding:12px 14px; background:#fffdfa;}
+.company-name{font-weight:800; font-size:0.98rem; margin-bottom:4px;}
+.company-meta{font-size:0.75rem; color:var(--ink-soft); margin-bottom:6px;}
+.company-usp{font-size:0.82rem;}
+.tag{display:inline-block; background:var(--brand-soft); color:var(--brand); border-radius:6px; padding:2px 8px; font-size:0.72rem; font-weight:700; margin-right:6px;}
+.news-date{font-size:0.75rem; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.03em; font-weight:700;}
+.hero-img{width:100%; max-height:360px; object-fit:cover; border-radius:14px; margin-bottom:18px; display:block;}
+.gallery{display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:12px; margin-top:12px;}
+.gallery figure{margin:0;}
+.gallery img{width:100%; height:220px; object-fit:cover; border-radius:10px; border:1px solid var(--line); display:block;}
+.gallery figcaption{font-size:0.75rem; color:var(--ink-soft); margin-top:4px;}
+.steps-img{width:100%; max-width:100%; height:auto; border-radius:12px; border:1px solid var(--line); display:block; margin:18px 0;}
+.quick-links{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;}
+.quick-links a{display:flex; flex-direction:column; gap:2px; background:var(--brand-soft); color:var(--brand); border-radius:10px; padding:10px 14px; font-size:0.88rem; font-weight:700; text-decoration:none; flex:1 1 160px;}
+.quick-links a:hover{text-decoration:underline;}
+.quick-links small{font-weight:400; color:var(--ink-soft); font-size:0.75rem;}
+footer{font-size:0.8rem; color:var(--ink-soft); text-align:center; margin-top:30px;}
+footer a{color:var(--brand);}
+
+.torte-search-bar{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px;}
+.torte-search-bar input[type="text"]{flex:1 1 260px; padding:10px 12px; border:1px solid var(--line); border-radius:10px; font-size:0.92rem; font-family:inherit;}
+.torte-search-bar select{padding:10px 12px; border:1px solid var(--line); border-radius:10px; font-size:0.92rem; font-family:inherit; background:#fff;}
+.torte-count{font-size:0.8rem; color:var(--ink-soft); margin-top:10px; font-weight:700;}
+.torte-results{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:12px; margin-top:12px;}
+.torte-result-card{border:1px solid var(--line); border-radius:10px; padding:12px 14px; background:#fffdfa; transition:transform 0.15s ease, box-shadow 0.15s ease;}
+.torte-result-card:hover{transform:translateY(-3px); box-shadow:0 8px 18px rgba(90,60,20,0.14);}
+.torte-pulse-dot{display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--amarena,#B23A2E); margin-right:5px; vertical-align:middle; animation:tortePulseDot 1.5s ease-in-out infinite;}
+@keyframes tortePulseDot{0%,100%{opacity:1;} 50%{opacity:0.35;}}
+.torte-result-head{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:6px;}
+.torte-azienda{font-weight:800; font-size:0.9rem; color:var(--brand);}
+.torte-cat-tag{display:inline-block; background:var(--brand-soft); color:var(--brand); border-radius:6px; padding:2px 8px; font-size:0.68rem; font-weight:700; white-space:nowrap;}
+.torte-prodotto{font-weight:700; font-size:0.95rem; margin-bottom:6px;}
+.torte-field{font-size:0.78rem; color:var(--ink-soft); margin-bottom:2px; line-height:1.4;}
+.torte-field strong{color:var(--ink);}
+
+
+.torte-search-bar input,.torte-search-bar select{max-width:100%;min-width:0;box-sizing:border-box}
+.chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;}
+.chip{border:1px solid var(--line); background:#fff; color:var(--ink); border-radius:999px; padding:6px 12px; font-size:0.8rem; font-weight:600; cursor:pointer; font-family:inherit;}
+.chip:hover{border-color:var(--brand);}
+.chip[aria-pressed="true"]{background:var(--brand); border-color:var(--brand); color:#fff;}
+.chip small{font-weight:400; opacity:0.8; margin-left:4px;}
+.gc-stats{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 6px;}
+.gc-stat{background:var(--brand-soft); border-radius:10px; padding:8px 12px; font-size:0.8rem; color:var(--ink-soft); flex:1 1 140px;}
+.gc-stat strong{display:block; font-size:1.05rem; color:var(--brand);}
+.gc-legend{display:flex; flex-wrap:wrap; gap:12px; font-size:0.75rem; color:var(--ink-soft); margin:8px 0;}
+.gc-legend i{display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:5px; vertical-align:middle;}
+.gc-chart{margin-top:6px;}
+.gc-axis{position:relative; height:18px; margin-left:minmax(0,0); font-size:0.68rem; color:var(--ink-soft);}
+.gc-row{display:grid; grid-template-columns:minmax(110px,34%) 1fr; gap:10px; align-items:center; padding:4px 0; cursor:pointer; border-radius:6px;}
+.gc-row:hover{background:#fbf3e8;}
+.gc-label{font-size:0.76rem; line-height:1.25; overflow:hidden; text-overflow:ellipsis;}
+.gc-label b{display:block; font-weight:700; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.gc-label span{color:var(--ink-soft); font-size:0.7rem;}
+.gc-track{position:relative; height:20px; background:linear-gradient(to right, transparent 0, transparent 100%); border-left:1px solid var(--line); border-bottom:1px dashed var(--line);}
+.gc-grid{position:absolute; top:0; bottom:0; width:1px; background:#efe5d6;}
+.gc-bar{position:absolute; top:4px; height:12px; border-radius:6px; min-width:7px; transition:left .25s ease, width .25s ease;}
+.gc-val{position:absolute; top:0; font-size:0.68rem; font-weight:700; line-height:20px; color:var(--ink); white-space:nowrap;}
+.gc-axis-wrap{display:grid; grid-template-columns:minmax(110px,34%) 1fr; gap:10px;}
+.gc-more{margin-top:10px;}
+.btn-lite{border:1px solid var(--line); background:#fff; border-radius:10px; padding:8px 14px; font-size:0.82rem; font-weight:700; cursor:pointer; font-family:inherit; color:var(--brand);}
+.btn-lite:hover{border-color:var(--brand);}
+.torte-fonte{font-size:0.72rem; margin-top:6px;}
+.torte-fonte a{color:var(--brand);}
+.pp-wrap{display:grid; gap:6px; margin-top:12px;}
+.pp-row{display:grid; grid-template-columns:minmax(120px,30%) 1fr; gap:10px; align-items:center; cursor:pointer; padding:3px 0; border-radius:6px;}
+.pp-row:hover{background:#fbf3e8;}
+.pp-row[aria-selected="true"]{background:#f7e9df;}
+.pp-name{font-size:0.8rem; font-weight:700;}
+.pp-bars{display:grid; gap:3px;}
+.pp-bar{height:12px; border-radius:6px; position:relative; min-width:2px; transition:width .25s ease;}
+.pp-bar span{position:absolute; left:calc(100% + 6px); top:-2px; font-size:0.68rem; font-weight:700; color:var(--ink); white-space:nowrap;}
+.pac{background:#c0392b;} .pod{background:#e0a526;}
+.pp-tools{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:10px;}
+.conv{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:12px;}
+.conv label{display:block; font-size:0.74rem; font-weight:700; color:var(--ink-soft); margin-bottom:4px;}
+.conv select,.conv input{width:100%; padding:9px 10px; border:1px solid var(--line); border-radius:10px; font-size:0.9rem; font-family:inherit; background:#fff;}
+.conv-out{margin-top:12px; background:var(--brand-soft); border-radius:12px; padding:12px 14px; font-size:0.92rem;}
+.conv-out strong{color:var(--brand);}
+@media (max-width:560px){.gc-row,.gc-axis-wrap,.pp-row{grid-template-columns:1fr;} .gc-label b{white-space:normal;}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist der PAC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Er ist die Gefrierpunkterniedrigung: er misst, wie stark ein Zucker den Gefrierpunkt der Mischung gegenüber Saccharose (PAC 100) senkt. Je höher, desto weicher bleibt das Eis bei gleicher Temperatur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der POD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Er ist die Süßkraft im Verhältnis zu Saccharose (POD 100). Dextrose hat zum Beispiel einen hohen PAC, aber eine geringere Süße als Saccharose."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich Zucker bei gleichem PAC austauschen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Der Rechner auf dieser Seite liefert einen Startwert: der Austausch verändert auch Süße und Feststoffe, das Rezept muss daher immer neu berechnet werden."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <a class="top-link" href="/">← Zurück zum Produktvergleich</a>
+  <h1>🍬 Zucker, Milch- und Sahnepulver</h1>
+
+  <section class="card">
+    <p>Zucker, Sirupe, Ballaststoffe sowie Milch- und Sahnepulver bestimmen <strong>Süßkraft (POD)</strong>, <strong>Gefrierpunkterniedrigung (PAC)</strong> und Trockenmasse einer Mischung. Auf dieser Seite: der PAC/POD-Vergleich der wichtigsten Zucker, ein Rechner zum Austausch eines Zuckers gegen einen anderen bei gleichem PAC und das Lieferantenarchiv.</p><p class="hint">Die theoretischen Grundlagen findest du im <a href="/guida-confronto-ingredienti.html">Leitfaden zu PAC, POD und Trockenmasse</a>.</p>
+  </section>
+
+  <section class="card" id="ppSection">
+    <h2>⚖️ PAC und POD der Zucker</h2>
+    <p>Referenzwerte pro 100 g Produkt (Saccharose = 100). Klicke auf einen Zucker, um ihn als Referenz für den Vergleich zu verwenden.</p>
+    <div class="pp-tools"><span class="hint" style="margin:0">Sortieren nach:</span>
+      <button type="button" class="chip" data-sort="pac">PAC</button><button type="button" class="chip" data-sort="pod">POD</button><button type="button" class="chip" data-sort="name">Name</button>
+      <span class="gc-legend" style="margin:0 0 0 8px"><span><i style="background:#c0392b"></i>PAC</span><span><i style="background:#e0a526"></i>POD</span></span></div>
+    <div class="pp-wrap" id="ppWrap"></div>
+    <p class="hint">Quelle der Koeffizienten: iceicedaddy.com, «Zuccheri utilizzati in gelati e sorbetti» (dieselben wie in der Rezeptkalibrierung der Seite). Inulin: Werte aus dem Sorbet-Rechner dieser Seite. Es sind Startwerte, nicht zertifiziert: reale Produkte variieren je nach DE und Hersteller.</p>
+    <h2 style="margin-top:22px">🔁 Einen Zucker durch einen anderen ersetzen (bei gleichem PAC)</h2>
+    <div class="conv">
+      <div><label for="cvFrom">Ausgangszucker</label><select id="cvFrom"></select></div>
+      <div><label for="cvG">Menge (g)</label><input id="cvG" type="number" min="1" step="1" value="100"></div>
+      <div><label for="cvTo">Ersatzzucker</label><select id="cvTo"></select></div>
+    </div>
+    <div class="conv-out" id="cvOut"></div>
+    <p class="hint">Vereinfachte Rechnung: berücksichtigt nur PAC und POD pro 100 g Produkt und ignoriert Wasser und Feststoffe. Prüfe vor der Produktion immer das vollständige Rezept (auch die Trockenmasse).</p>
+  </section>
+
+  <section class="card" id="pgChartCard">
+    <h2 id="gcTitle"></h2>
+    <div class="chips" id="gcTabs"></div>
+    <p id="gcIntro" style="margin-top:10px"></p>
+    <p class="hint" id="gcApprox">Balken mit «≈» sind angenähert: Prozentangaben werden mit 10 g je 1 % umgerechnet (≈ g/kg) oder Dosierungen ohne Einheit als g/L gedeutet. Prüfe immer das Datenblatt des Herstellers.</p>
+    <div class="gc-stats" id="gcStats"></div>
+    <div class="gc-legend" id="gcLegend"></div>
+    <div class="gc-chart" id="gcChart"></div>
+  </section>
+
+  <section class="card" id="pgArchive">
+    <h2>🔎 Produktarchiv</h2>
+    <p>Eigenes Archiv mit <strong>77 Produkten</strong> von 31 Unternehmen mit Zucker, Sirupen, Ballaststoffen, Milch- und Sahnepulver sowie Proteinen — gleiche Daten wie der Hauptvergleich, aber auf einer eigenen Seite nur für diese Kategorie.</p>
+    <div class="torte-search-bar">
+      <input type="text" id="pgSearch" placeholder="Suche nach Unternehmen, Produkt oder Detail...">
+      <select id="pgCat"><option value="">Alle Kategorien</option><option value="Zucker">Zucker</option><option value="Traubenzucker (Dextrose)">Traubenzucker (Dextrose)</option><option value="Glukosesirup">Glukosesirup</option><option value="Fruktose">Fruktose</option><option value="Maltodextrine">Maltodextrine</option><option value="Inulin">Inulin</option><option value="Ballaststoffe">Ballaststoffe</option><option value="Magermilchpulver">Magermilchpulver</option><option value="Vollmilchpulver">Vollmilchpulver</option><option value="Sahnepulver">Sahnepulver</option><option value="Proteine">Proteine</option></select>
+      <select id="pgAz"><option value="">Alle Unternehmen</option></select>
+    </div>
+    <div class="hint" style="margin-top:12px">Schnellfilter (kombinierbar)</div>
+    <div class="chips" id="pgChips"></div>
+    <p class="hint">Die Schnellfilter suchen Wörter im Datenblatt: sie sind nur ein Anhaltspunkt, prüfe immer das technische Datenblatt des Herstellers.</p>
+    <div class="torte-count" id="pgCount"></div>
+    <div class="torte-results" id="pgResults"></div>
+  </section>
+  <script type="application/json" id="page-archive-data">[{"azienda":"IPSA","categoria":"Inulin","prodotto":"Inulina","fields":{"Tipo":"Fibra alimentare in polvere (addensante/texturizzante)","Dosaggio dichiarato":"5% uso normale, massimo 10%","Caratteristiche / posizionamento":"Migliora struttura, cremosità e stabilità; nei sorbetti dà una consistenza più setosa e minore sensazione di freddo al palato; confezione scatola con 4 buste da 1,5 kg; shelf life 365 giorni"},"note":"","fonte":"https://www.ipsa.it/it/inulina"},{"azienda":"IPSA","categoria":"Magermilchpulver","prodotto":"Latte Scremato in Polvere Granulare ad Alta Solubilità","fields":{"Tipo":"Latte magro in polvere granulare ad alta solubilità","Dosaggio dichiarato":"n.d.","Caratteristiche / posizionamento":"Migliora struttura, cremosità e bilanciamento delle miscele; resa costante e integrazione uniforme in ricette a caldo o a freddo. Shelf life 365 giorni."},"note":"","fonte":"https://www.ipsa.it/it/latte-magro-in-polvere-granulare-ad-alta-solubilit%C3%A0"},{"azienda":"D'Avino","categoria":"Zucker","prodotto":"Feinkristallzucker / Rohrzucker","fields":{"Produkttyp":"Feinkristallzucker und raffinierter Zucker, weiß und Rohrzucker","Format / Verpackung":"Sticks und Portionsbeutel (Barlinie), Säcke à 25 kg und 5 kg (Backwaren-/Industrielinie)","Merkmale / Positionierung":"Traditionsreiches Unternehmen aus Kampanien (seit 1927), spezialisiert auf Zucker für den professionellen Einsatz (Bars, Konditoreien) und die Industrie."},"note":"","fonte":""},{"azienda":"COPROB / Italia Zuccheri","categoria":"Zucker","prodotto":"Feinkristallzucker aus Zuckerrüben (auch Bio)","fields":{"Produkttyp":"Feinkristallzucker, auch Bio-Linie","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Einzige verbliebene 100% italienische Zuckerlieferkette, aus in Italien angebauten Zuckerrüben; rund 250.000 t/Jahr, konventionell und biologisch."},"note":"","fonte":""},{"azienda":"Südzucker AG","categoria":"Zucker","prodotto":"Feinkristallzucker / flüssige Zuckersirupe","fields":{"Produkttyp":"Kristallzucker, Glukosesirupe, Invertzucker, Fondants","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Größter europäischer Rübenzuckerproduzent mit Sitz in Mannheim, Deutschland; eines der breitesten Zucker-Produktsortimente."},"note":"","fonte":""},{"azienda":"Pfeifer & Langen","categoria":"Zucker","prodotto":"Kristallzucker / Puderzucker","fields":{"Produkttyp":"Kristallzucker, Puderzucker","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Traditionsreicher deutscher Zuckerproduzent (Köln, seit 1870), mit Hunderten Produktspezifikationen für die Lebensmittelindustrie."},"note":"","fonte":""},{"azienda":"Zucchero & C. Srl","categoria":"Traubenzucker (Dextrose)","prodotto":"Traubenzucker-Monohydrat","fields":{"Produkttyp":"Traubenzucker-Monohydrat aus Maisstärke","Format / Verpackung":"Säcke à 25 kg (Mindestbestellung kumulativ 60 kg)","Merkmale / Positionierung":"Toskanisches Unternehmen (Bagno a Ripoli, FI), spezialisiert auf Zucker und Zutaten für die Lebensmittelindustrie; laut Hersteller besonders für Eisdielen geeignet wegen Gefrierpunkterniedrigung und geringer Süßkraft."},"note":"","fonte":""},{"azienda":"Cargill","categoria":"Traubenzucker (Dextrose)","prodotto":"C☆Dex® Traubenzucker (Monohydrat und wasserfrei)","fields":{"Produkttyp":"Traubenzucker-Monohydrat und wasserfrei, verschiedene Körnungen","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Globaler Agrarkonzern (seit 1865) mit europäischem Werk für Stärke und Süßungsmittel in Krefeld, Deutschland."},"note":"","fonte":""},{"azienda":"Roquette","categoria":"Traubenzucker (Dextrose)","prodotto":"Traubenzucker aus Maisstärke","fields":{"Produkttyp":"Traubenzucker aus Maisstärke","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Französischer Konzern (seit 1933), führend bei pflanzlichen Stärken; verarbeitet Maisstärke zu Traubenzucker und Glukosesirup auch im eigenen Werk in Cassano d'Adda, Italien."},"note":"","fonte":""},{"azienda":"AGRANA","categoria":"Traubenzucker (Dextrose)","prodotto":"DEXTRODYN® Traubenzucker","fields":{"Produkttyp":"Traubenzucker, feines weißes Pulver","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Österreichischer Konzern (Wien, seit 1988, Teil der Südzucker-Gruppe), spezialisiert auf Verzuckerungsprodukte aus Stärke, hohe mikrobiologische Reinheit."},"note":"","fonte":""},{"azienda":"Roquette","categoria":"Glukosesirup","prodotto":"GLUCIDEX® getrockneter Glukosesirup","fields":{"Produkttyp":"Getrockneter Glukosesirup aus Mais","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Einer der weltweit größten Hersteller von Glukosesirup und pflanzlichen Stärken für Lebensmittel- und Pharmaanwendungen."},"note":"","fonte":""},{"azienda":"Cargill","categoria":"Glukosesirup","prodotto":"Glukosesirupe (Linie Liquid Sweeteners)","fields":{"Produkttyp":"Glukose- und Glukose-Fruktose-Sirupe aus Getreide","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Hergestellt im deutschen Werk Krefeld, das 2018–2019 umgerüstet wurde."},"note":"","fonte":""},{"azienda":"Tereos","categoria":"Glukosesirup","prodotto":"Glukosesirupe (Linie Sweet&You)","fields":{"Produkttyp":"Glukosesirupe aus Weizen-/Maisstärke","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Zweitgrößter Zuckerproduzent weltweit (größter in Frankreich), mit eigener Sparte für Glukosesirupe."},"note":"","fonte":""},{"azienda":"AGRANA","categoria":"Glukosesirup","prodotto":"AGENAMALT® / AGENABON® Glukosesirupe","fields":{"Produkttyp":"Glukosesirupe, DE 6-97","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Sortiment an Glukosesirupen mit unterschiedlichen Dextrose-Äquivalent-Werten (DE) für Lebensmittel- und Pharmaanwendungen."},"note":"","fonte":""},{"azienda":"Galam Ltd","categoria":"Fruktose","prodotto":"Fruitose® kristalline Fruktose","fields":{"Produkttyp":"Kristalline Fruktose","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Israelisches Unternehmen (Kibbutz Maanit), spezialisiert auf kristalline Fruktose, einer der weltweit führenden Anbieter dieser Zutat."},"note":"","fonte":""},{"azienda":"Tereos","categoria":"Fruktose","prodotto":"F95 flüssige Fruktose (Linie Sweet&You)","fields":{"Produkttyp":"Hochkonzentrierte flüssige Fruktose","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Produziert flüssige Fruktose neben Zucker und Glukosesirupen aus Stärke."},"note":"","fonte":""},{"azienda":"AGRANA","categoria":"Fruktose","prodotto":"Fruktosesirupe (niedriger/hoher Gehalt)","fields":{"Produkttyp":"Fruktosesirupe, inkl. Glukose-Fruktose (Isoglukose/HFCS)","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Hergestellt in der Stärke-Sparte der österreichischen AGRANA-Gruppe."},"note":"","fonte":""},{"azienda":"Cargill","categoria":"Fruktose","prodotto":"C☆TruSweet® Glukose-Fruktose-Sirup","fields":{"Produkttyp":"Glukose-Fruktose-Sirup","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Hergestellt für die Lebensmittel- und Getränkeindustrie im deutschen Werk Krefeld."},"note":"","fonte":""},{"azienda":"DMK Group","categoria":"Sahnepulver","prodotto":"Cream Powder (Sahnepulver)","fields":{"% Fett":"42-75% Fett","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Eine der größten europäischen Molkereigenossenschaften (Bremen), verarbeitet rund 5,1 Milliarden kg Milch pro Jahr. Hinweis: 2026 wurde eine Fusion mit Arla Foods angekündigt — aktuellen Namen vor Kontaktaufnahme prüfen."},"note":"","fonte":""},{"azienda":"Schwarzwaldmilch","categoria":"Sahnepulver","prodotto":"Sahnepulver","fields":{"% Fett":"42-60% Fett (freies Fett bis 80%)","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Deutsche Molkereigenossenschaft aus Baden-Württemberg (seit 1930), produziert sprühgetrocknetes Sahnepulver aus Sahne und Magermilch, auch in Bio-, koscher- und halal-Varianten."},"note":"","fonte":""},{"azienda":"Corman (Savencia-Gruppe)","categoria":"Sahnepulver","prodotto":"Concentrated Cream (Pulverform)","fields":{"% Fett":"In den Quellen nicht angegeben","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Belgischer Spezialist für Milchfett (Limbourg, seit 1935), bietet konzentrierte Sahne auch in Pulverform für industrielle Vormischungen."},"note":"","fonte":""},{"azienda":"Ecco! Ingredients","categoria":"Sahnepulver","prodotto":"Sahnepulver 42%","fields":{"% Fett":"42% Fett","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Italienischer Vertrieb (Rescaldina, MI) von Rohstoffen für Eisdielen, Konditoreien und Schokoladenhersteller — kein Primärproduzent."},"note":"","fonte":""},{"azienda":"Inalpi S.p.A.","categoria":"Magermilchpulver","prodotto":"Magermilchpulver","fields":{"% Fett":"Niedrig, genauer Wert in den Quellen nicht angegeben","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Piemontesisches Unternehmen (Moretta, CN, seit 1966) mit dem ersten Sprühturm Italiens für Milchpulver, zu 100% aus piemontesischer Milch."},"note":"","fonte":""},{"azienda":"Lactalis Ingredients","categoria":"Magermilchpulver","prodotto":"Skimmed Milk Powder","fields":{"% Fett":"Niedriger Fettgehalt, genauer Wert in den Quellen nicht angegeben","Format / Verpackung":"Versionen low/medium/high heat","Merkmale / Positionierung":"Ingredients-Sparte der Lactalis-Gruppe (Bourgbarré, Frankreich, seit 1933), einer der größten Molkereikonzerne der Welt."},"note":"","fonte":""},{"azienda":"Uelzena eG","categoria":"Magermilchpulver","prodotto":"Magermilchpulver (Low/Medium Heat)","fields":{"% Fett":"Maximal 1,25% Fett","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Deutsche Genossenschaft (Uelzen, seit 1952) mit einer Kapazität bis 75.000 t/Jahr, zertifiziert nach ISO 9001, FSSC 22000, IFS, koscher und halal."},"note":"","fonte":""},{"azienda":"Vreugdenhil Dairy Foods","categoria":"Magermilchpulver","prodotto":"Skimmed Milk Powder","fields":{"% Fett":"Ca. 1% Fett","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Niederländisches Familienunternehmen (Voorthuizen, seit 1954), verarbeitet über eine Milliarde kg Milch pro Jahr, Export in über 130 Länder."},"note":"","fonte":""},{"azienda":"Inalpi S.p.A.","categoria":"Vollmilchpulver","prodotto":"Vollmilchpulver","fields":{"% Fett":"In den Quellen nicht angegeben (Marktstandard ca. 26%, von der Quelle nicht bestätigt)","Format / Verpackung":"Auch in 25-kg-Format für die Süßwaren-/Eisindustrie","Merkmale / Positionierung":"Piemontesisches Unternehmen (Moretta, CN, seit 1966), Verarbeitung zu 100% aus piemontesischer Milch."},"note":"","fonte":""},{"azienda":"Lactalis Ingredients","categoria":"Vollmilchpulver","prodotto":"Whole Milk Powder","fields":{"% Fett":"26% oder 28% Fett","Format / Verpackung":"Regular- oder Instant-Version","Merkmale / Positionierung":"Ingredients-Sparte der Lactalis-Gruppe (Bourgbarré, Frankreich, seit 1933)."},"note":"","fonte":""},{"azienda":"DMK Group","categoria":"Vollmilchpulver","prodotto":"Whole Milk Powder – Basic","fields":{"% Fett":"26% oder 28% Fett","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Deutsche Molkereigenossenschaft (Bremen, seit 2011). Hinweis: 2026 wurde eine Fusion mit Arla Foods angekündigt — aktuellen Namen prüfen."},"note":"","fonte":""},{"azienda":"Fonterra (NZMP)","categoria":"Vollmilchpulver","prodotto":"NZMP Whole Milk Powder (Regular / Organic / UHT)","fields":{"% Fett":"26-28% Fett (UHT-Variante mit 28% angegeben)","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Größte Molkereigenossenschaft Neuseelands (seit 2001); exportiert über die Marke NZMP Vollmilchpulver, zu über 90% aus neuseeländischer Milch hergestellt."},"note":"","fonte":""},{"azienda":"Roquette","categoria":"Maltodextrine","prodotto":"Glucidex® Maltodextrine (Mais/Kartoffel)","fields":{"Typ / Angegebener DE-Wert":"Verschiedene DE-Werte (z. B. Glucidex® 12)","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Weltweit führender Anbieter pflanzlicher Zutaten (Lestrem, Frankreich, seit 1933), über 700 Produkte in mehr als 150 Ländern."},"note":"","fonte":""},{"azienda":"Tereos","categoria":"Maltodextrine","prodotto":"Maldex® feine und grobe Maltodextrine","fields":{"Typ / Angegebener DE-Wert":"Serien Maldex® 120/170/190 und G120/G170/G190/G191, aus Mais, Weizen oder Kartoffel","Format / Verpackung":"Breites Sortiment an Verpackungsformaten (nicht genau beziffert)","Merkmale / Positionierung":"Französischer Agrargenossenschaftskonzern, der Zuckerrüben, Zuckerrohr, Getreide und Kartoffeln zu Zucker, Stärke, Alkohol und funktionellen Zutaten verarbeitet."},"note":"","fonte":""},{"azienda":"Ingredion Incorporated","categoria":"Maltodextrine","prodotto":"Globe® Maltodextrin","fields":{"Typ / Angegebener DE-Wert":"Serie DE 10, 15, 18 (z. B. Globe® 10 DE, Globe® 18 DE Non-GMO)","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Einer der weltweit größten Hersteller von Stärke- und Kohlenhydrat-Zutaten (Westchester, Illinois, USA)."},"note":"","fonte":""},{"azienda":"Cargill","categoria":"Maltodextrine","prodotto":"C*Dry® MD Maltodextrin","fields":{"Typ / Angegebener DE-Wert":"Z. B. C*Dry MD 01915","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Globaler Agrarkonzern (seit 1865), beliefert Food-&-Beverage-Hersteller weltweit mit Lebensmittelzutaten."},"note":"","fonte":""},{"azienda":"BENEO GmbH (Südzucker-Gruppe)","categoria":"Inulin","prodotto":"Orafti® Inulin (GR, ST-Gel, HSI, HP, HPX, Synergy1, Organic IN)","fields":{"Produkttyp":"Verschiedene Varianten je nach Anwendung","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Tochtergesellschaft der Südzucker-Gruppe (Mannheim, seit 2007), spezialisiert auf funktionelle Zutaten aus Chicoréewurzel und Reis."},"note":"","fonte":""},{"azienda":"Cosucra Groupe Warcoing SA","categoria":"Inulin","prodotto":"Fibruline® Chicorée-Inulin (Instant/XL)","fields":{"Produkttyp":"Verschiedene Varianten je nach Anwendung","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"B-Corp-zertifiziertes belgisches Familienunternehmen (Warcoing, Inulinproduktion seit 1986), Pionier bei der Extraktion von Chicoréefasern und Erbsenprotein aus lokalen Rohstoffen."},"note":"","fonte":""},{"azienda":"Sensus (heute Cosun Ingredients)","categoria":"Inulin","prodotto":"Frutafit® Inulin / Frutalose® Oligofruktose","fields":{"Produkttyp":"Verschiedene Varianten je nach Anwendung","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Niederländischer Hersteller (Roosendaal), spezialisiert auf Inulin und Oligofruktose aus in den Niederlanden angebauter Chicoréewurzel; firmiert seit dem 1. Juli als Cosun Ingredients."},"note":"","fonte":""},{"azienda":"Cargill","categoria":"Inulin","prodotto":"Oliggo-Fiber® Inulin (auch flüssig erhältlich)","fields":{"Produkttyp":"Auch in flüssiger Form/Sirup","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Von Cargill in Zusammenarbeit/Lizenz mit Cosucra vermarktetes Inulin als präbiotische Zutat zur Zucker- und Fettreduzierung."},"note":"","fonte":""},{"azienda":"Tate & Lyle PLC","categoria":"Ballaststoffe","prodotto":"STA-LITE® Polydextrose","fields":{"Produkttyp":"Erhältlich in flüssiger und Pulverform","Format / Verpackung":"Geringer Einfluss auf Geschmack/Farbe, Füllstoff für kalorien-/zuckerreduzierte Produkte, auch Speiseeis","Merkmale / Positionierung":"Traditionsreicher britischer Lebensmittelzutaten-Konzern (London, seit 1903), heute fokussiert auf lösliche Ballaststoffe und Zucker-/Kalorienreduktion."},"note":"","fonte":""},{"azienda":"IFF Health Sciences (Danisco/DuPont-Erbe)","categoria":"Ballaststoffe","prodotto":"Litesse® Polydextrose","fields":{"Produkttyp":"In den Quellen nicht angegeben","Format / Verpackung":"Langsam fermentierender präbiotischer Ballaststoff für Süßwaren- und Molkereianwendungen","Merkmale / Positionierung":"US-amerikanischer Zutatenkonzern (New York); das Litesse-Portfolio stammt aus dem Erbe von DuPont Nutrition & Biosciences / Danisco."},"note":"","fonte":""},{"azienda":"Roquette","categoria":"Ballaststoffe","prodotto":"NUTRIOSE® resistentes Dextrin","fields":{"Produkttyp":"Serien 06, 10, FM 15S; Faseranteil von 70% bis über 90%","Format / Verpackung":"In den Quellen nicht angegeben","Merkmale / Positionierung":"Resistentes Dextrin aus Non-GMO-Mais oder -Weizen zur Erhöhung des Ballaststoffgehalts und Zuckerreduktion in Lebensmitteln, auch Speiseeis."},"note":"","fonte":""},{"azienda":"Matsutani Chemical Industry (JV mit ADM)","categoria":"Ballaststoffe","prodotto":"Fibersol® resistentes Dextrin/Maltodextrin","fields":{"Produkttyp":"In den Quellen nicht angegeben","Format / Verpackung":"Gestützt auf über 30 Jahre klinische Forschung","Merkmale / Positionierung":"Japanisches Chemieunternehmen (Itami, seit 1919), Erfinder des resistenten Dextrins Fibersol®, seit 2006 global über ein Joint Venture mit ADM produziert und vermarktet."},"note":"","fonte":""},{"azienda":"Babbi","categoria":"Magermilchpulver","prodotto":"Latte in Polvere Scremato","fields":{"Tipo":"Latte scremato in polvere in sacchetto, uso a caldo","Dosaggio dichiarato":"q.b.","Caratteristiche / posizionamento":"Latte in polvere ad alto contenuto di proteine nobili, utile ad aumentare il contenuto di solidi del latte per un gelato più ricco e cremoso."},"note":"","fonte":""},{"azienda":"Babbi","categoria":"Glukosesirup","prodotto":"Gluky 3 kg","fields":{"Tipo":"Sciroppo di glucosio ad alto DE, caldo o freddo","Dosaggio dichiarato":"q.b.","Caratteristiche / posizionamento":"Sciroppo di glucosio ad alto DE che aumenta la spatolabilità del gelato e riduce la dolcezza."},"note":"","fonte":""},{"azienda":"Fructital","categoria":"Ballaststoffe","prodotto":"Fructifibra","fields":{"Tipo prodotto":"Integratore di fibre a basso peso per gelati alla frutta","Formato / Confezione":"3x2 kg; SKU IN0103","Caratteristiche / posizionamento":"Fibre altamente igroscopiche che trattengono l'acqua libera, rendendo il gelato più 'asciutto' e migliorando la tenuta in vetrina; dosaggio 20 g/kg; uso caldo/freddo"},"note":"","fonte":"https://fructital.it/product/fructifibra-integratore-di-fibre/"},{"azienda":"Unigel","categoria":"Magermilchpulver","prodotto":"Latte Magro in Polvere","fields":{"% Fett":"n.d.","Format / Verpackung":"n.d.","Merkmale / Positionierung":"n.d."},"note":"","fonte":"https://unigelitalia.com/categoria-prodotti/prodotti-pronti-funzionali-e-altro/"},{"azienda":"Unigel","categoria":"Magermilchpulver","prodotto":"Latte Delattosato","fields":{"% Fett":"n.d.","Format / Verpackung":"n.d.","Merkmale / Positionierung":"n.d."},"note":"","fonte":"https://unigelitalia.com/categoria-prodotti/prodotti-pronti-funzionali-e-altro/"},{"azienda":"Unigel","categoria":"Inulin","prodotto":"Fibrapluss (inulina)","fields":{"Produkttyp":"n.d.","Format / Verpackung":"n.d.","Merkmale / Positionierung":"n.d."},"note":"","fonte":"https://unigelitalia.com/categoria-prodotti/prodotti-pronti-funzionali-e-altro/"},{"azienda":"Unigel","categoria":"Ballaststoffe","prodotto":"Fibratop","fields":{"Produkttyp":"n.d.","Format / Verpackung":"n.d.","Merkmale / Positionierung":"n.d."},"note":"","fonte":"https://unigelitalia.com/categoria-prodotti/prodotti-pronti-funzionali-e-altro/"},{"azienda":"Unigel","categoria":"Maltodextrine","prodotto":"Maltodex","fields":{"Typ / Angegebener DE-Wert":"n.d.","Format / Verpackung":"n.d.","Merkmale / Positionierung":"n.d."},"note":"","fonte":"https://unigelitalia.com/categoria-prodotti/prodotti-pronti-funzionali-e-altro/"},{"azienda":"Unigel","categoria":"Glukosesirup","prodotto":"Sciroppo Glucosio Disidratato 30 D.E.","fields":{"Produkttyp":"n.d.","Format / Verpackung":"n.d.","Merkmale / Positionierung":"n.d."},"note":"","fonte":"https://unigelitalia.com/categoria-prodotti/prodotti-pronti-funzionali-e-altro/"},{"azienda":"Unigel","categoria":"Zucker","prodotto":"Sorbitolo","fields":{"Produkttyp":"n.d.","Format / Verpackung":"n.d.","Merkmale / Positionierung":"n.d."},"note":"","fonte":"https://unigelitalia.com/categoria-prodotti/prodotti-pronti-funzionali-e-altro/"},{"azienda":"Unigel","categoria":"Zucker","prodotto":"Trealosio","fields":{"Produkttyp":"n.d.","Format / Verpackung":"n.d.","Merkmale / Positionierung":"n.d."},"note":"","fonte":"https://unigelitalia.com/categoria-prodotti/prodotti-pronti-funzionali-e-altro/"},{"azienda":"Reire","categoria":"Magermilchpulver","prodotto":"Reimilko 20P","fields":{"% Fett":"In den Quellen nicht angegeben","Format / Verpackung":"Pulver; Format nicht angegeben","Merkmale / Positionierung":"Proteinreiches Halbfertigprodukt in Pulverform auf Milchbasis mit 20% Protein, ersetzt Magermilchpulver."},"note":"","fonte":"https://www.reire.com/prodotti/preparati/sostitutivi-latte/"},{"azienda":"Reire","categoria":"Magermilchpulver","prodotto":"Reimilko 26P","fields":{"% Fett":"In den Quellen nicht angegeben","Format / Verpackung":"Pulver; Format nicht angegeben","Merkmale / Positionierung":"Proteinreiches Halbfertigprodukt in Pulverform auf Milchbasis mit 26% Protein: dem Magermilchpulver im Proteingehalt am ähnlichsten, ersetzt dieses."},"note":"","fonte":"https://www.reire.com/prodotti/preparati/sostitutivi-latte/"},{"azienda":"Reire","categoria":"Vollmilchpulver","prodotto":"Re-Lat","fields":{"% Fett":"11%+1 Fett","Format / Verpackung":"Pulver; Format nicht angegeben","Merkmale / Positionierung":"Milchersatz mit höherem Fettgehalt als magere Varianten, zum teilweisen Ersatz von Vollmilch mit hohem Anteil an Milchproteinen."},"note":"","fonte":"https://www.reire.com/prodotti/preparati/sostitutivi-latte/"},{"azienda":"Reire","categoria":"Proteine","prodotto":"Texturierte Pflanzenproteine","fields":{"Produkttyp":"Texturierte Pflanzenproteine aus Soja- und Erbsenmehl","Format / Verpackung":"Nicht angegeben","Merkmale / Positionierung":"Aus Soja- und Erbsenmehl durch Hitze und Druck hergestellt; nach dem Rehydrieren ahmen sie die Konsistenz von Fleisch nach. Einsatz: vegane Fleischersatzprodukte und Texturverbesserung."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/proteine-vegetali/"},{"azienda":"Reire","categoria":"Proteine","prodotto":"Konzentrierte und isolierte Pflanzenproteine","fields":{"Produkttyp":"Konzentrierte und isolierte Pflanzenproteine aus Soja, Erbse und Reis","Format / Verpackung":"Nicht angegeben","Merkmale / Positionierung":"Nachhaltige Alternative zu tierischen Proteinen mit verdickenden und emulgierenden Eigenschaften; hydrolysierte Varianten eignen sich für Sporternährung."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/proteine-vegetali/"},{"azienda":"Reire","categoria":"Proteine","prodotto":"Weizengluten (Vital)","fields":{"Produkttyp":"Weizengluten in Pulverform","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Eiweißreicher Proteinkomplex aus Weizen: rehydriert verleiht er Teigen Elastizität und Festigkeit; für Backwaren gedacht."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/proteine-vegetali/"},{"azienda":"Reire","categoria":"Zucker","prodotto":"Laktose","fields":{"Produkttyp":"Disaccharid der Milch (Glukose + Galaktose)","Format / Verpackung":"Nicht angegeben","Merkmale / Positionierung":"In Kuhmilch enthaltenes Disaccharid aus Glukose und Galaktose."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Fruktose","prodotto":"Fruktose","fields":{"Produkttyp":"Monosaccharid aus Maisstärke","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Enzymatisch aus Maisstärke (Maisdextrose) hergestellt; hohe Gefrierpunkterniedrigung."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Glukosesirup","prodotto":"Glukosesirupe","fields":{"Produkttyp":"Sirupe aus der Hydrolyse von Maisstärke, nach DE-Wert eingestuft","Format / Verpackung":"Sirup","Merkmale / Positionierung":"Dienen zur Regulierung von Süße und Viskosität; nach DE-Wert eingestuft."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Maltodextrine","prodotto":"Maltodextrine","fields":{"Typ / Angegebener DE-Wert":"Maltodextrine aus der Hydrolyse von Maisstärke","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Aus der Hydrolyse von Maisstärke hergestellt."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Zucker","prodotto":"Trehalose","fields":{"Produkttyp":"Nicht reduzierender Zucker","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Nicht reduzierender Zucker mit neutralem Geschmack; stabilisiert Proteine und Fette."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Traubenzucker (Dextrose)","prodotto":"Dextrose / Glukose","fields":{"Produkttyp":"Dextrose aus Maisstärke","Format / Verpackung":"Kristallines Pulver","Merkmale / Positionierung":"Weißes, kristallines, geruchloses und sehr reines Pulver."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Zucker","prodotto":"Rohrzucker","fields":{"Produkttyp":"Roher, unraffinierter Rohrzucker","Format / Verpackung":"Granuliert","Merkmale / Positionierung":"Roh und unraffiniert; behält Spuren von Melasse."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Zucker","prodotto":"Saccharose","fields":{"Produkttyp":"Disaccharid (Haushaltszucker)","Format / Verpackung":"Granuliert","Merkmale / Positionierung":"Gewöhnlicher Zucker, Disaccharid aus Glukose und Fruktose."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Ballaststoffe","prodotto":"Glukosefaser","fields":{"Produkttyp":"Lösliche Ballaststoffe aus Mais","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Süße ähnlich einem Glukosesirup 30 DE."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Ballaststoffe","prodotto":"Kartoffelfaser","fields":{"Produkttyp":"Pflanzliche Ballaststoffe aus Kartoffelstärke","Format / Verpackung":"Hellbraunes Pulver","Merkmale / Positionierung":"Bindet Wasser und Öl."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Inulin","prodotto":"Inulin","fields":{"Produkttyp":"Fruktose-Polysaccharid","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Lösliche Ballaststoffe mit präbiotischer Wirkung."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Ballaststoffe","prodotto":"Zitrusfaser","fields":{"Produkttyp":"Unlösliche Ballaststoffe aus Zitrusfrüchten","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Unlösliche Faser, die bis zum 8-Fachen ihres Gewichts an Wasser bindet."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Ballaststoffe","prodotto":"Bambusfaser","fields":{"Produkttyp":"Unlösliche pflanzliche Cellulose","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Unlösliche Faser (Cellulose), die bis zum 8-Fachen ihres Gewichts an Wasser bindet."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Ballaststoffe","prodotto":"Erbsenfaser","fields":{"Produkttyp":"Ballaststoffe aus kanadischen Erbsen","Format / Verpackung":"Weißes Pulver","Merkmale / Positionierung":"Hält bis zum 10-Fachen ihres Gewichts an Wasser zurück."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Ballaststoffe","prodotto":"Haferfaser","fields":{"Produkttyp":"Unlösliche Ballaststoffe aus Haferschalen","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Glutenfrei, mit über 83% unlöslichen Ballaststoffen."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Ballaststoffe","prodotto":"Flohsamenschalen-Faser 99%","fields":{"Produkttyp":"Ballaststoffe aus Samen von Plantago ovata","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Kann bis zu 60 ml Wasser pro Gramm aufnehmen."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Inulin","prodotto":"FOS (Fruktooligosaccharide)","fields":{"Produkttyp":"Fruktan-Polysaccharide ähnlich Inulin","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Fruktane ähnlich Inulinen, mit 5-12% freien Zuckern."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"},{"azienda":"Reire","categoria":"Ballaststoffe","prodotto":"Alpha-Cyclodextrin","fields":{"Produkttyp":"Cyclodextrin-Komplex","Format / Verpackung":"Pulver","Merkmale / Positionierung":"Resistent gegen Verdauungsenzyme, wirkt als Ballaststoff."},"note":"","fonte":"https://www.reire.com/prodotti/materie-prime/carboidrati/"}]</script>
+  <script>(function(){
+  var CFG = {"cats": ["Zucker", "Traubenzucker (Dextrose)", "Glukosesirup", "Fruktose", "Maltodextrine", "Inulin", "Ballaststoffe", "Magermilchpulver", "Vollmilchpulver", "Sahnepulver", "Proteine"], "pct10": false, "bare": false, "metrics": [{"key": "fat", "tab": "Fett", "title": "📊 Fettgehalt von Milch- und Sahnepulver", "intro": "Jeder Balken zeigt den vom Hersteller angegebenen Fettgehalt in Prozent (als Bereich, wenn mehrere Werte genannt werden). Es erscheinen nur Milch- und Sahnepulver mit angegebenem Wert; wähle im Archiv eine Kategorie, um einzugrenzen.", "unit": "% Fett", "filt": "gefiltert (die übrigen geben keinen Fettgehalt an)", "approx": false, "linear": true}], "chips": [{"key": "bio", "kw": ["bio", "biolog", "organic"], "label": "chipBio"}, {"key": "glutine", "kw": ["senza glutine", "gluten"], "label": "chipGluten"}, {"key": "vegano", "kw": ["vegan", "vegetal"], "label": "chipVegan"}], "sugars": [{"id": "saccarosio", "label": "Saccharose", "pac": 100, "pod": 100}, {"id": "destrosio", "label": "Dextrose", "pac": 190, "pod": 70}, {"id": "sciroppodiglucosio42de", "label": "Glukosesirup 42 DE", "pac": 90, "pod": 50}, {"id": "sciroppodiglucosio38de", "label": "Glukosesirup 38 DE", "pac": 45, "pod": 24}, {"id": "sciroppodiglucosio21de", "label": "Glukosesirup 21 DE", "pac": 20, "pod": 10}, {"id": "zuccheroinvertito", "label": "Invertzucker", "pac": 190, "pod": 130}, {"id": "fruttosio", "label": "Fruktose", "pac": 190, "pod": 170}, {"id": "lattosio", "label": "Laktose", "pac": 100, "pod": 16}, {"id": "maltodestrine18de", "label": "Maltodextrin 18 DE", "pac": 34, "pod": 21}, {"id": "inulina", "label": "Inulin", "pac": 25, "pod": 10}]};
+  var L = {"found": "Produkte gefunden", "none": "Keine Produkte gefunden.", "more": "Mehr anzeigen", "showall": "Alle anzeigen", "showtop": "Nur die ersten anzeigen", "fonte": "Quelle", "note": "Hinweis", "nochart": "Kein Produkt mit vergleichbarem Wert für die gewählten Filter.", "st_in": "im Diagramm", "st_of": "von", "st_min": "Mindestwert", "st_med": "Medianwert", "st_max": "Höchstwert", "vs": "ggü.", "conv_same": "Wähle zwei verschiedene Zucker.", "conv_more": "süßer", "conv_less": "weniger süß", "conv_eq": "praktisch unverändert", "chipHot": "Heiß", "chipCold": "Kalt", "chipVegan": "Vegan", "chipLactose": "Laktosefrei", "chipGluten": "Glutenfrei", "chipPalm": "Ohne Palmöl / pflanzliche Fette", "chipYogurt": "Joghurt", "chipSoft": "Soft", "chipMilk": "Mit Milch", "chipWater": "Mit Wasser", "chipBio": "Bio", "chipSDL": "Ohne Milchbestandteile", "chipPure": "100 % rein", "chipSicily": "Sizilien", "chipPiedmont": "Piemont", "chipAmarena": "Amarena", "chipChoc": "Schokolade", "chipBiscuit": "Keks", "chipNut": "Haselnuss", "chipPist": "Pistazie", "chipCaramel": "Karamell", "chipNoSugar": "Ohne Zuckerzusatz", "coll": "de", "dec": ",", "conv_out_tpl": "Für denselben PAC braucht man etwa <strong>{gb} g</strong> {b} statt {ga} g {a}. Die Süße (POD) ändert sich von {poda} auf {podb}: <strong>{dl}</strong>."};
+  var data = JSON.parse(document.getElementById('page-archive-data').textContent);
+  var COLORS = ['#c0392b','#e0a526','#2e7d32','#2f6f9f','#7b4f9d','#d2691e','#008b8b','#8b5a2b','#6b8e23','#b8860b','#555'];
+  var catColor = {}; CFG.cats.forEach(function(c,i){ catColor[c] = COLORS[i % COLORS.length]; });
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function num(s){ return parseFloat(String(s).replace(',', '.')); }
+  function fmt(x){ var r = Math.round(x*10)/10; if(x < 1) r = Math.round(x*100)/100; return String(r).replace('.', L.dec); }
+
+  // ---------- parser
+  function rng(a, b, approx){ var x = num(a), y = b ? num(b) : x; return {min: Math.min(x,y), max: Math.max(x,y), approx: !!approx}; }
+  var N = '(\\d+(?:[.,]\\d+)?)', SEP = '\\s*[-–/]\\s*';
+  function parseDose(p){
+    var t = (p.fields||{})['Dosaggio dichiarato']; if(!t) return null; t = String(t); var m;
+    m = t.match(new RegExp('\\(\\s*'+N+'(?:'+SEP+N+')?\\s*(?:g|gr)\\s*\\/\\s*(?:l|L|kg)'));
+    if(m) return rng(m[1], m[2]);
+    m = t.match(new RegExp(N+'\\s*kg\\s*\\+\\s*'+N+'\\s*[lL]\\b'));
+    if(m){ var v = num(m[1])*1000/num(m[2]); return {min:v, max:v, approx:false}; }
+    m = t.match(new RegExp(N+'(?:'+SEP+N+')?\\s*(?:g|gr)\\s*(?:\\/\\s*(?:l|L|kg|litro)|per\\s*(?:1\\s*)?(?:l|L|litro|kg)\\b)'));
+    if(m) return rng(m[1], m[2]);
+    m = t.match(new RegExp(N+'(?:'+SEP+N+')?\\s*x\\s*[lL]\\b'));
+    if(m) return rng(m[1], m[2]);
+    m = t.match(new RegExp('^\\s*'+N+'(?:'+SEP+N+')?\\s*%'));
+    if(m && CFG.pct10){ var r = rng(m[1], m[2], true); r.min *= 10; r.max *= 10; return r; }
+    m = t.match(new RegExp('^\\s*'+N+'(?:'+SEP+N+')?\\s*(?:g|gr)?\\s*(?:\\([^)]*\\))?\\s*$'));
+    if(m && CFG.bare) return rng(m[1], m[2], true);
+    return null;
+  }
+  function parseFat(p){
+    var t = (p.fields||{})['% Grassi'] || (p.fields||{})['% Fett']; if(!t) return null; t = String(t);
+    if(/^\s*(non specificat|n\.d\.|basso)/i.test(t)) return null;
+    var m = t.match(/(\d+)\s*%\s*\+\s*(\d+)/); if(m) return {min:num(m[1]), max:num(m[1])+num(m[2]), approx:false};
+    t = t.replace(/\([^)]*\)/g, '');
+    if(t.indexOf('%') < 0) return null;
+    var ns = (t.match(/\d+(?:[.,]\d+)?/g) || []).map(num).filter(function(x){ return x <= 100; });
+    if(!ns.length) return null;
+    return {min: Math.min.apply(null, ns), max: Math.max.apply(null, ns), approx:false};
+  }
+  function parsePct(p){
+    var t = (p.fields||{})['% Amarena / Frutto dichiarata']; if(!t) return null; t = String(t);
+    if(/^\s*(n\.d\.|non dichiarata)/i.test(t)) return null;
+    var m = t.match(new RegExp(N+'\\s*%\\s*totale'));
+    if(!m) m = t.replace(/\([^)]*\)/g, '').match(new RegExp(N+'\\s*%'));
+    if(!m) return null;
+    var v = num(m[1]); return (v > 0 && v <= 100) ? {min:v, max:v, approx:false} : null;
+  }
+  function parsePack(p){
+    var t = (p.fields||{})['Formato / Confezione'] || (p.fields||{})['Calibro / Formato']; if(!t) return null; t = String(t);
+    var m = t.match(new RegExp('\\d+\\s*[xX×]\\s*'+N+'\\s*kg'));
+    if(!m) m = t.match(new RegExp(N+'\\s*kg'));
+    if(m){ var v = num(m[1]); return v > 0 ? {min:v, max:v, approx:false} : null; }
+    m = t.match(new RegExp('\\d+\\s*[xX×]\\s*'+N+'\\s*(?:g|gr)\\b')) || t.match(new RegExp(N+'\\s*(?:g|gr)\\b'));
+    if(m){ var w = num(m[1])/1000; return (w >= 0.05 && w <= 30) ? {min:w, max:w, approx:false} : null; }
+    return null;
+  }
+  var PARSERS = {dose: parseDose, fat: parseFat, pct: parsePct, pack: parsePack};
+  var metrics = CFG.metrics, cur = metrics[0];
+  data.forEach(function(p){
+    p._vs = {}; metrics.forEach(function(m){ p._vs[m.key] = PARSERS[m.key](p); });
+    p._hay = (p.azienda+' '+p.prodotto+' '+p.categoria+' '+Object.keys(p.fields||{}).map(function(k){return p.fields[k];}).join(' ')+' '+(p.note||'')).toLowerCase();
+  });
+
+  // ---------- elementi
+  var input = document.getElementById('pgSearch'), selCat = document.getElementById('pgCat'), selAz = document.getElementById('pgAz');
+  var results = document.getElementById('pgResults'), count = document.getElementById('pgCount'), chipsBox = document.getElementById('pgChips');
+  var chartBox = document.getElementById('gcChart'), statsBox = document.getElementById('gcStats'), legend = document.getElementById('gcLegend');
+  var gcTitle = document.getElementById('gcTitle'), gcIntro = document.getElementById('gcIntro'), gcTabs = document.getElementById('gcTabs'), gcApprox = document.getElementById('gcApprox');
+  var chipState = {}; CFG.chips.forEach(function(c){ chipState[c.key] = false; });
+  var shown = 24, chartAll = false;
+
+  (function fill(){
+    var az = []; data.forEach(function(p){ if(az.indexOf(p.azienda) < 0) az.push(p.azienda); });
+    az.sort(function(a,b){ return a.localeCompare(b, L.coll); });
+    az.forEach(function(a){ var o = document.createElement('option'); o.value = a; o.textContent = a; selAz.appendChild(o); });
+  })();
+
+  function filtered(){
+    var q = input.value.trim().toLowerCase(), cat = selCat.value, az = selAz.value;
+    return data.filter(function(p){
+      if(cat && p.categoria !== cat) return false;
+      if(az && p.azienda !== az) return false;
+      if(q && p._hay.indexOf(q) < 0) return false;
+      for(var i = 0; i < CFG.chips.length; i++){
+        var c = CFG.chips[i]; if(!chipState[c.key]) continue;
+        if(!c.kw.some(function(k){ return p._hay.indexOf(k) >= 0; })) return false;
+      }
+      return true;
+    });
+  }
+  function renderChips(){
+    var base = data.filter(function(p){ return (!selCat.value || p.categoria === selCat.value) && (!selAz.value || p.azienda === selAz.value); });
+    chipsBox.innerHTML = CFG.chips.map(function(c){
+      var n = base.filter(function(p){ return c.kw.some(function(k){ return p._hay.indexOf(k) >= 0; }); }).length;
+      return '<button type="button" class="chip" data-k="'+c.key+'" aria-pressed="'+(chipState[c.key]?'true':'false')+'">'+esc(L[c.label])+'<small>'+n+'</small></button>';
+    }).join('');
+    Array.prototype.forEach.call(chipsBox.querySelectorAll('.chip'), function(b){
+      b.addEventListener('click', function(){ chipState[b.getAttribute('data-k')] = !chipState[b.getAttribute('data-k')]; shown = 24; render(); });
+    });
+  }
+
+  // ---------- grafico
+  var doms = {};
+  function domOf(m){
+    if(doms[m.key]) return doms[m.key];
+    var d;
+    if(m.linear){ d = {lo:0, hi:100, log:false, ticks:[0,20,40,60,80,100]}; }
+    else {
+      var mn = Infinity, mx = 0;
+      data.forEach(function(p){ var v = p._vs[m.key]; if(v){ mn = Math.min(mn, v.min); mx = Math.max(mx, v.max); } });
+      if(!isFinite(mn)){ mn = 1; mx = 10; }
+      var lo = Math.pow(10, Math.floor(Math.log(Math.max(mn,0.01))/Math.LN10)), hi = Math.pow(10, Math.ceil(Math.log(mx)/Math.LN10));
+      if(hi <= lo) hi = lo*10;
+      var ticks = []; for(var e = lo; e <= hi*1.0001; e *= 10){ [1,2,5].forEach(function(f){ var v = e*f; if(v >= lo && v <= hi) ticks.push(v); }); }
+      d = {lo:lo, hi:hi, log:true, ticks:ticks};
+    }
+    doms[m.key] = d; return d;
+  }
+  function renderChart(list){
+    var key = cur.key, dom = domOf(cur);
+    function pos(v){ return dom.log ? (Math.log(v/dom.lo))/(Math.log(dom.hi/dom.lo))*100 : (v - dom.lo)/(dom.hi - dom.lo)*100; }
+    gcTitle.textContent = cur.title; gcIntro.innerHTML = cur.intro; gcApprox.style.display = cur.approx ? '' : 'none';
+    if(gcTabs){ gcTabs.innerHTML = metrics.length > 1 ? metrics.map(function(m){ return '<button type="button" class="chip" data-m="'+m.key+'" aria-pressed="'+(m.key === cur.key ? 'true' : 'false')+'">'+esc(m.tab)+'</button>'; }).join('') : '';
+      Array.prototype.forEach.call(gcTabs.querySelectorAll('.chip'), function(b){ b.addEventListener('click', function(){ cur = metrics.filter(function(m){ return m.key === b.getAttribute('data-m'); })[0]; chartAll = false; renderChart(list); }); }); }
+    var rows = list.filter(function(p){ return p._vs[key]; }).sort(function(a,b){ return a._vs[key].min - b._vs[key].min || a._vs[key].max - b._vs[key].max; });
+    legend.innerHTML = CFG.cats.filter(function(c){ return rows.some(function(p){ return p.categoria === c; }); }).map(function(c){ return '<span><i style="background:'+catColor[c]+'"></i>'+esc(c)+'</span>'; }).join('');
+    if(!rows.length){ statsBox.innerHTML = ''; chartBox.innerHTML = '<p class="hint">'+esc(L.nochart)+'</p>'; return; }
+    var vals = rows.map(function(p){ return (p._vs[key].min + p._vs[key].max)/2; }).sort(function(a,b){ return a-b; });
+    var med = vals[Math.floor(vals.length/2)];
+    var lo = Math.min.apply(null, rows.map(function(p){ return p._vs[key].min; })), hi = Math.max.apply(null, rows.map(function(p){ return p._vs[key].max; }));
+    statsBox.innerHTML = '<div class="gc-stat"><strong>'+rows.length+' '+esc(L.st_in)+'</strong>'+esc(L.st_of)+' '+list.length+' '+esc(cur.filt)+'</div>'+
+      '<div class="gc-stat"><strong>'+fmt(lo)+'</strong>'+esc(L.st_min)+' ('+esc(cur.unit)+')</div>'+
+      '<div class="gc-stat"><strong>'+fmt(med)+'</strong>'+esc(L.st_med)+'</div>'+
+      '<div class="gc-stat"><strong>'+fmt(hi)+'</strong>'+esc(L.st_max)+'</div>';
+    var limit = chartAll ? rows.length : 30, vis = rows.slice(0, limit);
+    var grid = dom.ticks.map(function(t){ return '<span class="gc-grid" style="left:'+pos(t).toFixed(2)+'%"></span>'; }).join('');
+    var axis = '<div class="gc-axis-wrap"><div class="hint" style="margin:0">'+esc(cur.unit)+'</div><div class="gc-axis">'+dom.ticks.map(function(t){ return '<span style="position:absolute; left:'+pos(t).toFixed(2)+'%; transform:translateX(-50%)">'+String(t).replace('.', L.dec)+'</span>'; }).join('')+'</div></div>';
+    var out = axis + vis.map(function(p){
+      var v = p._vs[key], a = pos(v.min), b = pos(v.max), w = Math.max(b - a, 0);
+      var label = (v.approx ? '≈ ' : '') + (v.min === v.max ? fmt(v.min) : fmt(v.min)+'–'+fmt(v.max));
+      var left = Math.min(Math.max(a, 0), 98);
+      var valLeft = (a + w > 80) ? 'right:'+(100 - a - 0.5).toFixed(2)+'%' : 'left:calc('+(a + w).toFixed(2)+'% + 6px)';
+      return '<div class="gc-row" data-n="'+esc(p.prodotto)+'" title="'+esc(p.azienda+' — '+p.prodotto+': '+label+' '+cur.unit)+'">'+
+        '<div class="gc-label"><b>'+esc(p.prodotto)+'</b><span>'+esc(p.azienda)+'</span></div>'+
+        '<div class="gc-track">'+grid+'<div class="gc-bar" style="left:'+left.toFixed(2)+'%; width:'+w.toFixed(2)+'%; background:'+catColor[p.categoria]+'"></div><span class="gc-val" style="'+valLeft+'">'+esc(label)+'</span></div></div>';
+    }).join('');
+    if(rows.length > 30) out += '<div class="gc-more"><button type="button" class="btn-lite" id="gcToggle">'+esc(chartAll ? L.showtop+' 30' : L.showall+' ('+rows.length+')')+'</button></div>';
+    chartBox.innerHTML = out;
+    var tg = document.getElementById('gcToggle'); if(tg) tg.addEventListener('click', function(){ chartAll = !chartAll; renderChart(list); });
+    Array.prototype.forEach.call(chartBox.querySelectorAll('.gc-row'), function(r){
+      r.addEventListener('click', function(){ input.value = r.getAttribute('data-n'); shown = 24; render(); document.getElementById('pgArchive').scrollIntoView({behavior:'smooth', block:'start'}); });
+    });
+  }
+
+  // ---------- risultati
+  function render(){
+    renderChips();
+    var list = filtered();
+    count.innerHTML = (input.value ? '<span class="torte-pulse-dot" aria-hidden="true"></span>' : '') + list.length + ' ' + L.found;
+    var vis = list.slice(0, shown);
+    results.innerHTML = vis.map(function(p){
+      var f = Object.keys(p.fields||{}).map(function(k){ return '<div class="torte-field"><strong>'+esc(k)+':</strong> '+esc(p.fields[k])+'</div>'; }).join('');
+      var extra = (p.note ? '<div class="torte-field"><strong>'+esc(L.note)+':</strong> '+esc(p.note)+'</div>' : '') + (p.fonte ? '<div class="torte-fonte"><a href="'+esc(p.fonte)+'" target="_blank" rel="noopener noreferrer">'+esc(L.fonte)+' ↗</a></div>' : '');
+      return '<div class="torte-result-card"><div class="torte-result-head"><span class="torte-azienda">'+esc(p.azienda)+'</span><span class="torte-cat-tag">'+esc(p.categoria)+'</span></div><div class="torte-prodotto">'+esc(p.prodotto)+'</div>'+f+extra+'</div>';
+    }).join('') || '<p class="hint">'+esc(L.none)+'</p>';
+    if(list.length > shown) results.innerHTML += '<div style="grid-column:1/-1"><button type="button" class="btn-lite" id="pgMore">'+esc(L.more)+' ('+(list.length - shown)+')</button></div>';
+    var mb = document.getElementById('pgMore'); if(mb) mb.addEventListener('click', function(){ shown += 24; render(); });
+    renderChart(list);
+  }
+  input.addEventListener('input', function(){ shown = 24; render(); });
+  selCat.addEventListener('change', function(){ shown = 24; render(); });
+  selAz.addEventListener('change', function(){ shown = 24; render(); });
+  render();
+
+  // ---------- PAC/POD (solo pagina zuccheri)
+  if(CFG.sugars){
+    var pp = document.getElementById('ppWrap'), sortBy = 'pac', ref = null;
+    var S = CFG.sugars;
+    function ppRender(){
+      var arr = S.slice();
+      if(sortBy === 'pac') arr.sort(function(a,b){ return b.pac - a.pac; });
+      else if(sortBy === 'pod') arr.sort(function(a,b){ return b.pod - a.pod; });
+      else arr.sort(function(a,b){ return a.label.localeCompare(b.label, L.coll); });
+      var mx = Math.max.apply(null, S.map(function(s){ return Math.max(s.pac, s.pod); }));
+      var rs = ref ? S.filter(function(s){ return s.id === ref; })[0] : null;
+      pp.innerHTML = arr.map(function(s){
+        var cmp = rs && rs.id !== s.id ? ' · PAC '+(s.pac/rs.pac).toFixed(2).replace('.', L.dec)+'× / POD '+(s.pod/rs.pod).toFixed(2).replace('.', L.dec)+'× '+L.vs+' '+rs.label : '';
+        return '<div class="pp-row" data-id="'+s.id+'" aria-selected="'+(ref === s.id ? 'true' : 'false')+'"><div class="pp-name">'+esc(s.label)+'<div class="hint" style="margin:0">'+esc(cmp)+'</div></div>'+
+          '<div class="pp-bars"><div class="pp-bar pac" style="width:'+(s.pac/mx*88).toFixed(1)+'%"><span>PAC '+s.pac+'</span></div><div class="pp-bar pod" style="width:'+(s.pod/mx*88).toFixed(1)+'%"><span>POD '+s.pod+'</span></div></div></div>';
+      }).join('');
+      Array.prototype.forEach.call(pp.querySelectorAll('.pp-row'), function(r){ r.addEventListener('click', function(){ var id = r.getAttribute('data-id'); ref = (ref === id ? null : id); ppRender(); }); });
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('[data-sort]'), function(b){ b.addEventListener('click', function(){ sortBy = b.getAttribute('data-sort'); ppRender(); }); });
+    ppRender();
+    var fa = document.getElementById('cvFrom'), fb = document.getElementById('cvTo'), fg = document.getElementById('cvG'), out = document.getElementById('cvOut');
+    S.forEach(function(s){ [fa, fb].forEach(function(el){ var o = document.createElement('option'); o.value = s.id; o.textContent = s.label; el.appendChild(o); }); });
+    fa.value = 'saccarosio'; fb.value = 'destrosio';
+    function conv(){
+      var a = S.filter(function(s){ return s.id === fa.value; })[0], b = S.filter(function(s){ return s.id === fb.value; })[0], g = num(fg.value);
+      if(!a || !b || !(g > 0)){ out.innerHTML = ''; return; }
+      if(a.id === b.id){ out.textContent = L.conv_same; return; }
+      var gb = g*a.pac/b.pac, poda = g*a.pod/100, podb = gb*b.pod/100, d = (podb - poda)/poda*100;
+      var dl = Math.abs(d) < 2 ? L.conv_eq : (Math.abs(Math.round(d)) + '% ' + (d > 0 ? L.conv_more : L.conv_less));
+      out.innerHTML = L.conv_out_tpl.replace('{gb}', fmt(gb)).replace('{b}', esc(b.label)).replace('{ga}', fmt(g)).replace('{a}', esc(a.label)).replace('{poda}', fmt(poda)).replace('{podb}', fmt(podb)).replace('{dl}', dl);
+    }
+    [fa, fb, fg].forEach(function(el){ el.addEventListener('input', conv); el.addEventListener('change', conv); });
+    conv();
+  }
+})();
+</script>
+
+  <section class="card">
+    <h2>Häufige Fragen</h2>
+    <h3 style="font-size:0.98rem; margin:14px 0 4px">Was ist der PAC?</h3><p>Er ist die Gefrierpunkterniedrigung: er misst, wie stark ein Zucker den Gefrierpunkt der Mischung gegenüber Saccharose (PAC 100) senkt. Je höher, desto weicher bleibt das Eis bei gleicher Temperatur.</p><h3 style="font-size:0.98rem; margin:14px 0 4px">Was ist der POD?</h3><p>Er ist die Süßkraft im Verhältnis zu Saccharose (POD 100). Dextrose hat zum Beispiel einen hohen PAC, aber eine geringere Süße als Saccharose.</p><h3 style="font-size:0.98rem; margin:14px 0 4px">Kann ich Zucker bei gleichem PAC austauschen?</h3><p>Der Rechner auf dieser Seite liefert einen Startwert: der Austausch verändert auch Süße und Feststoffe, das Rezept muss daher immer neu berechnet werden.</p>
+  </section>
+
+  <section class="card">
+    <h2>Weitere vertiefende Seiten</h2>
+    <p>Eigene Seiten mit Archiv und dynamischen Diagrammen, zum schnellen Vergleichen.</p>
+    <div class="quick-links"><a href="/basi-latte.html">🥛 Milchbasen<small>Eisbasen: Dosierungen im Vergleich</small></a><a href="/basi-frutta.html">🍓 Fruchtbasen<small>Basen für Sorbets und Fruchteis</small></a><a href="/neutri-addensanti.html">🧂 Neutrals & Stabilisatoren<small>Dosierungen im Vergleich</small></a><a href="/creme-paste.html">🥜 Cremes & Pasten<small>Reine und zusammengesetzte Pasten</small></a><a href="/variegati.html">🍒 Variegati & Toppings<small>Amarena, Frucht, Cremes, Keks</small></a><a href="/gelato-soft.html">🍦 Softeis<small>Soft- und Frozen-Yogurt-Basen</small></a><a href="/guida-confronto-ingredienti.html">🎓 Leitfaden zum Vergleich<small>PAC, POD und Trockenmasse erklärt</small></a><a href="/calcolatore-ricetta-sorbetto">🍓 Sorbet-Rechner<small>PAC und POD der Frucht ausbalancieren</small></a></div>
+  </section>
+
+  <footer>Eisdielen Zutatenvergleich — unabhängige Plattform, ohne Sponsoring. <a href="/">Zurück zur Startseite</a>.</footer>
+</div>
+</body>
+</html>
