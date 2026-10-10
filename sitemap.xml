@@ -1,256 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eisdieleinfo.com/</loc>
+    <loc>https://gelateriaattrezzature.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://eisdieleinfo.com/calcolatore-ricetta-sorbetto</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/chi-sono.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/torte-gelato.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torte-gelato-copertina.jpg</image:loc>
-      <image:title>Meine Eistorten — Collage aus vier handwerklichen Kreationen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-01.jpg</image:loc>
-      <image:title>Rotes Herz, Blumen und dekorierte Schokoladenbänder</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-02.jpg</image:loc>
-      <image:title>Weißes Herz mit Blumen und Schokoladenlocken</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-03.jpg</image:loc>
-      <image:title>Rotes Herz mit Pastellblumen und Herzchen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-04.jpg</image:loc>
-      <image:title>Gelbe Glasur mit Zuckerpasten-Rosen und frischen Erdbeeren</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-05.jpg</image:loc>
-      <image:title>Orange Glasur mit gezeichneten Schokoladendekoren</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-06.jpg</image:loc>
-      <image:title>Verzierung mit Pfirsichen und frischen Weintrauben</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-07.jpg</image:loc>
-      <image:title>Schokoladenspirale und bunte Macarons</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-08.jpg</image:loc>
-      <image:title>Rosa/orange marmorierte Glasur mit Blumen und Macarons</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-09.jpg</image:loc>
-      <image:title>Orange Glasur mit Schmetterlingen und dekorativen Blumen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-10.jpg</image:loc>
-      <image:title>Weiße Glasur mit rosa Macarons und dekorierter Schokolade</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-11.jpg</image:loc>
-      <image:title>Grüne und rosa Torten mit Monoportionen auf Waffel</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-12.jpg</image:loc>
-      <image:title>Rosa Monoportionen mit Schmetterlingsdekor</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-13.jpg</image:loc>
-      <image:title>Bunte Variegatos, Blumen und Schokoladen-Strohhalme</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-fragole-fiori-nastri-cioccolato.jpg</image:loc>
-      <image:title>Rosa marmoriert mit Erdbeeren, Blumen und Schokoladenbändern</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-farfalle-rose-gialle.jpg</image:loc>
-      <image:title>Dekorative Schmetterlinge, gelbe Rosen und blaue Blume</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-rose-frutta-fragole.jpg</image:loc>
-      <image:title>Gelbe Glasur mit Fruchtrosen und frischen Erdbeeren</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-rose-rosa-pasta-zucchero.jpg</image:loc>
-      <image:title>Rosa Rosen aus Zuckerpaste und zentrale Blume</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-cioccolato-paisley.jpg</image:loc>
-      <image:title>Schokoladenscheiben mit dekoriertem Paisley-Muster</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-frutti-bosco-macaron.jpg</image:loc>
-      <image:title>Roter Fruchtcoulis, Macarons und Waldbeeren</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-macaron-viola.jpg</image:loc>
-      <image:title>Violette Macarons und dekorierte Schokoladenstreifen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-spirale-cioccolato-macaron.jpg</image:loc>
-      <image:title>Schokoladenspirale und gelbe/türkise Macarons</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-farfalla-cioccolato.jpg</image:loc>
-      <image:title>Schmetterling aus dekorierter dunkler Schokolade</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-marmorizzata-fiori-pastello.jpg</image:loc>
-      <image:title>Gelb/rosa marmoriert mit Pastellblumen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-cuori-rose-rosa.jpg</image:loc>
-      <image:title>Rote Herzchen und rosa Rosen aus Zuckerpaste</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-azzurra-macaron-colorati.jpg</image:loc>
-      <image:title>Hellblaue Glasur mit bunten Macarons und Schokolade</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-farfalle-fiori-lilla.jpg</image:loc>
-      <image:title>Dekorative Schmetterlinge und lila Blumen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-rose-cioccolato-bianco.jpg</image:loc>
-      <image:title>Rosen aus weißer Schokolade und dekorative Stäbchen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/decorazione-torta-gelato-rose-cioccolato-dettaglio.jpg</image:loc>
-      <image:title>Detail: Schokoladenrosen und dekorative Blumen</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/aziende.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/notizie.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/guida-confronto-ingredienti.html</loc>
+    <loc>https://gelateriaattrezzature.com/chi-sono.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://eisdieleinfo.com/prodotti-speciali.html</loc>
+    <loc>https://gelateriaattrezzature.com/aziende.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gelateriaattrezzature.com/notizie.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gelateriaattrezzature.com/usato.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gelateriaattrezzature.com/aziende-usato.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gelateriaattrezzature.com/mantecatori-gelato.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gelateriaattrezzature.com/arredamento-gelateria.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gelateriaattrezzature.com/vetrine-gelato.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gelateriaattrezzature.com/abbattitori-gelato.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gelateriaattrezzature.com/video-demo.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eisdieleinfo.com/ricette-gelato.html</loc>
+    <loc>https://gelateriaattrezzature.com/accessori-gelateria.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/decorazioni-torte.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/glasse-torte.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/scatole-torte.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/stampi-torte.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/grossisti.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/ghiaccioli.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/basi-latte.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/basi-frutta.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/neutri-addensanti.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/creme-paste.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/variegati.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/gelato-soft.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/zuccheri-polveri.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/cacao-cioccolato.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/torta-gelato-matrimonio.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-matrimonio-tre-piani-cuori-rose.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-matrimonio-giglio-pasta-di-zucchero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://eisdieleinfo.com/torta-gelato-dimensioni.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-rettangolare-cuore-rosa-sposi-1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://eisdieleinfo.com/torta-gelato-rettangolare-cuore-rosa-sposi-2.jpg</image:loc>
-    </image:image>
   </url>
 </urlset>

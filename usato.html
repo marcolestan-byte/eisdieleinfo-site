@@ -19,13 +19,13 @@
   gtag('js', new Date());
   gtag('config', 'G-65E7207759');
 </script>
-<title>Aziende produttrici di attrezzature per gelateria | Confronto Attrezzature Gelateria</title>
-<meta name="description" content="Schede delle aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori per gelateria: fondazione, categorie, certificazioni e presenza sul mercato.">
-<link rel="canonical" href="https://gelateriaattrezzature.com/aziende.html">
-<meta property="og:title" content="Aziende produttrici di attrezzature per gelateria | Confronto Attrezzature Gelateria">
-<meta property="og:description" content="Schede delle aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori per gelateria: fondazione, categorie, certificazioni e presenza sul mercato.">
+<title>Mercatino Usato | Confronto Attrezzature Gelateria</title>
+<meta name="description" content="Compra e vendi attrezzature per gelateria usate: mantecatori, pastorizzatori, vetrine, banchi e abbattitori di seconda mano.">
+<link rel="canonical" href="https://gelateriaattrezzature.com/usato.html">
+<meta property="og:title" content="Mercatino Usato | Confronto Attrezzature Gelateria">
+<meta property="og:description" content="Compra e vendi attrezzature per gelateria usate: mantecatori, pastorizzatori, vetrine, banchi e abbattitori di seconda mano.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://gelateriaattrezzature.com/aziende.html">
+<meta property="og:url" content="https://gelateriaattrezzature.com/usato.html">
 <meta name="theme-color" content="#3C7DB0">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" href="icon-192.png">
@@ -131,6 +131,73 @@
   .card{ background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 24px; margin-top: 22px; border: 1px solid var(--line); }
   .card h2{ margin: 0 0 16px; font-size: 1.08rem; font-weight:800; color: var(--hazelnut-dark); display:flex; align-items:center; gap:8px; letter-spacing:-0.01em; }
   .card p{ line-height:1.65; }
+  .promo-banner-wrap{ text-align:center; margin-top:14px; }
+  .promo-banner-wrap img{ max-width:340px; width:100%; border-radius: var(--radius); box-shadow: var(--shadow); }
+  .demo-video-wrap{ margin-top:14px; border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow); background:#000; }
+  .demo-video-wrap video{ width:100%; display:block; max-height:520px; background:#000; }
+  .demo-video-caption{ font-size:0.78rem; color:var(--ink-soft); margin-top:8px; }
+  .demo-note{ font-size: 0.8rem; color: var(--amarena-dark); background: #FBEAE7; border: 1px solid var(--amarena); border-radius: 10px; padding: 8px 12px; margin-top: 10px; }
+  .info-note{ font-size: 0.8rem; color: var(--pistachio-dark); background: #EAF2F8; border: 1px solid var(--pistachio); border-radius: 10px; padding: 8px 12px; margin-top: 10px; }
+  .field-hint{ font-size: 0.72rem; color: var(--ink-soft); margin: 4px 0 0; text-transform: none; font-weight: 400; }
+  label{ display:block; font-size: 0.78rem; font-weight: 700; color: var(--ink-soft); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.02em; }
+  select, input, textarea{ width:100%; padding: 10px 12px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--cream); font-size: 0.92rem; color: var(--ink); font-family: inherit; }
+  select:focus, input:focus, textarea:focus{ outline: none; border-color: var(--pistachio); }
+  .field{ margin-bottom: 14px; }
+  .btn{ display:inline-flex; align-items:center; gap:6px; background: var(--pistachio); color:white; border:none; padding: 11px 20px; border-radius: 10px; font-weight:700; font-size: 0.9rem; cursor:pointer; box-shadow: var(--shadow); transition: transform 0.1s ease, background 0.15s ease; text-decoration:none; }
+  .btn:hover{ background: var(--pistachio-dark); transform: translateY(-1px); }
+  .btn.secondary{ background: var(--hazelnut); }
+  .btn.secondary:hover{ background: var(--hazelnut-dark); }
+  .btn.small{ padding: 7px 14px; font-size: 0.8rem; width:100%; justify-content:center; }
+  .filter-bar{ display:grid; grid-template-columns: 1.4fr 1fr 1fr auto; gap:12px; align-items:end; }
+  @media (max-width: 720px){ .filter-bar{ grid-template-columns: 1fr 1fr; } }
+  .filter-bar .field{ margin-bottom:0; }
+  .listing-count{ font-size:0.8rem; color:var(--ink-soft); margin: 12px 0 0; }
+  .listing-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap:16px; margin-top:14px; }
+  .listing-card{ background:var(--white); border:1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow:hidden; display:flex; flex-direction:column; position:relative; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  .listing-card:hover{ transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .listing-photo{ height:210px; display:flex; align-items:center; justify-content:center; font-size:2.6rem; background: linear-gradient(135deg, var(--cream-2) 0%, var(--cream) 100%); border-bottom:1px solid var(--line); overflow:hidden; padding:8px; }
+  .listing-photo img{ width:100%; height:100%; object-fit:contain; display:block; }
+  .listing-card--noimg .listing-body{ padding-top:32px; }
+  .listing-ribbon{ position:absolute; top:10px; left:-28px; transform:rotate(-40deg); background:var(--amarena); color:white; font-size:0.62rem; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; padding:3px 34px; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
+  .listing-ribbon.real{ background:var(--pistachio-dark); }
+  .listing-seller{ font-size:0.72rem; color:var(--pistachio-dark); font-weight:700; }
+  .listing-body{ padding:14px; display:flex; flex-direction:column; gap:6px; flex:1; }
+  .listing-price{ font-size:1.15rem; font-weight:800; color:var(--pistachio-dark); }
+  .listing-title{ font-size:0.92rem; font-weight:700; color:var(--ink); line-height:1.3; }
+  .listing-meta{ font-size:0.72rem; color:var(--ink-soft); display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .cond-tag{ display:inline-block; padding:2px 9px; border-radius:999px; font-size:0.68rem; font-weight:700; }
+  .cond-nuovo{ background:#EEF3E5; color:var(--pistachio-dark); }
+  .cond-ottimo{ background:#E6F0F7; color:#1B5883; }
+  .cond-buono{ background:#FBF1DE; color:var(--hazelnut-dark); }
+  .cond-revisionare{ background:#FBEAE7; color:var(--amarena-dark); }
+  .listing-desc{ font-size:0.78rem; color:var(--ink-soft); line-height:1.5; flex:1; }
+  .listing-body .btn{ margin-top:6px; }
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Kalam:wght@700&display=swap');
+  .listing-card--wanted{ text-decoration:none; color:inherit; cursor:pointer; }
+  .cta-overlay{ position:absolute; inset:0; z-index:5; display:flex; align-items:center; justify-content:center; padding:10px; background:rgba(255,255,255,0.42); backdrop-filter: blur(0.5px); }
+  .cta-overlay-inner{ position:relative; width:100%; text-align:center; line-height:1.08; }
+  .cta-line1{ font-family:'Kalam', cursive; font-weight:700; font-size:1.5rem; color:#4EA8DE; display:block; transform:rotate(-6deg); text-shadow: 0 1px 0 rgba(255,255,255,0.6); }
+  .cta-line2{ font-family:'Permanent Marker', cursive; font-size:1.62rem; color:#154360; display:block; transform:rotate(-3deg); margin-top:2px; text-shadow: 0 1px 0 rgba(255,255,255,0.6); }
+  .cta-spark{ position:absolute; color:#F2C94C; font-size:1.1rem; text-shadow:0 1px 0 rgba(255,255,255,0.6); }
+  .cta-spark.s1{ top:-6px; left:6px; transform:rotate(-15deg); }
+  .cta-spark.s2{ top:4px; right:2px; transform:rotate(20deg); }
+  .cta-spark.s3{ bottom:-2px; left:10px; transform:rotate(10deg); }
+  .listing-card--wanted:hover .cta-overlay{ background:rgba(255,255,255,0.55); }
+  .modal-overlay{ display:none; position:fixed; inset:0; background:rgba(58,46,34,0.55); z-index:1000; align-items:center; justify-content:center; padding:16px; }
+  .modal-overlay.open{ display:flex; }
+  .modal-box{ background:var(--white); border-radius: var(--radius); box-shadow: var(--shadow-lg); padding:24px; max-width:460px; width:100%; max-height:90vh; overflow-y:auto; position:relative; }
+  .modal-close{ position:absolute; top:12px; right:12px; background:var(--cream-2); border:1px solid var(--line); width:30px; height:30px; border-radius:50%; font-size:1rem; line-height:1; cursor:pointer; color:var(--ink-soft); }
+  .modal-close:hover{ background:var(--line); }
+  .modal-box h2{ margin:0 30px 8px 0; font-size:1.15rem; color:var(--hazelnut-dark); }
+  .modal-box .modal-sub{ font-size:0.85rem; color:var(--ink-soft); margin:0 0 16px; line-height:1.5; }
+  .modal-box .field{ margin-bottom:12px; }
+  .modal-box button[type="submit"]{ width:100%; justify-content:center; margin-top:6px; }
+  .modal-box button[type="submit"]:disabled{ opacity:0.65; cursor:default; transform:none; }
+  .form-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width:600px){ .form-grid{ grid-template-columns:1fr; } }
+  .form-grid .full{ grid-column: 1 / -1; }
+  .toast{ position: fixed; bottom: 20px; left:50%; transform: translateX(-50%); background: var(--ink); color:white; padding:10px 18px; border-radius: 10px; font-size:0.85rem; box-shadow: var(--shadow-lg); opacity:0; pointer-events:none; transition: opacity 0.25s ease, transform 0.25s ease; z-index: 999; }
+  .toast.show{ opacity:1; transform: translateX(-50%) translateY(-4px); }
   footer.note{ max-width:1020px; margin: 26px auto 0; padding: 22px 18px; font-size:0.75rem; color: var(--ink-soft); text-align:center; line-height:1.65; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--line); }
   footer.note a{ color: var(--pistachio-dark); font-weight:700; text-decoration:none; }
   footer.note a:hover{ text-decoration:underline; }
@@ -177,413 +244,65 @@
     <button class="lang-btn" id="btnLangDE" onclick="setLang('de')" type="button">🇩🇪 DE</button>
     <button class="lang-btn" id="btnLangEN" onclick="setLang('en')" type="button">🇬🇧 EN</button>
   </div>
-  <h1 data-i18n="aziendeTitle">🏢 Aziende</h1>
+  <span class="badge-proto" data-i18n="demoBadge">Anteprima / esempio</span>
+  <h1 data-i18n="usatoTitle">♻️ Mercatino Usato</h1>
+  <p data-i18n="usatoSubtitle">Compra e vendi attrezzature per gelateria di seconda mano: mantecatori, pastorizzatori, vetrine, banchi e abbattitori.</p>
 </header>
 
 <nav class="quick-nav" id="quickNav" aria-label="Navigazione rapida">
   <div class="nav-row">
-    <a class='nav-archivio' data-i18n='navArchivio' href='/#archiveSection'>📚 Archivio</a>
-    <a class='nav-chisono' data-i18n='navChiSiamo' href='/chi-sono'>👤 Chi sono</a>
-    <a class='active nav-aziende' data-i18n='navAziende' href='/aziende'>🏢 Aziende</a>
-    <a class='nav-notizie' data-i18n='navNotizie' href='/notizie'>📰 Notizie</a>
-    <a class='nav-usato' data-i18n='navUsato' href='/usato'>♻️ Usato</a>
-    <a class='nav-usato-aziende' data-i18n='navUsatoAziende' href='/aziende-usato'>🏬 Rivenditori Usato</a>
-    <a class='nav-vetrine' href='/vetrine-gelato'>🧊 Vetrine</a>
-    <a class='nav-abbattitori' href='/abbattitori-gelato'>❄️ Abbattitori</a>
-    <a class='nav-video' href='/video-demo'>🎬 Video</a>
+    <a href="index.html#archiveSection" class="nav-archivio" data-i18n="navArchivio">📚 Archivio</a>
+    <a href="chi-sono.html" class="nav-chisono" data-i18n="navChiSiamo">👤 Chi sono</a>
+    <a href="aziende.html" class="nav-aziende" data-i18n="navAziende">🏢 Aziende</a>
+    <a href="notizie.html" class="nav-notizie" data-i18n="navNotizie">📰 Notizie</a>
+    <a href="usato.html" class="active nav-usato" data-i18n="navUsato">♻️ Usato</a>
+    <a href="aziende-usato.html" class="nav-usato-aziende" data-i18n="navUsatoAziende">🏬 Rivenditori Usato</a>
+    <a href="vetrine-gelato.html" class="nav-vetrine">🧊 Vetrine</a>
+    <a href="abbattitori-gelato.html" class="nav-abbattitori">❄️ Abbattitori</a>
+    <a href="video-demo.html" class="nav-video">🎬 Video</a>
   </div>
   <div class="nav-row">
-    <a class='nav-arredamento' data-i18n='navArredamento' href='/arredamento-gelateria'>🪑 Arredamento</a>
-    <a class='nav-accessori' data-i18n='navAccessori' href='/accessori-gelateria'>🧰 Accessori</a>
+    <a href="arredamento-gelateria.html" class="nav-arredamento" data-i18n="navArredamento">🪑 Arredamento</a>
+    <a href="accessori-gelateria.html" class="nav-accessori" data-i18n="navAccessori">🧰 Accessori</a>
   </div>
 </nav>
 <p class="construction-note" data-i18n="constructionNote">🚧 Sito in costruzione</p>
 
 <main>
   <section class="card">
-    <p data-i18n="aziendeText">Le aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori presenti nell'archivio, con una breve scheda per ciascuna.</p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top:16px;">
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Bamix</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Svizzera · Svizzera</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1954 circa — marchio svizzero storico</div><div><b data-i18n="colCategorie">Categorie</b>: Mixer a immersione professionali (linea Gastro)</div><div style="margin-top:6px;">Marchio svizzero storico; motore garantito a vita con doppio isolamento; gamma Gastro (200W/350W) pensata per uso professionale intensivo, lavorazione fino a 20 litri</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — marchio di origine germanofona (Svizzera), ampiamente diffuso in area DACH<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://bamix.com/" target="_blank" rel="noopener">https://bamix.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Bravo</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Montecchio Maggiore (VI) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1967 (Genesio Bravo)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, Pastorizzatori, macchine per pasticceria, cioccolateria e ristorazione</div><div style="margin-top:6px;">Inventore nel 1974 della prima macchina multifunzione per gelato artigianale (&#x27;Trittico&#x27;); forte spinta sull&#x27;innovazione dei macchinari multifunzione</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Presente — filiale tedesca aperta nel 2015 (oltre a Francia 1982, Asia 2010, Nord America 2011, Emirati Arabi 2017)</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via della Tecnica, 5, Montecchio Maggiore (VI), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0444.707700</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0444.4993.33</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@bravo.it">info@bravo.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.bravo.it/" target="_blank" rel="noopener">https://www.bravo.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Carpigiani</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Anzola dell&#x27;Emilia (BO) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1944 (Bruto e Poerio Carlo Carpigiani); dal 1989 parte del gruppo ALI Group</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, Pastorizzatori, Abbattitori, macchine gelato soft</div><div style="margin-top:6px;">Leader mondiale del settore (circa 35% di quota di mercato globale); prima azienda del comparto certificata ISO 9001 (1993); gestisce la Gelato University con oltre 20 sedi nel mondo</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: ISO 9001</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — filiale diretta in Germania, presenza in oltre 10 paesi</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Emilia, 45, Anzola dell'Emilia (BO), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 051 6505 11</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 051 732178</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@carpigiani.it">info@carpigiani.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.carpigiani.com/it/" target="_blank" rel="noopener">https://www.carpigiani.com/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Cattabriga</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Anzola dell&#x27;Emilia (BO) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1927 (Otello Cattabriga); dal 2010 parte del gruppo Iceteam 1927 (con Coldelite, Promag, Ott-Freezer)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori</div><div style="margin-top:6px;">Prima azienda al mondo ad aver ideato, prodotto e commercializzato macchine per la produzione del gelato; inventore del meccanismo brevettato a &#x27;vite senza fine&#x27;; leader storico del settore</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — nessuna menzione diretta nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Emilia, 45/A, Anzola dell'Emilia (BO), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39.051.6505.330</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39.051.6505.331</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@cattabriga.com">info@cattabriga.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.iceteam1927.it/i-brand/cattabriga/" target="_blank" rel="noopener">https://www.iceteam1927.it/i-brand/cattabriga/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Coldline</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Italia · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Abbattitori, frigoriferi, fermalievitazione</div><div style="margin-top:6px;">Ampia gamma multifunzione — la linea Vision unisce abbattitore, frigorifero e fermalievitazione in un solo apparecchio; forte focus su design e tecnologia (&#x27;cultura del freddo&#x27;)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://coldline.it/" target="_blank" rel="noopener">https://coldline.it/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Frigomat</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Guardamiglio (LO) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Oltre 50 anni di storia (data di fondazione precisa non specificata nelle fonti consultate)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, Pastorizzatori, macchine gelato soft</div><div style="margin-top:6px;">Certificazione ISO 9001:2015; gamma ampia e personalizzabile; forte rete di distribuzione internazionale (sito disponibile in 7 lingue)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: ISO 9001:2015</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Presente — sito e distribuzione anche in lingua tedesca</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via 1° Maggio, 28, Guardamiglio (LO), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0377.4150.11</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0377.4510.79</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@frigomat.com">info@frigomat.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.frigomat.com/it" target="_blank" rel="noopener">https://www.frigomat.com/it</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Irinox</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Corbanese di Tarzo (TV) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Abbattitori (linee MultiFresh Next, EasyFresh Next, SimplyFresh)</div><div style="margin-top:6px;">Riferimento di settore per l&#x27;abbattimento di temperatura; tecnologia MultiSensor a 5 punti per il controllo della temperatura al cuore del prodotto; gas refrigerante naturale R-290 (propano) a basso impatto ambientale; range operativo da -35°C a +85°C</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.irinoxprofessional.com/" target="_blank" rel="noopener">https://www.irinoxprofessional.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Mondial Framec</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Borgo San Dalmazzo (CN) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Vetrine refrigerate, armadi frigoriferi e congelatori per gelaterie e pasticcerie</div><div style="margin-top:6px;">Specializzata in vetrine e frigoriferi dedicati al settore gelateria, pasticceria ed enoteca</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.mondialframec.com/" target="_blank" rel="noopener">https://www.mondialframec.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Robot Coupe</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Francia · Francia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mixer a immersione (gamme Mini, Compact, Large — serie MP e CMP)</div><div style="margin-top:6px;">Gamma molto ampia segmentata per numero di porzioni lavorabili (da 1-50 fino a oltre 1200 porzioni), con varianti a velocità variabile (V.V.)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.robot-coupe.com/ita/it" target="_blank" rel="noopener">https://www.robot-coupe.com/ita/it</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Sirman</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">San Zenone degli Ezzelini (TV) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mixer a immersione e macchine per la preparazione alimenti</div><div style="margin-top:6px;">Ampia gamma di frullatori a immersione professionali per gastronomia e gelateria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.sirman.com/" target="_blank" rel="noopener">https://www.sirman.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Tecnodom</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Italia · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Frigoriferi e congelatori ad armadio professionali</div><div style="margin-top:6px;">Ampia gamma di armadi frigo e congelatori professionali (temperatura positiva e negativa), molto diffusi nel canale HORECA</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.tecnodomspa.com/" target="_blank" rel="noopener">https://www.tecnodomspa.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Telme</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Colognola ai Colli (VR) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Pastorizzatori (linee Evopastò ed Ecomix T)</div><div style="margin-top:6px;">Due linee distinte: Evopastò (alimentazione a gravità, modelli 30/60/60A/120) ed Ecomix T (con pompa di pressurizzazione, modelli 60/60A/120/180/200) per gelateria, pasticceria e gastronomia</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via S. Pertini, 10, Codogno (LO), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0377.4666.60</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0377.4666.90</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:telme@telme.it">telme@telme.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.telme.it/" target="_blank" rel="noopener">https://www.telme.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Innova</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Cerete (BG) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d. (azienda descritta come realtà moderna e dinamica, attiva da anni nel settore)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori (banco e verticali), pastorizzatori, macchine combinate, macchine soft</div><div style="margin-top:6px;">Vendita diretta dal produttore al gelatiere, prezzo uniforme e trasparente su tutti i canali di vendita, garanzia estendibile fino a 5 anni; macchine interamente progettate e costruite in Italia</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Made in Italy</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Sito disponibile anche in tedesco; presenza sui mercati europei non specificata nel dettaglio nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Lentino, Loc. Cedrini, Cerete (BG), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0346.634.97</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0346.640.838</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@innovaitalia.com">info@innovaitalia.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.innovaitalia.com/" target="_blank" rel="noopener">http://www.innovaitalia.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Valmar D.O.O.</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Volčja Draga · Slovenia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Macchine per gelato artigianale e industriale</div><div style="margin-top:6px;">Produttore sloveno di macchinari per la produzione di gelato, con linee dedicate sia alla gelateria artigianale sia alla produzione industriale</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Dombrava, 1A, Volčja Draga, Slovenia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +386 53311777</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +386 53311778</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@valmar.eu">info@valmar.eu</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://valmar.eu/it/" target="_blank" rel="noopener">http://valmar.eu/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Kälte Rudi</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Keltern · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1964</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori (linea DICOM Diagonal Freezer), pastorizzatori (DIBASE), mantecatori tradizionali</div><div style="margin-top:6px;">Marchio tedesco storico (&#x27;Quality made in Germany since 1964&#x27;); gamma dedicata sia alla gelateria artigianale sia alla produzione più intensiva</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — azienda con sede in Germania</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Dieselstrasse, 5/7, Keltern, Germania</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +49 (0)7236/9829-0</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +49 (0)7236/9829-22</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@kaelte-rudi.de">info@kaelte-rudi.de</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.kaelte-rudi.de/home/" target="_blank" rel="noopener">https://www.kaelte-rudi.de/home/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Lawer</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Cossato (BI) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Sistemi di dosaggio ed erogazione automatica di polveri e ingredienti alimentari</div><div style="margin-top:6px;">Specializzata in sistemi di dosaggio automatico per l&#x27;industria alimentare, applicabili anche alla preparazione di basi e ingredienti per gelateria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Amendola, 12/14, Cossato (BI), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 015 9899511</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 015 984221</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:sales@lawer.com">sales@lawer.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.lawer.com/" target="_blank" rel="noopener">https://www.lawer.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Safac</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Alte di Montecchio Maggiore (VI) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Macchinari e attrezzature per gelateria e pasticceria</div><div style="margin-top:6px;">Fornitore di macchinari e attrezzature per il settore gelateria e pasticceria fresca</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: V.le Pietro Ceccato, 27, Alte di Montecchio Maggiore (VI), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 0444 69 68 46</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 0444 49 05 97</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@safac.it">info@safac.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.safac.it/" target="_blank" rel="noopener">http://www.safac.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Staff Ice System</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Rimini (RN) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1959</div><div><b data-i18n="colCategorie">Categorie</b>: Apparecchiature per il freddo, macchine per gelato e pasticceria</div><div style="margin-top:6px;">Punto di riferimento sul mercato delle apparecchiature per il freddo, per le macchine del gelato e della pasticceria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Anna Frank, 8, Rimini (RN), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 0541 373250</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 0541 371376</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:office@staff1959.com">office@staff1959.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.staff1959.com/" target="_blank" rel="noopener">https://www.staff1959.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Friulinox</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Taiedo di Chions (PN) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Vetrine refrigerate, abbattitori e soluzioni combinate per gelateria (linea Storage Ice Cream)</div><div style="margin-top:6px;">Produttore di soluzioni professionali di refrigerazione e conservazione, con vetrine e armadi dedicati alla gelateria oltre ad abbattitori e sistemi multifunzione</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Treviso, 4, Taiedo di Chions (PN), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0434 6354 11</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39.0434.635414</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@friulinox.com">info@friulinox.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.friulinox.com/" target="_blank" rel="noopener">http://www.friulinox.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Icetech</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Azzano San Paolo (BG) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Macchine per gelato artigianale professionali (linea "La Gelatiera")</div><div style="margin-top:6px;">Produttore di macchine professionali per il gelato artigianale, con gamma dedicata anche a grandi impianti e accessori</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Piemonte, 2, Azzano San Paolo (BG), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 035.320.400</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 035.3203.80</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@icetechitaly.it">info@icetechitaly.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.icetechitaly.it/" target="_blank" rel="noopener">http://www.icetechitaly.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Bovo</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Dosson di Casier (TV) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Anni &#x27;40 (fondatore Bruno Pillon)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, pastorizzatori, cuocicreme, mulini a sfere per gelateria e pasticceria</div><div style="margin-top:6px;">Storico marchio italiano nato negli anni &#x27;40; partecipò all&#x27;apertura della Fiera del Gelato di Longarone nel 1959; oggi propone anche soluzioni Industria 4.0</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Viale della Liberazione, 46, Dosson di Casier (TV), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0422.38.22.85</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0422.38.00.02</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@bovogelati.com">info@bovogelati.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.bovogelati.com/" target="_blank" rel="noopener">http://www.bovogelati.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Martellato</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Vigonza (PD) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Stampi per semifreddi, torte gelato e pasticceria</div><div style="margin-top:6px;">Produttore italiano di stampi professionali per semifreddi, torte gelato e pasticceria, oltre ad attrezzature e prodotti per la pasticceria in generale</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Rovigo, 1/B, Vigonza (PD), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 049 7800155</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 049 8087744</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@martellato.com">info@martellato.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.martellato.com/" target="_blank" rel="noopener">https://www.martellato.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Silikomart</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Mellaredo di Pianiga (VE) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Stampi in silicone per semifreddi, torte gelato e pasticceria</div><div style="margin-top:6px;">Specializzata in stampi in silicone professionali per pasticceria, gelateria e semifreddi, con gamma molto ampia di forme e formati</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Tagliamento, 78, Mellaredo di Pianiga (VE), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 041 5190550</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 041 5190290</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:enzo.danieletto@silikomart.com">enzo.danieletto@silikomart.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.silikomart.com/home_silikomart_it.html" target="_blank" rel="noopener">https://www.silikomart.com/home_silikomart_it.html</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Pavoni Italia</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Suisio (BG) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Stampi per semifreddi, torte gelato e pasticceria</div><div style="margin-top:6px;">Produttore italiano di stampi professionali per pasticceria e gelateria, con gamma dedicata a semifreddi e torte gelato</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via E. Fermi, s.n., Suisio (BG), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 035 493 4111</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 035 494 8200</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@pavonitalia.com">info@pavonitalia.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://pavoniitalia.com/it/" target="_blank" rel="noopener">https://pavoniitalia.com/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Gel Matic</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Grassobbio (BG) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Macchine a mantecazione espressa per gelato soft, frozen yogurt, smoothie, sundae e frappè</div><div style="margin-top:6px;">Specializzata in macchine professionali a mantecazione espressa per gelato soft e prodotti frozen affini (smoothie, sundae, frappè/blend)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Zanica, 6/C, Grassobbio (BG), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 035.525138</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 035.452239</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@gelmatic.com">info@gelmatic.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.gelmatic.com/it/" target="_blank" rel="noopener">https://www.gelmatic.com/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">4Gel</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori</div><div style="margin-top:6px;">Produttore di mantecatori professionali (gamma "Evomantecatore"), nato dall'esperienza del proprio staff nel settore gelateria e pasticceria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://4gel.it/" target="_blank" rel="noopener">https://4gel.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Nemox</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">n.d.</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, Abbattitori</div><div style="margin-top:6px;">Produttore di mantecatori e abbattitori per gelateria (gamma "i-Green")</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.nemox.com/" target="_blank" rel="noopener">https://www.nemox.com/</a></div>
-        </div>
-        <div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:8px;">
-          <a class="source-link" href="https://www.nemox.com/prodotti/macchine-da-gelato/#banco" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">🍨 Macchine da banco</a>
-          <a class="source-link" href="https://www.nemox.com/prodotti/macchine-da-gelato/#ruote" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">🛞 Macchine a ruote</a>
-          <a class="source-link" href="https://www.nemox.com/prodotti/vetrine-per-gelato/" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">🖼️ Vetrine gelato</a>
-          <a class="source-link" href="https://www.nemox.com/prodotti/abbattitori-di-temperatura/" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">❄️ Abbattitori</a>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Iceteam 1927</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">n.d.</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori</div><div style="margin-top:6px;">Produttore di mantecatori per gelateria (modello Stargel 4)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.iceteam1927.it/" target="_blank" rel="noopener">https://www.iceteam1927.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Miles (Hangzhou Gelato Tech Co., Ltd.)</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Hangzhou, Zhejiang · Cina</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 2020</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori da banco e a ciclo continuo, macchine gelato soft, carretti gelato; linea Galaxy (mantecatore professionale e vetrina a pozzetti in un unico blocco, modelli EV / Pro V4 / Pro-Max V8)</div><div style="margin-top:6px;">Produttore cinese (brand Miles) con oltre 18.000 macchine/anno prodotte; esporta il 71-90% della produzione in Nord e Sud America, Europa, Sud-Est asiatico, Medio Oriente e Oceania; clientela gelaterie, pasticcerie, hotel, parchi a tema</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: ISO 9001; marcatura CE su modelli selezionati</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — nessuna filiale europea diretta nota; distribuzione tramite rivenditori</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: No. 585 Shushangwang, Jinhua Town, Xiaoshan District, Hangzhou, Zhejiang, Cina</div><div style="margin-top:2px;">Referente/distributore Italia: Miles S.R.L., Via Enrico Cialdini 37, Milano, Italia (P.IVA 13912560961)</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://milestac.en.alibaba.com/" target="_blank" rel="noopener">https://milestac.en.alibaba.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">YC Italia</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Venezia · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d. — ragione sociale F.A.R.H. Snc di Bottacin Antonio &amp; C.</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori da banco compatti; attrezzature professionali per ristorazione in generale</div><div style="margin-top:6px;">Mantecatori da banco compatti, descritti dal produttore come silenziosi e veloci, pensati per ristoranti, hotel e gelaterie con spazi limitati</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — nessuna menzione diretta nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Venezia, Italia (sede F.A.R.H. Snc di Bottacin Antonio &amp; C.)</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 041 437118</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://ycitalia.com/it/" target="_blank" rel="noopener">https://ycitalia.com/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Plastitalia Group</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d.</div><div><b data-i18n="colCategorie">Categorie</b>: Vetrine refrigerate per gelato a pozzetti/carapine</div><div style="margin-top:6px;">Vetrine a pozzetti con raffreddamento rapido (temperatura di regime in meno di un'ora) e controllo indipendente per pozzetto, per evitare stratificazioni del gelato</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — nessuna menzione diretta nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: n.d. — verificare sede legale</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.plastitalia.it/" target="_blank" rel="noopener">https://www.plastitalia.it/</a></div>
-        </div>
-      </div>
+    <h2><span data-i18n="introTitle">🔎 Come funziona</span></h2>
+    <p data-i18n="introText">Un mercatino tra gelatieri per comprare e vendere attrezzature usate in buono stato: mantecatori, pastorizzatori, vetrine espositive, banchi gelato, abbattitori e congelatori. Filtra per categoria e stato, oppure pubblica un tuo annuncio.</p>
+    <div class="demo-note" data-i18n-html="demoNote">⚠️ Gli annunci qui sotto sono <strong>esempi dimostrativi</strong> per mostrare come funzionerà la sezione — non sono attrezzature realmente in vendita.</div>
+    <div class="info-note" data-i18n-html="liabilityNote">ℹ️ Prezzo, foto, spedizione (spese a carico dell'acquirente, salvo diverso accordo) e ogni altra condizione vengono concordati <strong>direttamente tra venditore e acquirente</strong>. Il portale mette in contatto le parti ma non si assume alcuna responsabilità per gli annunci pubblicati né per le transazioni concluse.</div>
+    <div class="promo-banner-wrap">
+      <img src="usato-mercatino-promo.jpg" alt="Mercatino usato gelateriaattrezzature.com: pubblica un annuncio, i tuoi annunci subito live, portale indipendente e gratuito senza sponsorizzazioni" loading="lazy">
     </div>
   </section>
 
   
 
   <section class="card">
-    <h3 style="margin:0 0 6px; font-size:1.05rem;">🏢 Rivenditori e grossisti (attrezzature e materie prime per gelateria)</h3>
-    <p style="font-size:0.9rem; color:var(--ink-soft); margin:0 0 16px;">A differenza delle aziende elencate sopra (produttori di macchinari), queste sono attività di commercio all'ingrosso/rivendita: distribuiscono macchine, materie prime e forniture di più marchi, spesso con consulenza e progettazione locale. Utili soprattutto per chi cerca un unico fornitore B2B in Germania o Austria.</p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;">
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Gelato24</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Neuenkirchen · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Oltre 35 anni di attività — nata come gelateria di famiglia</div><div><b data-i18n="colCategorie">Categorie</b>: Rivenditore/grossista — macchine per gelato, pastorizzatori, vetrine refrigerate, accessori e materie prime</div><div style="margin-top:6px;">Offre anche consulenza, progettazione del locale e assistenza tecnica/ricambi; vende esclusivamente a professionisti/imprenditori (B2B, non a privati)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede in Germania</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://gelato24.de/" target="_blank" rel="noopener">https://gelato24.de/</a></div>
-        </div>
+    <h2><span data-i18n="filterTitle">🧭 Filtra gli annunci</span></h2>
+    <div class="filter-bar">
+      <div class="field">
+        <label for="searchInput" data-i18n="labelCerca">Cerca</label>
+        <input type="text" id="searchInput" data-i18n-ph="searchPh" placeholder="Es. mantecatore, vetrina…" />
       </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">EISUNION GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Germania (6 filiali)</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d.</div><div><b data-i18n="colCategorie">Categorie</b>: Grossista specializzato — materie prime (paste e basi gelato), macchine per gelato, vetrine frigorifere, pastorizzatori, banchi in acciaio inox, arredo gelateria, oltre a caffè/snack/prodotti da forno</div><div style="margin-top:6px;">Si presenta come il principale grossista di gelato tedesco, con circa 4.000 articoli a catalogo, partner B2B per l'equipaggiamento professionale della gelateria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — 6 filiali sul territorio tedesco</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.eisrohstoffhandel.de" target="_blank" rel="noopener">https://www.eisrohstoffhandel.de</a></div>
-        </div>
+      <div class="field">
+        <label for="catFilter" data-i18n="labelCategoria">Categoria</label>
+        <select id="catFilter"></select>
       </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Merten &amp; Pusch GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Dortmund · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Azienda familiare, specializzata nel gelato dagli anni '70</div><div><b data-i18n="colCategorie">Categorie</b>: Grossista (Eisgroßhandel) — materie prime per la produzione di gelato, dolci surgelati, macchine da caffè e per gelato, forniture gastro</div><div style="margin-top:6px;">Rivolta a gelaterie, panetterie, pasticcerie e operatori di luna park; anche articoli promozionali personalizzati (coppette, tovaglioli)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede a Dortmund più filiale a Gau-Algesheim</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.eisgrosshandel.de" target="_blank" rel="noopener">http://www.eisgrosshandel.de</a></div>
-        </div>
+      <div class="field">
+        <label for="condFilter" data-i18n="labelStato">Stato</label>
+        <select id="condFilter"></select>
       </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">NordCap GmbH &amp; Co. KG</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d.</div><div><b data-i18n="colCategorie">Categorie</b>: Produttore/fornitore di attrezzature professionali per ristorazione — refrigerazione/congelamento, cottura, lavaggio, soluzioni per gelateria e pizza</div><div style="margin-top:6px;">Portafoglio completo per raffreddare, congelare, presentare, cuocere e lavare; forte rete di assistenza a livello nazionale, garanzia estesa e supporto post-vendita</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede in Germania</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.nordcap.de" target="_blank" rel="noopener">https://www.nordcap.de</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">GroßHandel EIS GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Kirchstetten · Austria</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d.</div><div><b data-i18n="colCategorie">Categorie</b>: Grossista specializzato — macchine per gelato, basi e paste (latte/frutta), topping e salse, decorazioni, coni e coppette, attrezzature di vendita, materiale pubblicitario</div><div style="margin-top:6px;">Partner di aziende che producono, decorano, vendono o pubblicizzano gelato; possiede il marchio "Eis &amp; Gelati" per prodotti di qualità professionale</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — azienda austriaca, presenza diretta in Germania non nota</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Aschberg 11, 3062 Kirchstetten, Austria</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.eisgmbh.at/" target="_blank" rel="noopener">https://www.eisgmbh.at/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <img src="gennaro-eis-logo.png" alt="Logo Gennaro Eis GmbH" style="max-width:150px; height:auto; display:block; margin-bottom:8px;">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Gennaro Eis GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Külsheim · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Oltre 20 anni di attività nel settore; sede attuale di 1.200&nbsp;m² dal 2021</div><div><b data-i18n="colCategorie">Categorie</b>: Rivenditore — mantecatori, pastorizzatori, macchine combinate, abbattitori, vetrine e banchi gelato, macchine gelato soft, distributori automatici, macchine da caffè, ricambi e accessori</div><div style="margin-top:6px;">Rivenditore tedesco specializzato in attrezzature nuove e usate per gelaterie, con focus su marchi tedeschi e italiani; officina di assistenza interna, ampio magazzino ricambi (shop dedicato gelatoparts.de) e mezzi mobili per la vendita ambulante (carretti, bici, veicoli)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — azienda con sede in Germania</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Wolferstetter Weg 23, 97900 Külsheim, Germania</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +49 (0) 9345 – 927 687 4</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@gennaro-eis.de">info@gennaro-eis.de</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.gennaro-eis.de" target="_blank" rel="noopener">https://www.gennaro-eis.de</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <img src="geppetto-eis-logo.png" alt="Logo Geppetto Eis GmbH" style="max-width:150px; height:auto; display:block; margin-bottom:8px;">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Geppetto Eis GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Wildeshausen · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Attiva dal 1994 (famiglia Ienco)</div><div><b data-i18n="colCategorie">Categorie</b>: Produttore/grossista — compressori, macchine gelato e soft ice, spaghetti-eispressen, affettatrici e attrezzature ausiliarie (anche ricondizionate)</div><div style="margin-top:6px;">Produttore tedesco di attrezzature per gelateria, con catalogo completo di macchine nuove (incluse le presse per spaghetti eis) e una linea dedicata di macchine usate revisionate (Carpigiani, VALMAR, JunAir, Stöckel).</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede in Germania</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Visbeker Straße 51, 27793 Wildeshausen, Germania</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.geppetto-eis.de/geppetto/" target="_blank" rel="noopener">https://www.geppetto-eis.de/geppetto/</a></div>
-        </div>
-        <p style="margin:12px 0 0;"><a class="source-link" href="https://www.geppetto-eis.de/produktkategorie/spaghetti-eispressen/" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">🍝 Spaghetti Eis</a></p>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Fontana GmbH &amp; Co. KG</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Neuenkirchen · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Decenni di esperienza nel settore (data precisa non specificata)</div><div><b data-i18n="colCategorie">Categorie</b>: Rivenditore/fornitore completo — macchinari per gelato, attrezzature per eislaboratori, macchinari a norma UE, ricambi e servizi</div><div style="margin-top:6px;">Si definisce "fornitore completo, risolutore di problemi, generatore di idee": consulenza, progettazione, finanziamento (leasing) ed esecuzione chiavi in mano; marchio "Melkeis" dedicato alle aziende agricole che vogliono produrre gelato proprio</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede in Germania</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Dieselstraße 15, 48485 Neuenkirchen, Germania</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://fontana-equipment.de/" target="_blank" rel="noopener">https://fontana-equipment.de/</a></div>
-        </div>
+      <div class="field">
+        <button type="button" class="btn small secondary" id="btnOpenSell" data-i18n="btnPubblica">➕ Pubblica un annuncio</button>
       </div>
     </div>
+    <p class="listing-count" id="listingCount"></p>
+    <div class="listing-grid" id="listingGrid"></div>
   </section>
-  <section class="card">
-    <h3 style="margin:0 0 6px; font-size:1.05rem;">♻️ Rivenditori di attrezzature usate per gelateria</h3>
-    <p style="font-size:0.9rem; color:var(--ink-soft); margin:0 0 16px;">Aziende specializzate in acquisto, revisione e rivendita di macchinari usati (mantecatori, vetrine, pastorizzatori, abbattitori) per gelaterie e pasticcerie — utili per chi cerca attrezzature ricondizionate a prezzi più contenuti.</p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;">
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Good Gelato</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Puglia · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Acquisto, revisione e rivendita di attrezzature professionali usate per gelaterie e pasticcerie</div>
-          <div style="margin-top:6px;"><b>Note</b>: Showroom in Puglia; servizio di valutazione e ritiro rapido dell'usato</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://www.goodgelato.com/en" target="_blank" rel="noopener">https://www.goodgelato.com/en</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">I MORI</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Coriano (RN) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Vendita e acquisto di macchinari usati per gelaterie, pasticcerie, panetterie, cucine, bar e supermercati</div>
-          <div style="margin-top:6px;"><b>Note</b>: Oltre 40 anni di esperienza dei fondatori nel settore; noleggio stagionale/eventi; consulenza sulla scelta dell'attrezzatura; catalogo con macchine usate di marchi come Carpigiani, ISA, FB</div>
-          <div style="margin-top:2px;"><b>Indirizzo</b>: Via Maranello, 19, 47853 Coriano (RN), Italia</div>
-          <div style="margin-top:2px;"><b>Telefono</b>: +39 345 0369943</div>
-          <div style="margin-top:2px;"><b>Email</b>: info@imoristock.com</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://imoristock.com/" target="_blank" rel="noopener">https://imoristock.com/</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Ice-Berg Bergamo</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Bergamo · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Divisione dedicata all'usato: vetrine gelato, pastomaster, agemaster, mantecatori (es. Maestro 2** HCD Carpigiani), montapanna</div>
-          <div style="margin-top:6px;"><b>Note</b>: Selezione attenta di attrezzature usate, revisionate, certificate e garantite; preventivo su richiesta</div>
-          <div style="margin-top:2px;"><b>Indirizzo</b>: Via Pandini, 6, 24126 Bergamo, Italia</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://www.icebergamo.it/usato/" target="_blank" rel="noopener">https://www.icebergamo.it/usato/</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Carpigiani — Programma Refurbished</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Anzola dell'Emilia (BO) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Macchine ricondizionate ufficiali del produttore, con processo di restauro rigoroso (parte refrigerante, componenti meccanici ed elettrici) e ricambi originali</div>
-          <div style="margin-top:6px;"><b>Note</b>: Garanzia standard di 1 anno; unico canale ufficiale del produttore per macchine usate certificate</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://carpigiani.com/en/page/refurbished" target="_blank" rel="noopener">https://carpigiani.com/en/page/refurbished</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Marco srl (Marco Italia)</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Pisa · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Consulenza e progettazione per gelaterie, pasticcerie, ristoranti e pizzerie; vendita attrezzature nuove e usate (vetrine refrigerate, macchine soft, gelatiere, forni, abbattitori, arredo bar)</div>
-          <div style="margin-top:6px;"><b>Note</b>: Attrezzature usate revisionate da tecnici specializzati prima della vendita; oltre 80 articoli usati a catalogo</div>
-          <div style="margin-top:2px;"><b>Indirizzo</b>: Via Capiteta, 56104 Pisa, Italia</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://www.marcoitalia.it/macchine-gelati-carpigiani/macchine-usate-per-pasticcerie-gelaterie/" target="_blank" rel="noopener">https://www.marcoitalia.it/</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Gonella Ice Cream</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Portogruaro (VE) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Rivendita attrezzature usate per gelateria: vetrine, mantecatori, pastorizzatori, abbattitori/celle, macchine combinate, macchine soft, granitori, miscelatori, accessori</div>
-          <div style="margin-top:6px;"><b>Note</b>: Revisione completa con smontaggio, analisi e sostituzione componenti usurati con ricambi originali, test funzionali; garanzia 12 mesi e assistenza post-vendita</div>
-          <div style="margin-top:2px;"><b>Indirizzo</b>: Via Sardegna, 1, Portogruaro (VE), Italia</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://gonellaicecream.com/prodotti/usato/" target="_blank" rel="noopener">https://gonellaicecream.com/prodotti/usato/</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Antiga</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">San Pietro di Feletto (TV) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Fondazione</b>: 1925</div>
-          <div><b>Categorie</b>: Arredamento outdoor per gelaterie, bar, ristoranti e hotel: sedie e poltroncine, panche e divani, sgabelli, fioriere, basi e piani tavolo, accessori</div>
-          <div style="margin-top:6px;"><b>Note</b>: Dalla lavorazione di sedie in vimini e rattan all'alluminio con tessuti tecnici (Batyline); colori del telaio, rivestimenti e stampa del logo personalizzabili</div>
-          <div style="margin-top:6px;"><b>Indirizzo</b>: Via Antiga 14, San Pietro di Feletto (TV), Italia</div>
-          <div style="margin-top:2px;"><b>Telefono</b>: +39 0438 486803</div>
-          <div style="margin-top:2px;"><b>Email</b>: <a href="mailto:antiga@antiga.it">antiga@antiga.it</a></div>
-          <div style="margin-top:2px;"><b>Sito web</b>: <a href="https://www.antiga.it/" target="_blank" rel="noopener">https://www.antiga.it/</a></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
 </main>
 
 <footer class="note">
@@ -591,7 +310,7 @@
   <p style="margin:0;"><span data-i18n="contatti">✉️ Contatti:</span> <a href="mailto:marcolestan@gelateriaingredienti.com">marcolestan@gelateriaingredienti.com</a></p>
   <p style="margin:6px 0 0;"><a href="https://www.instagram.com/gelateriaingredienti/" target="_blank" rel="noopener" data-i18n="instagramLink">📷 Seguici su Instagram</a></p>
   <p style="margin:6px 0 0;"><a href="https://gelateriaingredienti.com" data-i18n="sisterSiteLink">🍨 Confronto ingredienti gelato — gelateriaingredienti.com</a></p>
-  <p class="back-link"><a data-i18n='backToApp' href='/'>← Torna al Confronto Attrezzature</a></p>
+  <p class="back-link"><a href="index.html" data-i18n="backToApp">← Torna al Confronto Attrezzature</a></p>
   <div class="legal-notice">
     <strong>© <span id="copyYear"></span> Tutti i diritti riservati.</strong>
     <span data-i18n="legalText">Contenuti conformi alla normativa europea vigente (incl. Regolamento UE 2016/679 – GDPR). Il presente portale ha finalità esclusivamente informativa e consultiva: non è consentito alcun uso commerciale, riproduzione, distribuzione o sfruttamento dei contenuti senza autorizzazione scritta del titolare.</span>
@@ -599,124 +318,513 @@
   </div>
 </footer>
 
+<div class="modal-overlay" id="sellModalOverlay">
+  <div class="modal-box">
+    <button type="button" class="modal-close" id="sellModalClose" aria-label="Chiudi">✕</button>
+    <h2 data-i18n="sellTitle">➕ Pubblica un annuncio</h2>
+    <p class="modal-sub" data-i18n="sellSubtitle">Vendi un'attrezzatura usata? Compila il modulo: ti ricontattiamo per pubblicare l'annuncio. Se hai già le foto pronte, potrai inviarcele rispondendo alla nostra email di conferma.</p>
+    <form name="usato-annuncio" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" id="sellForm">
+      <input type="hidden" name="form-name" value="usato-annuncio" />
+      <p style="position:absolute; left:-9999px;" aria-hidden="true">
+        <label>Non compilare questo campo: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </p>
+      <div class="form-grid">
+        <div class="field full">
+          <label for="sellNome" data-i18n="sellLabelNome">Nome / Gelateria *</label>
+          <input type="text" id="sellNome" name="nome" required />
+        </div>
+        <div class="field">
+          <label for="sellEmail" data-i18n="sellLabelEmail">Email *</label>
+          <input type="email" id="sellEmail" name="email" required />
+        </div>
+        <div class="field">
+          <label for="sellTelefono" data-i18n="sellLabelTelefono">Telefono / WhatsApp (facoltativo)</label>
+          <input type="tel" id="sellTelefono" name="telefono" data-i18n-ph="sellTelefonoPh" placeholder="Es. +39 333 1234567" />
+        </div>
+        <div class="field">
+          <label for="sellCategoria" data-i18n="sellLabelCategoria">Categoria</label>
+          <select id="sellCategoria" name="categoria"></select>
+        </div>
+        <div class="field">
+          <label for="sellCitta" data-i18n="sellLabelCitta">Città</label>
+          <input type="text" id="sellCitta" name="citta" />
+        </div>
+        <div class="field full">
+          <label for="sellTitolo" data-i18n="sellLabelTitolo">Titolo annuncio *</label>
+          <input type="text" id="sellTitolo" name="titolo" required data-i18n-ph="sellTitoloPh" placeholder="Es. Mantecatore Carpigiani LB 502" />
+        </div>
+        <div class="field">
+          <label for="sellPrezzo" data-i18n="sellLabelPrezzo">Prezzo richiesto</label>
+          <input type="text" id="sellPrezzo" name="prezzo" data-i18n-ph="sellPrezzoPh" placeholder="Es. € 3.200" />
+        </div>
+        <div class="field">
+          <label for="sellStato" data-i18n="sellLabelStato">Stato</label>
+          <select id="sellStato" name="stato"></select>
+        </div>
+        <div class="field full">
+          <label for="sellDescrizione" data-i18n="sellLabelDescrizione">Descrizione</label>
+          <textarea id="sellDescrizione" name="descrizione" rows="3" data-i18n-ph="sellDescrizionePh" placeholder="Anno, condizioni, motivo della vendita…"></textarea>
+        </div>
+        <div class="field full">
+          <label for="sellFoto" data-i18n="sellLabelFoto">📷 Scatta una foto ora (o carica dalla galleria)</label>
+          <input type="file" id="sellFoto" name="foto" accept="image/*" capture="environment" multiple />
+          <p class="field-hint" data-i18n="sellFotoHint">Tocca per aprire la fotocamera e scattare subito, oppure scegli fino a 3 foto già salvate (JPG o PNG).</p>
+        </div>
+      </div>
+      <div class="field" style="display:flex; align-items:flex-start; gap:8px;">
+        <input type="checkbox" id="sellWhatsapp" name="whatsapp_disponibile" style="width:auto; margin-top:3px;" />
+        <label for="sellWhatsapp" style="text-transform:none; font-weight:400; font-size:0.8rem; margin:0;" data-i18n="sellWhatsappLabel">💬 Raggiungibile anche su WhatsApp a questo numero</label>
+      </div>
+      <div class="field" style="display:flex; align-items:flex-start; gap:8px;">
+        <input type="checkbox" id="sellSpedizione" name="spedizione_disponibile" style="width:auto; margin-top:3px;" />
+        <label for="sellSpedizione" style="text-transform:none; font-weight:400; font-size:0.8rem; margin:0;" data-i18n="sellSpedizioneLabel">🚚 Disponibile per la spedizione (spese a carico dell'acquirente)</label>
+      </div>
+      <div class="field" style="display:flex; align-items:flex-start; gap:8px;">
+        <input type="checkbox" id="sellPrivacy" name="privacy_accettata" required style="width:auto; margin-top:3px;" />
+        <label for="sellPrivacy" style="text-transform:none; font-weight:400; font-size:0.8rem; margin:0;" data-i18n="sellPrivacyLabel">Ho letto e accetto l'informativa privacy (obbligatorio) *</label>
+      </div>
+      <div class="field" style="display:flex; align-items:flex-start; gap:8px;">
+        <input type="checkbox" id="sellResponsabilita" name="responsabilita_accettata" required style="width:auto; margin-top:3px;" />
+        <label for="sellResponsabilita" style="text-transform:none; font-weight:400; font-size:0.8rem; margin:0;" data-i18n="sellResponsabilitaLabel">Accetto che prezzo, foto, spedizione, pagamento e consegna vengano concordati direttamente tra venditore e acquirente: il portale non si assume alcuna responsabilità per gli annunci pubblicati né per le transazioni concluse (obbligatorio) *</label>
+      </div>
+      <button type="submit" class="btn" data-i18n="sellSubmit">Invia annuncio</button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
 <script>
+const CATEGORY_ICONS = { mantecatori:'🥄', pastorizzatori:'🌡️', abbattitori:'❄️', vetrine:'🪟', banchi:'🧊', congelatori:'🧊', altro:'🔧' };
+const CONDITION_CLASS = { nuovo:'cond-nuovo', ottimo:'cond-ottimo', buono:'cond-buono', revisionare:'cond-revisionare' };
+
 const I18N = {
   it: {
     constructionNote: "🚧 Sito in costruzione",
-    navConfronta: "⚖️ Confronta",
-    navArchivio: "📚 Archivio",
-    navChiSiamo: "👤 Chi sono",
-    navAziende: "🏢 Aziende",
-    navNotizie: "📰 Notizie",
-    navUsato: "♻️ Usato",
-    navUsatoAziende: "🏬 Rivenditori Usato",
-    navArredamento: "🪑 Arredamento",
-    navAccessori: "🧰 Accessori",
-    aziendeTitle: "🏢 Aziende",
-    aziendeText: "Le aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori presenti nell'archivio, con una breve scheda per ciascuna.",
-    colFondazione: "Fondazione",
-    colCategorie: "Categorie",
-    colCertificazioni: "Certificazioni",
-    colPresenzaDE: "Presenza in Germania",
-    colIndirizzo: "Indirizzo",
-    colTelefono: "Telefono",
-    colFax: "Fax",
-    colEmail: "Email",
-    colSito: "Sito web",
-    contatti: "✉️ Contatti:",
-    instagramLink: "📷 Seguici su Instagram",
+    navConfronta: "⚖️ Confronta", navArchivio: "📚 Archivio", navChiSiamo: "👤 Chi sono",
+    navAziende: "🏢 Aziende", navNotizie: "📰 Notizie", navUsato: "♻️ Usato", navUsatoAziende: "🏬 Rivenditori Usato", navArredamento: "🪑 Arredamento", navAccessori: "🧰 Accessori",
+    demoBadge: "Anteprima / esempio",
+    usatoTitle: "♻️ Mercatino Usato",
+    usatoSubtitle: "Compra e vendi attrezzature per gelateria di seconda mano: mantecatori, pastorizzatori, vetrine, banchi e abbattitori.",
+    introTitle: "🔎 Come funziona",
+    introText: "Un mercatino tra gelatieri per comprare e vendere attrezzature usate in buono stato: mantecatori, pastorizzatori, vetrine espositive, banchi gelato, abbattitori e congelatori. Filtra per categoria e stato, oppure pubblica un tuo annuncio.",
+    demoNote: "⚠️ Gli annunci senza etichetta sono <strong>esempi dimostrativi</strong> per mostrare come funzionerà la sezione. Gli annunci con l'etichetta <strong>\"Annuncio reale\"</strong> provengono dal nostro partner Gennaro Eis GmbH e sono macchine effettivamente disponibili: prezzo e disponibilità vanno comunque riconfermati direttamente con il rivenditore.",
+    liabilityNote: "ℹ️ Prezzo, foto, spedizione (spese a carico dell'acquirente, salvo diverso accordo) e ogni altra condizione vengono concordati <strong>direttamente tra venditore e acquirente</strong>. Il portale mette in contatto le parti ma non si assume alcuna responsabilità per gli annunci pubblicati né per le transazioni concluse.",
+    videoDemoTitle: "🎬 Video demo",
+    videoDemoText: "Una rapida panoramica di alcuni mantecatori nuovi e usati disponibili sul mercato, per farsi un'idea prima di consultare gli annunci.",
+    videoDemoCaption: "Video dimostrativo — le attrezzature mostrate provengono da rivenditori terzi, a scopo illustrativo.",
+    filterTitle: "🧭 Filtra gli annunci",
+    labelCerca: "Cerca", searchPh: "Es. mantecatore, vetrina…",
+    labelCategoria: "Categoria", labelStato: "Stato",
+    btnPubblica: "➕ Pubblica un annuncio",
+    optTutte: "Tutte le categorie", optTutti: "Tutti gli stati",
+    catLabels: { mantecatori:"Mantecatori", pastorizzatori:"Pastorizzatori", abbattitori:"Abbattitori", vetrine:"Vetrine espositive", banchi:"Banchi gelato", congelatori:"Congelatori", altro:"Altro" },
+    condLabels: { nuovo:"Come nuovo", ottimo:"Ottimo stato", buono:"Buono stato", revisionare:"Da revisionare" },
+    contattaVenditore: "✉️ Contatta il venditore",
+    chiamaVenditore: "📞 Chiama il venditore",
+    listingCountText: (n) => n === 1 ? "1 annuncio trovato" : `${n} annunci trovati`,
+    esempioRibbon: "Esempio",
+    realRibbon: "Annuncio reale",
+    vediVenditore: (nome) => `🔗 Vedi su ${nome}`,
+    ctaLine1: "Hai un usato?", ctaLine2: "Scrivici, lo trovi poi qui!",
+    ctaSubject: "Ho un'attrezzatura usata da vendere",
+    sellTitle: "➕ Pubblica un annuncio",
+    sellSubtitle: "Vendi un'attrezzatura usata? Compila il modulo: ti ricontattiamo per pubblicare l'annuncio.",
+    sellLabelNome: "Nome / Gelateria *", sellLabelEmail: "Email *", sellLabelTelefono: "Telefono / WhatsApp (facoltativo)",
+    sellTelefonoPh: "Es. +39 333 1234567", sellWhatsappLabel: "💬 Raggiungibile anche su WhatsApp a questo numero",
+    sellLabelCategoria: "Categoria", sellLabelCitta: "Città", sellLabelTitolo: "Titolo annuncio *",
+    sellTitoloPh: "Es. Mantecatore Carpigiani LB 502",
+    sellLabelPrezzo: "Prezzo richiesto", sellPrezzoPh: "Es. € 3.200",
+    sellLabelStato: "Stato", sellLabelDescrizione: "Descrizione",
+    sellDescrizionePh: "Anno, condizioni, motivo della vendita…",
+    sellLabelFoto: "📷 Scatta una foto ora (o carica dalla galleria)", sellFotoHint: "Tocca per aprire la fotocamera e scattare subito, oppure scegli fino a 3 foto già salvate (JPG o PNG).",
+    sellSpedizioneLabel: "🚚 Disponibile per la spedizione (spese a carico dell'acquirente)",
+    sellPrivacyLabel: "Ho letto e accetto l'informativa privacy (obbligatorio) *",
+    sellResponsabilitaLabel: "Accetto che prezzo, foto, spedizione, pagamento e consegna vengano concordati direttamente tra venditore e acquirente: il portale non si assume alcuna responsabilità per gli annunci pubblicati né per le transazioni concluse (obbligatorio) *",
+    sellSubmit: "Invia annuncio", sellSubmitting: "Invio in corso…",
+    toastSellSuccess: "Grazie! Ti ricontattiamo per pubblicare l'annuncio.",
+    toastSellError: "Problema nell'invio. Scrivici direttamente a marcolestan@gelateriaingredienti.com",
+    contatti: "✉️ Contatti:", instagramLink: "📷 Seguici su Instagram",
     sisterSiteLink: "🍨 Confronto ingredienti gelato — gelateriaingredienti.com",
-    footerPrivacyLink: "Informativa privacy",
     legalText: "Contenuti conformi alla normativa europea vigente (incl. Regolamento UE 2016/679 – GDPR). Il presente portale ha finalità esclusivamente informativa e consultiva: non è consentito alcun uso commerciale, riproduzione, distribuzione o sfruttamento dei contenuti senza autorizzazione scritta del titolare.",
     disclaimerText: "Avviso: i dati contenuti in questo portale sono riportati solo a scopo di conoscenza. Il confronto è puramente teorico e si basa sui dati rilasciati dalle aziende o disponibili sul web. Non sono indicati costi né altri parametri economici.",
     backToApp: "← Torna al Confronto Attrezzature",
-    metaTitle: "Aziende produttrici di attrezzature per gelateria | Confronto Attrezzature Gelateria",
-    metaDesc: "Schede delle aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori per gelateria: fondazione, categorie, certificazioni e presenza sul mercato."
+    metaTitle: "Mercatino Usato | Confronto Attrezzature Gelateria",
+    metaDesc: "Compra e vendi attrezzature per gelateria usate: mantecatori, pastorizzatori, vetrine, banchi e abbattitori di seconda mano.",
+    listings: [
+      { id:1, cat:'mantecatori', cond:'buono', titolo:'Mantecatore Carpigiani LB 502', prezzo:'€ 3.200', citta:'Bologna', desc:"Revisionato di recente, sempre in manutenzione ordinaria. Ideale per chi avvia l'attività." },
+      { id:2, cat:'pastorizzatori', cond:'ottimo', titolo:'Pastorizzatore Cattabriga 60L', prezzo:'€ 1.800', citta:'Milano', desc:'Poco utilizzato, condizioni eccellenti. Venduto per cambio attrezzatura.' },
+      { id:3, cat:'abbattitori', cond:'nuovo', titolo:'Abbattitore di temperatura 5 teglie', prezzo:'€ 950', citta:'Torino', desc:'Usato pochissimo, praticamente come nuovo, con documentazione originale.' },
+      { id:4, cat:'vetrine', cond:'buono', titolo:'Vetrina espositiva 12 gusti', prezzo:'€ 2.500', citta:'Roma', desc:'Vetrina curva ben tenuta, illuminazione a LED funzionante.' },
+      { id:5, cat:'banchi', cond:'revisionare', titolo:'Banco gelato refrigerato 2m', prezzo:'€ 600', citta:'Napoli', desc:'Funzionante ma consigliata una revisione del compressore.' },
+      { id:6, cat:'congelatori', cond:'buono', titolo:'Congelatore a pozzetto -18°C', prezzo:'€ 700', citta:'Firenze', desc:'Buone condizioni generali, ideale come scorta di magazzino.' },
+      { id:7, cat:'mantecatori', cond:'buono', titolo:'Mantecatore Carpigiani Labo 30 45 XPL-P (usato)', prezzo:'€ 15.999', citta:'Külsheim (Germania)', desc:'Mantecatore professionale, capacità 7,5 kg, resa 45 kg/h. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-carpigiani-labo3045xplp.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:8, cat:'mantecatori', cond:'buono', titolo:'Mantecatore Carpigiani Labotronic 30 100 RTL (usato)', prezzo:'€ 21.999', citta:'Külsheim (Germania)', desc:'Mantecatore professionale, capacità 16,5 kg, resa 10 kg/h. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-carpigiani-labotronic30100rtl.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:9, cat:'mantecatori', cond:'buono', titolo:'Mantecatore Carpigiani Labotronic 20 60 RTL (usato)', prezzo:'€ 19.999', citta:'Külsheim (Germania)', desc:'Mantecatore professionale, capacità 10,5 kg, resa 60 kg/h. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-carpigiani-labotronic2060rtl.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:10, cat:'mantecatori', cond:'buono', titolo:'Mantecatore Carpigiani Labo 40 60 XPe (usato)', prezzo:'€ 10.999', citta:'Külsheim (Germania)', desc:'Mantecatore professionale, capacità 10,5 kg, resa 60 kg/h. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-carpigiani-labo4060xpe.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:11, cat:'mantecatori', cond:'buono', titolo:'Mantecatore combinato Coldelite Compacta 3002 RTX (usato)', prezzo:'€ 16.499', citta:'Külsheim (Germania)', desc:'Macchina combinata professionale, capacità 7,5 kg, resa 45 kg/h. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-coldelite-compacta3002rtx.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/' },
+      { id:12, cat:'pastorizzatori', cond:'buono', titolo:'Pastorizzatore Frigomat PEB 130 (usato)', prezzo:'€ 12.999', citta:'Külsheim (Germania)', desc:'Pastorizzatore professionale, capacità 130 litri. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-frigomat-peb130.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/' },
+      { id:13, cat:'vetrine', cond:'buono', titolo:'Vetrina gelato Eisvitrine MX Flat', citta:'Erftstadt (Germania)', desc:'Disponibile in diverse misure (12, 16, 18, 20 o 24 pozzetti), larghezza da 1,23 a 2,30 m. Foto di riferimento del rivenditore: prezzo e disponibilità da richiedere.', foto:'usato-heica-vetrina-mxflat.png', demo:true },
+      { id:14, cat:'mantecatori', cond:'buono', titolo:'Macchina soft / frozen yogurt BC Easy 2', citta:'Erftstadt (Germania)', desc:'Macchina per gelato soft e frozen yogurt. Foto di riferimento del rivenditore: prezzo e disponibilità da richiedere.', foto:'usato-heica-frozenyogurt-bceasy2.png', demo:true },
+      { id:15, cat:'abbattitori', cond:'buono', titolo:'Schockfroster BF 19/15-CW Crio Chill', citta:'Erftstadt (Germania)', desc:'Abbattitore con funzione di shock frost e rapido raffreddamento, capacità 15–19,5 kg. Foto di riferimento del rivenditore: prezzo e disponibilità da richiedere.', foto:'usato-heica-schockfroster-crio-chill.png', demo:true },
+      { id:16, cat:'altro', cond:'buono', titolo:'Frigorifero banco in acciaio inox a 2 ante', desc:'Frigorifero professionale a banco, doppia anta in acciaio inox, display digitale con controllo temperatura. Buone condizioni generali, funzionante. Prezzo su richiesta.', foto:'usato-frigorifero-banco-inox.jpg', mine:true, tel:'+491744877759' },
+      { id:17, cat:'altro', cond:'buono', titolo:'Macchina da caffè professionale 3 gruppi', desc:'Macchina da caffè espresso a 3 gruppi con leve manuali, gruppo vapore/acqua calda incluso. Buone condizioni, prezzo su richiesta.', foto:'usato-macchina-caffe-3gruppi.jpg', mine:true, tel:'+491744877759' },
+      { id:18, cat:'altro', cond:'buono', titolo:'Macchina da caffè professionale 2 gruppi con display digitale', desc:'Macchina da caffè espresso a 2 gruppi con pulsantiera digitale e programmazione dosi, gruppo vapore e acqua calda. Buone condizioni, prezzo su richiesta.', foto:'usato-macchina-caffe-2gruppi.jpg', mine:true, tel:'+491744877759' },
+      { id:19, cat:'altro', cond:'ottimo', titolo:'Vetrina refrigerata per torte e pasticceria (Saro)', desc:'Vetrina espositiva refrigerata a bombatura curva per torte e prodotti di pasticceria, marca Saro. Ancora imballata con pellicola protettiva, ottime condizioni. Prezzo su richiesta.', foto:'usato-vetrina-torte-saro.jpg', mine:true, tel:'+491744877759' },
+      { id:20, cat:'mantecatori', cond:'buono', titolo:'Mantecatore Valmar Snowy 12 TTi (usato)', prezzo:'€ 27.572', desc:'Mantecatore professionale, produzione 18–100 litri/ora, produzione per ciclo 3–17 litri. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-polartwist-snowy12tti.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:21, cat:'mantecatori', cond:'nuovo', titolo:'Mantecatore da laboratorio Telme Eurofreeze 3-8 / Ecogel 20-60 (riservato)', desc:'Macchina da laboratorio nuova/dimostrativa, dimensioni compatte, coperchio trasparente, cilindro di congelamento verticale, due cilindri a funzionamento parallelo. Attualmente riservato: contattare il rivenditore per la disponibilità futura.', foto:'usato-polartwist-eurofreeze3-8-ecogel20-60.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:22, cat:'mantecatori', cond:'buono', titolo:'Macchina soft/frozen yogurt Carpigiani 191 P/SP (usato)', prezzo:'€ 6.900', desc:'Macchina da banco per gelato soft/frozen yogurt, 1 gusto. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-polartwist-191psp.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:23, cat:'mantecatori', cond:'buono', titolo:'Mantecatore professionale (usato)', desc:'Mantecatore verticale professionale, pannello di controllo digitale, monoerogatore, su ruote. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-eistechnikcenter-mantecatore.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:24, cat:'vetrine', cond:'buono', titolo:'Vetrina Cristal Tower Panorama (usato)', desc:'Vetrina a torre con vetrate panoramiche, ripiani in vetro e ante laterali a battente. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-eistechnikcenter-cristaltower.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:25, cat:'vetrine', cond:'buono', titolo:'Vetrina a pozzetti Orion (usato)', desc:'Vetrina a pozzetti per gelato, marca italiana Orion, vetro curvo panoramico, capacità 16 pozzetti. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-eistechnikcenter-orion.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:26, cat:'altro', cond:'buono', titolo:'Compressore SilAir 30/D per pressa spaghetti gelato (usato)', desc:'Compressore di ricambio per pressa spaghetti gelato, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:27, cat:'altro', cond:'buono', titolo:'Maturatore latte Carpigiani Agemaster 60 Tronic (usato)', desc:'Maturatore/refrigeratore per miscele di latte, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:28, cat:'altro', cond:'buono', titolo:'Compressore C90D senza olio (usato)', desc:'Compressore oil-free, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:29, cat:'altro', cond:'buono', titolo:'Compressore SilAir 30D per pressa spaghetti gelato (usato)', desc:'Compressore di ricambio per pressa spaghetti gelato, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:30, cat:'altro', cond:'buono', titolo:'Compressore JunAir 4-4 per pressa spaghetti gelato (usato)', desc:'Compressore di ricambio per pressa spaghetti gelato, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:31, cat:'mantecatori', cond:'buono', titolo:'Macchina soft Carpigiani 161/P (usato)', desc:'Macchina per gelato soft, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:32, cat:'altro', cond:'buono', titolo:'Lavamani mobile ad acqua calda STÖCKEL (usato)', desc:'Lavamani mobile con acqua calda per uso in gelateria/laboratorio, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:33, cat:'altro', cond:'buono', titolo:'Compressore SilAir 30/6 per pressa spaghetti gelato (usato)', desc:'Compressore di ricambio per pressa spaghetti gelato, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:34, cat:'mantecatori', cond:'buono', titolo:'Mantecatore Valmar Snowy 14 (usato)', desc:'Mantecatore professionale, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:35, cat:'mantecatori', cond:'buono', titolo:'Mantecatore Carpigiani Labo 40 60 C (usato)', desc:'Mantecatore professionale, condizione usato. Prezzo e disponibilità da richiedere al rivenditore.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:36, cat:'pastorizzatori', cond:'buono', titolo:'Pastorizzatore PEB-60 (usato)', prezzo:'€ 8.500 netto (+ IVA)', desc:'Pastorizzatore professionale, potenza 7200 W, capacità 20–60 kg, disponibile a Gießen (Germania). Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-eisunion-peb60.jpg', real:true, venditore:'Eisunion Hannover', link:'mailto:hannover@eisunion.de' },
+      { id:37, cat:'pastorizzatori', cond:'buono', titolo:'Pastorizzatore Carpigiani Pastomaster 120 RTL (usato)', prezzo:'€ 15.980', desc:'Con garanzia del rivenditore autorizzato, spedizione gratuita. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-heica-pastomaster120rtl.jpg', real:true, venditore:'Heica', link:'mailto:info@heica.de' },
+      { id:38, cat:'altro', cond:'buono', titolo:'Cuocicrema Mussana Boy da 4 litri (usato)', prezzo:'€ 1.600 + spese di spedizione', desc:'Mussana originale, disponibile. Condizioni e disponibilità da riconfermare con il rivenditore.', foto:'usato-heica-mussanaboy4l.jpg', real:true, venditore:'Heica', link:'mailto:info@heica.de' },
+    ],
   },
   de: {
     constructionNote: "🚧 Website im Aufbau",
-    navConfronta: "⚖️ Vergleichen",
-    navArchivio: "📚 Archiv",
-    navChiSiamo: "👤 Über mich",
-    navAziende: "🏢 Firmen",
-    navNotizie: "📰 News",
-    navUsato: "♻️ Gebraucht",
-    navUsatoAziende: "🏬 Gebraucht-Händler",
-    navArredamento: "🪑 Einrichtung",
-    navAccessori: "🧰 Zubehör",
-    aziendeTitle: "🏢 Firmen",
-    aziendeText: "Die Hersteller von Rührmaschinen, Pasteurisierern, Mixern, Kühlschränken und Schockfrostern im Archiv, mit einem kurzen Profil für jede.",
-    colFondazione: "Gegründet",
-    colCategorie: "Kategorien",
-    colCertificazioni: "Zertifizierungen",
-    colPresenzaDE: "Präsenz in Deutschland",
-    colIndirizzo: "Adresse",
-    colTelefono: "Telefon",
-    colFax: "Fax",
-    colEmail: "E-Mail",
-    colSito: "Webseite",
-    contatti: "✉️ Kontakt:",
-    instagramLink: "📷 Folge uns auf Instagram",
+    navConfronta: "⚖️ Vergleichen", navArchivio: "📚 Archiv", navChiSiamo: "👤 Über mich",
+    navAziende: "🏢 Firmen", navNotizie: "📰 News", navUsato: "♻️ Gebraucht", navUsatoAziende: "🏬 Gebraucht-Händler", navArredamento: "🪑 Einrichtung", navAccessori: "🧰 Zubehör",
+    demoBadge: "Vorschau / Beispiel",
+    usatoTitle: "♻️ Gebrauchtmarkt",
+    usatoSubtitle: "Gebrauchte Eisdielen-Ausrüstung kaufen und verkaufen: Rührmaschinen, Pasteurisierer, Vitrinen, Theken und Schockfroster.",
+    introTitle: "🔎 So funktioniert's",
+    introText: "Ein Marktplatz unter Gelatieri zum Kaufen und Verkaufen gebrauchter Ausrüstung in gutem Zustand: Rührmaschinen, Pasteurisierer, Vitrinen, Eistheken, Schockfroster und Tiefkühltruhen. Nach Kategorie und Zustand filtern oder eine eigene Anzeige veröffentlichen.",
+    demoNote: "⚠️ Anzeigen ohne Kennzeichnung sind <strong>Beispiele zur Veranschaulichung</strong>. Anzeigen mit der Kennzeichnung <strong>\"Echtes Angebot\"</strong> stammen von unserem Partner Gennaro Eis GmbH und sind tatsächlich verfügbare Maschinen: Preis und Verfügbarkeit bitte direkt beim Händler bestätigen.",
+    liabilityNote: "ℹ️ Preis, Fotos, Versand (Versandkosten trägt der Käufer, sofern nicht anders vereinbart) und alle weiteren Bedingungen werden <strong>direkt zwischen Verkäufer und Käufer</strong> vereinbart. Das Portal stellt den Kontakt her, übernimmt jedoch keinerlei Haftung für veröffentlichte Anzeigen oder abgeschlossene Geschäfte.",
+    videoDemoTitle: "🎬 Video-Demo",
+    videoDemoText: "Ein kurzer Überblick über einige neue und gebrauchte Rührmaschinen auf dem Markt, als erste Orientierung vor den Anzeigen.",
+    videoDemoCaption: "Demonstrationsvideo — die gezeigten Geräte stammen von Drittanbietern und dienen nur zur Veranschaulichung.",
+    filterTitle: "🧭 Anzeigen filtern",
+    labelCerca: "Suche", searchPh: "Z. B. Rührmaschine, Vitrine…",
+    labelCategoria: "Kategorie", labelStato: "Zustand",
+    btnPubblica: "➕ Anzeige veröffentlichen",
+    optTutte: "Alle Kategorien", optTutti: "Alle Zustände",
+    catLabels: { mantecatori:"Rührmaschinen", pastorizzatori:"Pasteurisierer", abbattitori:"Schockfroster", vetrine:"Vitrinen", banchi:"Eistheken", congelatori:"Tiefkühltruhen", altro:"Sonstiges" },
+    condLabels: { nuovo:"Wie neu", ottimo:"Sehr guter Zustand", buono:"Guter Zustand", revisionare:"Wartung empfohlen" },
+    contattaVenditore: "✉️ Verkäufer kontaktieren",
+    chiamaVenditore: "📞 Verkäufer anrufen",
+    listingCountText: (n) => n === 1 ? "1 Anzeige gefunden" : `${n} Anzeigen gefunden`,
+    esempioRibbon: "Beispiel",
+    realRibbon: "Echtes Angebot",
+    vediVenditore: (nome) => `🔗 Ansehen bei ${nome}`,
+    ctaLine1: "Hast du ein Gebrauchtes?", ctaLine2: "Schreib uns, hier findest du es!",
+    ctaSubject: "Ich habe eine gebrauchte Ausrüstung zu verkaufen",
+    sellTitle: "➕ Anzeige veröffentlichen",
+    sellSubtitle: "Verkaufen Sie gebrauchte Ausrüstung? Füllen Sie das Formular aus: Wir melden uns, um die Anzeige zu veröffentlichen.",
+    sellLabelNome: "Name / Eisdiele *", sellLabelEmail: "E-Mail *", sellLabelTelefono: "Telefon / WhatsApp (optional)",
+    sellTelefonoPh: "z. B. +49 151 12345678", sellWhatsappLabel: "💬 Auch über WhatsApp unter dieser Nummer erreichbar",
+    sellLabelCategoria: "Kategorie", sellLabelCitta: "Stadt", sellLabelTitolo: "Anzeigentitel *",
+    sellTitoloPh: "Z. B. Rührmaschine Carpigiani LB 502",
+    sellLabelPrezzo: "Gewünschter Preis", sellPrezzoPh: "Z. B. € 3.200",
+    sellLabelStato: "Zustand", sellLabelDescrizione: "Beschreibung",
+    sellDescrizionePh: "Baujahr, Zustand, Verkaufsgrund…",
+    sellLabelFoto: "📷 Jetzt ein Foto machen (oder aus der Galerie hochladen)", sellFotoHint: "Tippen, um die Kamera zu öffnen und sofort zu fotografieren, oder bis zu 3 gespeicherte Fotos auswählen (JPG oder PNG).",
+    sellSpedizioneLabel: "🚚 Versand möglich (Versandkosten trägt der Käufer)",
+    sellPrivacyLabel: "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie (Pflichtfeld) *",
+    sellResponsabilitaLabel: "Ich akzeptiere, dass Preis, Fotos, Versand, Zahlung und Lieferung direkt zwischen Verkäufer und Käufer vereinbart werden: Das Portal übernimmt keinerlei Haftung für veröffentlichte Anzeigen oder abgeschlossene Geschäfte (Pflichtfeld) *",
+    sellSubmit: "Anzeige senden", sellSubmitting: "Wird gesendet…",
+    toastSellSuccess: "Vielen Dank! Wir melden uns, um die Anzeige zu veröffentlichen.",
+    toastSellError: "Problem beim Senden. Bitte schreiben Sie uns direkt an marcolestan@gelateriaingredienti.com",
+    contatti: "✉️ Kontakt:", instagramLink: "📷 Folge uns auf Instagram",
     sisterSiteLink: "🍨 Eissorten-Zutatenvergleich — gelateriaingredienti.com",
-    footerPrivacyLink: "Datenschutzerklärung",
     legalText: "Inhalte gemäß geltendem EU-Recht (einschl. Verordnung (EU) 2016/679 – DSGVO). Dieses Portal dient ausschließlich zu Informations- und Beratungszwecken: Jede kommerzielle Nutzung, Vervielfältigung, Verbreitung oder Verwertung der Inhalte ohne schriftliche Genehmigung des Inhabers ist untersagt.",
     disclaimerText: "Hinweis: Die auf diesem Portal enthaltenen Daten dienen ausschließlich der Information. Der Vergleich ist rein theoretisch und beruht auf den von den Unternehmen veröffentlichten bzw. im Web verfügbaren Daten. Es werden weder Kosten noch andere wirtschaftliche Parameter angegeben.",
     backToApp: "← Zurück zum Attrezzaturen-Vergleich",
-    metaTitle: "Hersteller von Eismaschinen und Zubehör | Eismaschinen-Vergleich",
-    metaDesc: "Profile der Hersteller von Rührmaschinen, Pasteurisierern, Mixern, Kühlschränken und Schockfrostern für Eisdielen: Gründung, Kategorien, Zertifizierungen und Marktpräsenz."
+    metaTitle: "Gebrauchtmarkt | Eismaschinen-Vergleich",
+    metaDesc: "Gebrauchte Eisdielen-Ausrüstung kaufen und verkaufen: Rührmaschinen, Pasteurisierer, Vitrinen, Theken und Schockfroster.",
+    listings: [
+      { id:1, cat:'mantecatori', cond:'buono', titolo:'Rührmaschine Carpigiani LB 502', prezzo:'€ 3.200', citta:'Bologna (IT)', desc:'Kürzlich gewartet, regelmäßige Instandhaltung. Ideal für den Einstieg.' },
+      { id:2, cat:'pastorizzatori', cond:'ottimo', titolo:'Pasteurisierer Cattabriga 60L', prezzo:'€ 1.800', citta:'Mailand (IT)', desc:'Wenig genutzt, ausgezeichneter Zustand. Verkauf wegen Geräteumstellung.' },
+      { id:3, cat:'abbattitori', cond:'nuovo', titolo:'Schockfroster für 5 Bleche', prezzo:'€ 950', citta:'Turin (IT)', desc:'Kaum benutzt, praktisch wie neu, mit Originalunterlagen.' },
+      { id:4, cat:'vetrine', cond:'buono', titolo:'Vitrine für 12 Sorten', prezzo:'€ 2.500', citta:'Rom (IT)', desc:'Gepflegte gebogene Vitrine, LED-Beleuchtung funktionstüchtig.' },
+      { id:5, cat:'banchi', cond:'revisionare', titolo:'Gekühlte Eistheke 2m', prezzo:'€ 600', citta:'Neapel (IT)', desc:'Funktionsfähig, Wartung des Kompressors empfohlen.' },
+      { id:6, cat:'congelatori', cond:'buono', titolo:'Tiefkühltruhe -18°C', prezzo:'€ 700', citta:'Florenz (IT)', desc:'Guter Allgemeinzustand, ideal als Lagerreserve.' },
+      { id:7, cat:'mantecatori', cond:'buono', titolo:'Rührmaschine Carpigiani Labo 30 45 XPL-P (gebraucht)', prezzo:'€ 15.999', citta:'Külsheim', desc:'Profi-Rührmaschine, Kapazität 7,5 kg, Leistung 45 kg/h. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-carpigiani-labo3045xplp.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:8, cat:'mantecatori', cond:'buono', titolo:'Rührmaschine Carpigiani Labotronic 30 100 RTL (gebraucht)', prezzo:'€ 21.999', citta:'Külsheim', desc:'Profi-Rührmaschine, Kapazität 16,5 kg, Leistung 10 kg/h. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-carpigiani-labotronic30100rtl.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:9, cat:'mantecatori', cond:'buono', titolo:'Rührmaschine Carpigiani Labotronic 20 60 RTL (gebraucht)', prezzo:'€ 19.999', citta:'Külsheim', desc:'Profi-Rührmaschine, Kapazität 10,5 kg, Leistung 60 kg/h. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-carpigiani-labotronic2060rtl.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:10, cat:'mantecatori', cond:'buono', titolo:'Rührmaschine Carpigiani Labo 40 60 XPe (gebraucht)', prezzo:'€ 10.999', citta:'Külsheim', desc:'Profi-Rührmaschine, Kapazität 10,5 kg, Leistung 60 kg/h. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-carpigiani-labo4060xpe.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:11, cat:'mantecatori', cond:'buono', titolo:'Kombi-Rührmaschine Coldelite Compacta 3002 RTX (gebraucht)', prezzo:'€ 16.499', citta:'Külsheim', desc:'Profi-Kombimaschine, Kapazität 7,5 kg, Leistung 45 kg/h. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-coldelite-compacta3002rtx.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/' },
+      { id:12, cat:'pastorizzatori', cond:'buono', titolo:'Pasteurisierer Frigomat PEB 130 (gebraucht)', prezzo:'€ 12.999', citta:'Külsheim', desc:'Profi-Pasteurisierer, Kapazität 130 Liter. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-frigomat-peb130.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/' },
+      { id:13, cat:'vetrine', cond:'buono', titolo:'Eisvitrine MX Flat', citta:'Erftstadt', desc:'Erhältlich in verschiedenen Größen (12er, 16er, 18er, 20er oder 24er), Breite von 1,23 bis 2,30 m. Referenzfoto des Händlers: Preis und Verfügbarkeit auf Anfrage.', foto:'usato-heica-vetrina-mxflat.png', demo:true },
+      { id:14, cat:'mantecatori', cond:'buono', titolo:'Softeismaschine / Frozen Yogurt Maschine BC Easy 2', citta:'Erftstadt', desc:'Maschine für Softeis und Frozen Yogurt. Referenzfoto des Händlers: Preis und Verfügbarkeit auf Anfrage.', foto:'usato-heica-frozenyogurt-bceasy2.png', demo:true },
+      { id:15, cat:'abbattitori', cond:'buono', titolo:'Schockfroster BF 19/15-CW Crio Chill', citta:'Erftstadt', desc:'Schockfrost- und Schnellkühlfunktion, Kapazität 15–19,5 kg. Referenzfoto des Händlers: Preis und Verfügbarkeit auf Anfrage.', foto:'usato-heica-schockfroster-crio-chill.png', demo:true },
+      { id:16, cat:'altro', cond:'buono', titolo:'Kühlschrank-Unterbau aus Edelstahl, 2 Türen', desc:'Profi-Kühlschrank als Unterbau, zwei Edelstahltüren, digitales Temperaturdisplay. Guter Allgemeinzustand, funktionstüchtig. Preis auf Anfrage.', foto:'usato-frigorifero-banco-inox.jpg', mine:true, tel:'+491744877759' },
+      { id:17, cat:'altro', cond:'buono', titolo:'Profi-Espressomaschine, 3 Gruppen', desc:'Espressomaschine mit 3 Brühgruppen und manuellen Hebeln, inkl. Dampf-/Heißwasserlanze. Guter Zustand, Preis auf Anfrage.', foto:'usato-macchina-caffe-3gruppi.jpg', mine:true, tel:'+491744877759' },
+      { id:18, cat:'altro', cond:'buono', titolo:'Profi-Espressomaschine, 2 Gruppen mit Digitaldisplay', desc:'Espressomaschine mit 2 Brühgruppen, digitaler Tastatur und Dosierprogrammierung, inkl. Dampf- und Heißwasserlanze. Guter Zustand, Preis auf Anfrage.', foto:'usato-macchina-caffe-2gruppi.jpg', mine:true, tel:'+491744877759' },
+      { id:19, cat:'altro', cond:'ottimo', titolo:'Gekühlte Kuchenvitrine (Saro)', desc:'Gebogene Kühlvitrine für Torten und Feingebäck, Marke Saro. Noch mit Schutzfolie verpackt, sehr guter Zustand. Preis auf Anfrage.', foto:'usato-vetrina-torte-saro.jpg', mine:true, tel:'+491744877759' },
+      { id:20, cat:'mantecatori', cond:'buono', titolo:'Rührmaschine Valmar Snowy 12 TTi (gebraucht)', prezzo:'€ 27.572', desc:'Profi-Rührmaschine, Produktion 18–100 Liter/Stunde, Produktion pro Zyklus 3–17 Liter. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-polartwist-snowy12tti.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:21, cat:'mantecatori', cond:'nuovo', titolo:'Labor-Rührmaschine Telme Eurofreeze 3-8 / Ecogel 20-60 (reserviert)', desc:'Neu-/Vorführgerät für den Laboreinsatz, kompakte Abmessungen, durchsichtiger Deckel, vertikaler Gefrierzylinder, zwei parallel arbeitende Zylinder. Aktuell reserviert: bitte beim Händler nach zukünftiger Verfügbarkeit fragen.', foto:'usato-polartwist-eurofreeze3-8-ecogel20-60.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:22, cat:'mantecatori', cond:'buono', titolo:'Softeis-/Frozen-Yogurt-Maschine Carpigiani 191 P/SP (gebraucht)', prezzo:'€ 6.900', desc:'Tischgerät für Softeis/Frozen Yogurt, 1 Eissorte. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-polartwist-191psp.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:23, cat:'mantecatori', cond:'buono', titolo:'Profi-Rührmaschine (gebraucht)', desc:'Professionelle Standrührmaschine, digitales Bedienfeld, ein Auslauf, auf Rollen. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-eistechnikcenter-mantecatore.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:24, cat:'vetrine', cond:'buono', titolo:'Vitrine Cristal Tower Panorama (gebraucht)', desc:'Turmvitrine mit Panorama-Verglasung, mehreren Glasablagen und seitlichen Klapptüren. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-eistechnikcenter-cristaltower.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:25, cat:'vetrine', cond:'buono', titolo:'Orion-Kübelvitrine (gebraucht)', desc:'Kübelvitrine für Speiseeis, italienische Marke Orion, gebogenes Panorama-Glas, Kapazität 16 Kübel. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-eistechnikcenter-orion.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:26, cat:'altro', cond:'buono', titolo:'Kompressor SilAir 30/D für Spaghetti-Eispresse (gebraucht)', desc:'Ersatzkompressor für Spaghetti-Eispresse, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:27, cat:'altro', cond:'buono', titolo:'Milchreifer Carpigiani Agemaster 60 Tronic (gebraucht)', desc:'Reifungs-/Kühltank für Milchmischungen, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:28, cat:'altro', cond:'buono', titolo:'Kompressor C90D, ölfrei (gebraucht)', desc:'Ölfreier Kompressor, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:29, cat:'altro', cond:'buono', titolo:'Kompressor SilAir 30D für Spaghetti-Eispresse (gebraucht)', desc:'Ersatzkompressor für Spaghetti-Eispresse, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:30, cat:'altro', cond:'buono', titolo:'Kompressor JunAir 4-4 für Spaghetti-Eispresse (gebraucht)', desc:'Ersatzkompressor für Spaghetti-Eispresse, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:31, cat:'mantecatori', cond:'buono', titolo:'Softeismaschine Carpigiani 161/P (gebraucht)', desc:'Softeismaschine, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:32, cat:'altro', cond:'buono', titolo:'Mobiles Warmwasser-Handwaschbecken STÖCKEL (gebraucht)', desc:'Mobiles Handwaschbecken mit Warmwasser für Eisdiele/Labor, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:33, cat:'altro', cond:'buono', titolo:'Kompressor SilAir 30/6 für Spaghetti-Eispresse (gebraucht)', desc:'Ersatzkompressor für Spaghetti-Eispresse, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:34, cat:'mantecatori', cond:'buono', titolo:'Rührmaschine Valmar Snowy 14 (gebraucht)', desc:'Profi-Rührmaschine, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:35, cat:'mantecatori', cond:'buono', titolo:'Rührmaschine Carpigiani Labo 40 60 C (gebraucht)', desc:'Profi-Rührmaschine, gebraucht. Preis und Verfügbarkeit bitte beim Händler erfragen.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:36, cat:'pastorizzatori', cond:'buono', titolo:'Pasteurisierer PEB-60 (gebraucht)', prezzo:'€ 8.500 netto (zzgl. MwSt.)', desc:'Profi-Pasteurisierer, Leistungsaufnahme 7200 Watt, Füllmenge 20–60 kg, Lagerort Gießen. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-eisunion-peb60.jpg', real:true, venditore:'Eisunion Hannover', link:'mailto:hannover@eisunion.de' },
+      { id:37, cat:'pastorizzatori', cond:'buono', titolo:'Pasteurisierer Carpigiani Pastomaster 120 RTL (gebraucht)', prezzo:'€ 15.980', desc:'Mit Garantie des autorisierten Händlers, kostenloser Versand. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-heica-pastomaster120rtl.jpg', real:true, venditore:'Heica', link:'mailto:info@heica.de' },
+      { id:38, cat:'altro', cond:'buono', titolo:'Cremekocher Mussana Boy, 4 Liter (gebraucht)', prezzo:'€ 1.600 + Versandkosten', desc:'Original Mussana, verfügbar. Zustand und Verfügbarkeit bitte direkt beim Händler bestätigen.', foto:'usato-heica-mussanaboy4l.jpg', real:true, venditore:'Heica', link:'mailto:info@heica.de' },
+    ],
   },
   en: {
     constructionNote: "🚧 Site under construction",
-    navConfronta: "⚖️ Compare",
-    navArchivio: "📚 Archive",
-    navChiSiamo: "👤 About me",
-    navAziende: "🏢 Companies",
-    navNotizie: "📰 News",
-    navUsato: "♻️ Used",
-    navUsatoAziende: "🏬 Used Dealers",
-    navArredamento: "🪑 Furnishings",
-    navAccessori: "🧰 Accessories",
-    aziendeTitle: "🏢 Companies",
-    aziendeText: "The manufacturers of batch freezers, pasteurizers, mixers, refrigerators and blast chillers in the archive, with a short profile for each.",
-    colFondazione: "Founded",
-    colCategorie: "Categories",
-    colCertificazioni: "Certifications",
-    colPresenzaDE: "Presence in Germany",
-    colIndirizzo: "Address",
-    colTelefono: "Phone",
-    colFax: "Fax",
-    colEmail: "Email",
-    colSito: "Website",
-    contatti: "✉️ Contact:",
-    instagramLink: "📷 Follow us on Instagram",
+    navConfronta: "⚖️ Compare", navArchivio: "📚 Archive", navChiSiamo: "👤 About me",
+    navAziende: "🏢 Companies", navNotizie: "📰 News", navUsato: "♻️ Used", navUsatoAziende: "🏬 Used Dealers", navArredamento: "🪑 Furnishings", navAccessori: "🧰 Accessories",
+    demoBadge: "Preview / example",
+    usatoTitle: "♻️ Used Equipment Marketplace",
+    usatoSubtitle: "Buy and sell second-hand gelato shop equipment: batch freezers, pasteurizers, display cases, counters and blast chillers.",
+    introTitle: "🔎 How it works",
+    introText: "A marketplace among gelato makers to buy and sell used equipment in good condition: batch freezers, pasteurizers, display cases, gelato counters, blast chillers and chest freezers. Filter by category and condition, or list your own item.",
+    demoNote: "⚠️ Listings without a tag are <strong>demo examples</strong> to show how this section will work. Listings tagged <strong>\"Real listing\"</strong> come from our partner Gennaro Eis GmbH and are actually available machines: please confirm price and availability directly with the dealer.",
+    liabilityNote: "ℹ️ Price, photos, shipping (costs covered by the buyer, unless otherwise agreed) and every other condition are arranged <strong>directly between seller and buyer</strong>. The portal puts the parties in touch but takes no responsibility for the listings published or for any transactions completed.",
+    videoDemoTitle: "🎬 Demo video",
+    videoDemoText: "A quick overview of some new and used batch freezers on the market, to get an idea before browsing the listings.",
+    videoDemoCaption: "Demo video — the equipment shown comes from third-party dealers, for illustrative purposes only.",
+    filterTitle: "🧭 Filter listings",
+    labelCerca: "Search", searchPh: "E.g. batch freezer, display case…",
+    labelCategoria: "Category", labelStato: "Condition",
+    btnPubblica: "➕ List an item",
+    optTutte: "All categories", optTutti: "All conditions",
+    catLabels: { mantecatori:"Batch freezers", pastorizzatori:"Pasteurizers", abbattitori:"Blast chillers", vetrine:"Display cases", banchi:"Gelato counters", congelatori:"Chest freezers", altro:"Other" },
+    condLabels: { nuovo:"Like new", ottimo:"Excellent condition", buono:"Good condition", revisionare:"Needs servicing" },
+    contattaVenditore: "✉️ Contact the seller",
+    chiamaVenditore: "📞 Call the seller",
+    listingCountText: (n) => n === 1 ? "1 listing found" : `${n} listings found`,
+    esempioRibbon: "Example",
+    realRibbon: "Real listing",
+    vediVenditore: (nome) => `🔗 View at ${nome}`,
+    ctaLine1: "Got a used one?", ctaLine2: "Write to us, you'll find it here!",
+    ctaSubject: "I have used equipment to sell",
+    sellTitle: "➕ List an item",
+    sellSubtitle: "Selling used equipment? Fill in the form: we'll get back to you to publish the listing.",
+    sellLabelNome: "Name / Gelato shop *", sellLabelEmail: "Email *", sellLabelTelefono: "Phone / WhatsApp (optional)",
+    sellTelefonoPh: "e.g. +1 555 1234567", sellWhatsappLabel: "💬 Also reachable on WhatsApp at this number",
+    sellLabelCategoria: "Category", sellLabelCitta: "City", sellLabelTitolo: "Listing title *",
+    sellTitoloPh: "E.g. Carpigiani LB 502 batch freezer",
+    sellLabelPrezzo: "Asking price", sellPrezzoPh: "E.g. € 3,200",
+    sellLabelStato: "Condition", sellLabelDescrizione: "Description",
+    sellDescrizionePh: "Year, condition, reason for selling…",
+    sellLabelFoto: "📷 Take a photo now (or upload from gallery)", sellFotoHint: "Tap to open the camera and shoot right away, or pick up to 3 saved photos (JPG or PNG).",
+    sellSpedizioneLabel: "🚚 Shipping available (buyer covers the cost)",
+    sellPrivacyLabel: "I have read and accept the privacy notice (required) *",
+    sellResponsabilitaLabel: "I accept that price, photos, shipping, payment and delivery are arranged directly between seller and buyer: the portal takes no responsibility for the listings published or for any transactions completed (required) *",
+    sellSubmit: "Send listing", sellSubmitting: "Sending…",
+    toastSellSuccess: "Thank you! We'll get back to you to publish the listing.",
+    toastSellError: "There was a problem sending your request. Please write to us directly at marcolestan@gelateriaingredienti.com",
+    contatti: "✉️ Contact:", instagramLink: "📷 Follow us on Instagram",
     sisterSiteLink: "🍨 Gelato ingredients comparison — gelateriaingredienti.com",
-    footerPrivacyLink: "Privacy notice",
     legalText: "Content compliant with applicable European regulations (incl. EU Regulation 2016/679 – GDPR). This portal is for informational and reference purposes only: no commercial use, reproduction, distribution or exploitation of the content is permitted without the written authorization of the owner.",
     disclaimerText: "Notice: the data on this portal is provided for informational purposes only. The comparison is purely theoretical and is based on data released by the companies or available on the web. No costs or other economic parameters are included.",
     backToApp: "← Back to Equipment Comparison",
-    metaTitle: "Manufacturers of ice cream equipment | Gelato Equipment Comparison",
-    metaDesc: "Profiles of manufacturers of batch freezers, pasteurizers, mixers, refrigerators and blast chillers for gelato shops: founding, categories, certifications and market presence."
-  }
+    metaTitle: "Used Equipment Marketplace | Gelato Equipment Comparison",
+    metaDesc: "Buy and sell used gelato shop equipment: batch freezers, pasteurizers, display cases, counters and blast chillers.",
+    listings: [
+      { id:1, cat:'mantecatori', cond:'buono', titolo:'Carpigiani LB 502 batch freezer', prezzo:'€ 3,200', citta:'Bologna (IT)', desc:'Recently serviced, regular maintenance. Great for a new shop.' },
+      { id:2, cat:'pastorizzatori', cond:'ottimo', titolo:'Cattabriga 60L pasteurizer', prezzo:'€ 1,800', citta:'Milan (IT)', desc:'Lightly used, excellent condition. Sold due to equipment upgrade.' },
+      { id:3, cat:'abbattitori', cond:'nuovo', titolo:'5-tray blast chiller', prezzo:'€ 950', citta:'Turin (IT)', desc:'Barely used, practically like new, with original documentation.' },
+      { id:4, cat:'vetrine', cond:'buono', titolo:'12-flavor display case', prezzo:'€ 2,500', citta:'Rome (IT)', desc:'Well-kept curved case, LED lighting in working order.' },
+      { id:5, cat:'banchi', cond:'revisionare', titolo:'2m refrigerated gelato counter', prezzo:'€ 600', citta:'Naples (IT)', desc:'Working, but the compressor should be serviced.' },
+      { id:6, cat:'congelatori', cond:'buono', titolo:'-18°C chest freezer', prezzo:'€ 700', citta:'Florence (IT)', desc:'Good overall condition, ideal as storage backup.' },
+      { id:7, cat:'mantecatori', cond:'buono', titolo:'Carpigiani Labo 30 45 XPL-P batch freezer (used)', prezzo:'€ 15,999', citta:'Külsheim (DE)', desc:'Professional batch freezer, 7.5 kg capacity, 45 kg/h output. Please confirm condition and availability directly with the dealer.', foto:'usato-carpigiani-labo3045xplp.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:8, cat:'mantecatori', cond:'buono', titolo:'Carpigiani Labotronic 30 100 RTL batch freezer (used)', prezzo:'€ 21,999', citta:'Külsheim (DE)', desc:'Professional batch freezer, 16.5 kg capacity, 10 kg/h output. Please confirm condition and availability directly with the dealer.', foto:'usato-carpigiani-labotronic30100rtl.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:9, cat:'mantecatori', cond:'buono', titolo:'Carpigiani Labotronic 20 60 RTL batch freezer (used)', prezzo:'€ 19,999', citta:'Külsheim (DE)', desc:'Professional batch freezer, 10.5 kg capacity, 60 kg/h output. Please confirm condition and availability directly with the dealer.', foto:'usato-carpigiani-labotronic2060rtl.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:10, cat:'mantecatori', cond:'buono', titolo:'Carpigiani Labo 40 60 XPe batch freezer (used)', prezzo:'€ 10,999', citta:'Külsheim (DE)', desc:'Professional batch freezer, 10.5 kg capacity, 60 kg/h output. Please confirm condition and availability directly with the dealer.', foto:'usato-carpigiani-labo4060xpe.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/carpigiani/' },
+      { id:11, cat:'mantecatori', cond:'buono', titolo:'Coldelite Compacta 3002 RTX combination freezer (used)', prezzo:'€ 16,499', citta:'Külsheim (DE)', desc:'Professional combination machine, 7.5 kg capacity, 45 kg/h output. Please confirm condition and availability directly with the dealer.', foto:'usato-coldelite-compacta3002rtx.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/' },
+      { id:12, cat:'pastorizzatori', cond:'buono', titolo:'Frigomat PEB 130 pasteurizer (used)', prezzo:'€ 12,999', citta:'Külsheim (DE)', desc:'Professional pasteurizer, 130-litre capacity. Please confirm condition and availability directly with the dealer.', foto:'usato-frigomat-peb130.jpg', real:true, venditore:'Gennaro Eis GmbH', link:'https://www.gennaro-eis.de/gebrauchtes/eismaschinen/' },
+      { id:13, cat:'vetrine', cond:'buono', titolo:'Ice cream display case Eisvitrine MX Flat', citta:'Erftstadt (DE)', desc:'Available in several sizes (12, 16, 18, 20 or 24 tubs), width from 1.23 to 2.30 m. Reference photo from the dealer: price and availability on request.', foto:'usato-heica-vetrina-mxflat.png', demo:true },
+      { id:14, cat:'mantecatori', cond:'buono', titolo:'Soft-serve / frozen yogurt machine BC Easy 2', citta:'Erftstadt (DE)', desc:'Machine for soft-serve ice cream and frozen yogurt. Reference photo from the dealer: price and availability on request.', foto:'usato-heica-frozenyogurt-bceasy2.png', demo:true },
+      { id:15, cat:'abbattitori', cond:'buono', titolo:'Blast chiller BF 19/15-CW Crio Chill', citta:'Erftstadt (DE)', desc:'Blast-freezing and quick-chill function, 15–19.5 kg capacity. Reference photo from the dealer: price and availability on request.', foto:'usato-heica-schockfroster-crio-chill.png', demo:true },
+      { id:16, cat:'altro', cond:'buono', titolo:'Stainless steel undercounter fridge, 2 doors', desc:'Professional undercounter fridge, two stainless steel doors, digital temperature display. Good overall condition, working. Price on request.', foto:'usato-frigorifero-banco-inox.jpg', mine:true, tel:'+491744877759' },
+      { id:17, cat:'altro', cond:'buono', titolo:'Professional espresso machine, 3 groups', desc:'3-group espresso machine with manual levers, including steam/hot water wand. Good condition, price on request.', foto:'usato-macchina-caffe-3gruppi.jpg', mine:true, tel:'+491744877759' },
+      { id:18, cat:'altro', cond:'buono', titolo:'Professional espresso machine, 2 groups with digital display', desc:'2-group espresso machine with digital keypad and programmable doses, including steam and hot water wand. Good condition, price on request.', foto:'usato-macchina-caffe-2gruppi.jpg', mine:true, tel:'+491744877759' },
+      { id:19, cat:'altro', cond:'ottimo', titolo:'Refrigerated cake display case (Saro)', desc:'Curved refrigerated display case for cakes and pastries, Saro brand. Still wrapped in protective film, excellent condition. Price on request.', foto:'usato-vetrina-torte-saro.jpg', mine:true, tel:'+491744877759' },
+      { id:20, cat:'mantecatori', cond:'buono', titolo:'Valmar Snowy 12 TTi batch freezer (used)', prezzo:'€ 27,572', desc:'Professional batch freezer, output 18–100 litres/hour, 3–17 litres per cycle. Please confirm condition and availability directly with the dealer.', foto:'usato-polartwist-snowy12tti.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:21, cat:'mantecatori', cond:'nuovo', titolo:'Telme Eurofreeze 3-8 / Ecogel 20-60 lab batch freezer (reserved)', desc:'New/demo lab unit, compact dimensions, transparent lid, vertical freezing cylinder, two parallel-working cylinders. Currently reserved: please ask the dealer about future availability.', foto:'usato-polartwist-eurofreeze3-8-ecogel20-60.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:22, cat:'mantecatori', cond:'buono', titolo:'Carpigiani 191 P/SP soft-serve/frozen yogurt machine (used)', prezzo:'€ 6,900', desc:'Countertop soft-serve/frozen yogurt machine, 1 flavour. Please confirm condition and availability directly with the dealer.', foto:'usato-polartwist-191psp.jpg', real:true, venditore:'Polartwist', link:'mailto:info@polartwist.de' },
+      { id:23, cat:'mantecatori', cond:'buono', titolo:'Professional batch freezer (used)', desc:'Professional upright batch freezer, digital control panel, single dispensing spout, on casters. Please confirm condition and availability directly with the dealer.', foto:'usato-eistechnikcenter-mantecatore.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:24, cat:'vetrine', cond:'buono', titolo:'Cristal Tower Panorama display case (used)', desc:'Tower-style display case with panoramic glazing, multiple glass shelves and side hinged doors. Please confirm condition and availability directly with the dealer.', foto:'usato-eistechnikcenter-cristaltower.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:25, cat:'vetrine', cond:'buono', titolo:'Orion scoop display case (used)', desc:'Ice cream scoop/dipping display case, Italian brand Orion, curved panoramic glass, 16-tub capacity. Please confirm condition and availability directly with the dealer.', foto:'usato-eistechnikcenter-orion.jpg', real:true, venditore:'Eistechnikcenter', link:'mailto:info@eistechnikcenter.de' },
+      { id:26, cat:'altro', cond:'buono', titolo:'SilAir 30/D compressor for spaghetti ice press (used)', desc:'Replacement compressor for spaghetti ice press, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:27, cat:'altro', cond:'buono', titolo:'Carpigiani Agemaster 60 Tronic milk ripener (used)', desc:'Ripening/cooling tank for milk mixes, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:28, cat:'altro', cond:'buono', titolo:'C90D oil-free compressor (used)', desc:'Oil-free compressor, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:29, cat:'altro', cond:'buono', titolo:'SilAir 30D compressor for spaghetti ice press (used)', desc:'Replacement compressor for spaghetti ice press, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:30, cat:'altro', cond:'buono', titolo:'JunAir 4-4 compressor for spaghetti ice press (used)', desc:'Replacement compressor for spaghetti ice press, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:31, cat:'mantecatori', cond:'buono', titolo:'Carpigiani 161/P soft-serve machine (used)', desc:'Soft-serve ice cream machine, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:32, cat:'altro', cond:'buono', titolo:'STÖCKEL mobile hot-water hand-wash basin (used)', desc:'Mobile hot-water hand-wash basin for gelato shop/lab use, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:33, cat:'altro', cond:'buono', titolo:'SilAir 30/6 compressor for spaghetti ice press (used)', desc:'Replacement compressor for spaghetti ice press, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:34, cat:'mantecatori', cond:'buono', titolo:'Valmar Snowy 14 batch freezer (used)', desc:'Professional batch freezer, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:35, cat:'mantecatori', cond:'buono', titolo:'Carpigiani Labo 40 60 C batch freezer (used)', desc:'Professional batch freezer, used. Please ask the dealer for price and availability.', real:true, venditore:'Geppetto Eis', link:'mailto:info@geppetto-eis.de' },
+      { id:36, cat:'pastorizzatori', cond:'buono', titolo:'PEB-60 pasteurizer (used)', prezzo:'€ 8,500 net (excl. VAT)', desc:'Professional pasteurizer, power draw 7200 W, capacity 20–60 kg, located in Gießen (Germany). Please confirm condition and availability directly with the dealer.', foto:'usato-eisunion-peb60.jpg', real:true, venditore:'Eisunion Hannover', link:'mailto:hannover@eisunion.de' },
+      { id:37, cat:'pastorizzatori', cond:'buono', titolo:'Carpigiani Pastomaster 120 RTL pasteurizer (used)', prezzo:'€ 15,980', desc:'With authorized dealer warranty, free shipping. Please confirm condition and availability directly with the dealer.', foto:'usato-heica-pastomaster120rtl.jpg', real:true, venditore:'Heica', link:'mailto:info@heica.de' },
+      { id:38, cat:'altro', cond:'buono', titolo:'Mussana Boy 4-litre pastry cream cooker (used)', prezzo:'€ 1,600 + shipping', desc:'Original Mussana unit, available. Please confirm condition and availability directly with the dealer.', foto:'usato-heica-mussanaboy4l.jpg', real:true, venditore:'Heica', link:'mailto:info@heica.de' },
+    ],
+  },
 };
 
 let LANG = 'it';
-function t(k){ return (I18N[LANG] && I18N[LANG][k]) || I18N.it[k] || k; }
+function t(k){ return (I18N[LANG] && I18N[LANG][k] !== undefined) ? I18N[LANG][k] : I18N.it[k]; }
+
 function translateStatic(){
   document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => { el.innerHTML = t(el.getAttribute('data-i18n-html')); });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.setAttribute('placeholder', t(el.getAttribute('data-i18n-ph'))); });
   document.title = t('metaTitle');
   const md = document.querySelector('meta[name="description"]');
   if (md) md.setAttribute('content', t('metaDesc'));
 }
+
+function populateSelects(){
+  const cat = document.getElementById('catFilter');
+  const cond = document.getElementById('condFilter');
+  const sellCat = document.getElementById('sellCategoria');
+  const sellCond = document.getElementById('sellStato');
+  const catLabels = t('catLabels');
+  const condLabels = t('condLabels');
+  const catKeep = cat.value, condKeep = cond.value;
+
+  cat.innerHTML = `<option value="">${t('optTutte')}</option>` +
+    Object.keys(CATEGORY_ICONS).map(k => `<option value="${k}">${CATEGORY_ICONS[k]} ${catLabels[k]}</option>`).join('');
+  cond.innerHTML = `<option value="">${t('optTutti')}</option>` +
+    Object.keys(CONDITION_CLASS).map(k => `<option value="${k}">${condLabels[k]}</option>`).join('');
+  sellCat.innerHTML = Object.keys(CATEGORY_ICONS).map(k => `<option value="${k}">${CATEGORY_ICONS[k]} ${catLabels[k]}</option>`).join('');
+  sellCond.innerHTML = Object.keys(CONDITION_CLASS).map(k => `<option value="${k}">${condLabels[k]}</option>`).join('');
+
+  if ([...cat.options].some(o => o.value === catKeep)) cat.value = catKeep;
+  if ([...cond.options].some(o => o.value === condKeep)) cond.value = condKeep;
+}
+
+function escHtml(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function renderListings(){
+  const grid = document.getElementById('listingGrid');
+  const countEl = document.getElementById('listingCount');
+  const search = document.getElementById('searchInput').value.trim().toLowerCase();
+  const catF = document.getElementById('catFilter').value;
+  const condF = document.getElementById('condFilter').value;
+  const catLabels = t('catLabels');
+  const condLabels = t('condLabels');
+
+  const items = t('listings').filter(item => {
+    if (catF && item.cat !== catF) return false;
+    if (condF && item.cond !== condF) return false;
+    if (search && !item.titolo.toLowerCase().includes(search)) return false;
+    return true;
+  });
+
+  countEl.textContent = t('listingCountText')(items.length);
+
+  grid.innerHTML = items.map(item => `
+    <div class="listing-card${item.foto ? '' : ' listing-card--noimg'}">
+      <span class="listing-ribbon${(item.real || item.mine) ? ' real' : ''}">${escHtml((item.real || item.mine) ? t('realRibbon') : t('esempioRibbon'))}</span>
+      ${item.foto ? `<div class="listing-photo"><img src="${item.foto}" alt="${escHtml(item.titolo)}" loading="lazy"></div>` : ''}
+      <div class="listing-body">
+        ${item.prezzo ? `<div class="listing-price">${escHtml(item.prezzo)}</div>` : ''}
+        <div class="listing-title">${escHtml(item.titolo)}</div>
+        <div class="listing-meta">
+          <span class="cond-tag ${CONDITION_CLASS[item.cond]}">${escHtml(condLabels[item.cond])}</span>
+          ${item.citta ? `<span>📍 ${escHtml(item.citta)}</span>` : ''}
+        </div>
+        <div class="listing-desc">${escHtml(item.desc)}</div>
+        ${item.real ? `<div class="listing-seller">🏬 ${escHtml(item.venditore)}</div>` : ''}
+        ${item.real
+          ? `<a class="btn small" href="${item.link}" target="_blank" rel="noopener">${escHtml(t('vediVenditore')(item.venditore))}</a>`
+          : (item.demo ? '' : `<a class="btn small" href="mailto:marcolestan@gelateriaingredienti.com?subject=${encodeURIComponent(item.titolo)}">${escHtml(t('contattaVenditore'))}</a>`)}
+        ${item.tel ? `<a class="btn small" href="tel:${item.tel.replace(/\s+/g,'')}">${escHtml(t('chiamaVenditore'))}</a>` : ''}
+      </div>
+      ${(!item.real && !item.mine) ? `
+      <a class="cta-overlay listing-card--wanted" href="mailto:marcolestan@gelateriaingredienti.com?subject=${encodeURIComponent(t('ctaSubject'))}" aria-label="${escHtml(t('ctaLine1'))} ${escHtml(t('ctaLine2'))}">
+        <span class="cta-overlay-inner">
+          <span class="cta-spark s1">✦</span><span class="cta-spark s2">✦</span><span class="cta-spark s3">✦</span>
+          <span class="cta-line1">${escHtml(t('ctaLine1'))}</span>
+          <span class="cta-line2">${escHtml(t('ctaLine2'))}</span>
+        </span>
+      </a>` : ''}
+    </div>
+  `).join('');
+}
+
 function setLang(lang){
   LANG = (lang === 'de' || lang === 'en') ? lang : 'it';
   document.getElementById('btnLangIT').classList.toggle('active', LANG === 'it');
   document.getElementById('btnLangDE').classList.toggle('active', LANG === 'de');
   document.getElementById('btnLangEN').classList.toggle('active', LANG === 'en');
   translateStatic();
+  populateSelects();
+  renderListings();
 }
 window.setLang = setLang;
+
+function showToast(msg){ const el = document.getElementById('toast'); el.textContent = msg; el.classList.add('show'); setTimeout(()=> el.classList.remove('show'), 2400); }
+
 document.getElementById('copyYear').textContent = String(new Date().getFullYear());
 translateStatic();
+populateSelects();
+renderListings();
+
+document.getElementById('searchInput').addEventListener('input', renderListings);
+document.getElementById('catFilter').addEventListener('change', renderListings);
+document.getElementById('condFilter').addEventListener('change', renderListings);
+
+(function(){
+  const overlay = document.getElementById('sellModalOverlay');
+  const form = document.getElementById('sellForm');
+  const btnOpen = document.getElementById('btnOpenSell');
+  const btnClose = document.getElementById('sellModalClose');
+
+  function openModal(){ overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal(){ overlay.classList.remove('open'); document.body.style.overflow = ''; }
+
+  btnOpen.addEventListener('click', openModal);
+  btnClose.addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal(); });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalLabel = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = t('sellSubmitting');
+    // FormData (not URL-encoded) so an attached photo is sent along with the other fields.
+    const body = new FormData(form);
+    fetch('/', {
+      method: 'POST',
+      body,
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error('Invio non riuscito: ' + response.status);
+        showToast(t('toastSellSuccess'));
+        closeModal();
+        form.reset();
+      })
+      .catch(() => {
+        showToast(t('toastSellError'));
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
+      });
+  });
+})();
 </script>
 <script>
 (function(){

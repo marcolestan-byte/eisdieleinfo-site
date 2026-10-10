@@ -19,13 +19,13 @@
   gtag('js', new Date());
   gtag('config', 'G-65E7207759');
 </script>
-<title>Aziende produttrici di attrezzature per gelateria | Confronto Attrezzature Gelateria</title>
-<meta name="description" content="Schede delle aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori per gelateria: fondazione, categorie, certificazioni e presenza sul mercato.">
-<link rel="canonical" href="https://gelateriaattrezzature.com/aziende.html">
-<meta property="og:title" content="Aziende produttrici di attrezzature per gelateria | Confronto Attrezzature Gelateria">
-<meta property="og:description" content="Schede delle aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori per gelateria: fondazione, categorie, certificazioni e presenza sul mercato.">
+<title>Guida alla scelta del mantecatore – Confronto Attrezzature Gelateria</title>
+<meta name="description" content="Come scegliere il mantecatore giusto per la tua gelateria: tipologie, caratteristiche tecniche da confrontare e fasce di prezzo indicative.">
+<link rel="canonical" href="https://gelateriaattrezzature.com/mantecatori-gelato.html">
+<meta property="og:title" content="Guida alla scelta del mantecatore – Confronto Attrezzature Gelateria">
+<meta property="og:description" content="Come scegliere il mantecatore giusto per la tua gelateria: tipologie, caratteristiche tecniche da confrontare e fasce di prezzo indicative.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://gelateriaattrezzature.com/aziende.html">
+<meta property="og:url" content="https://gelateriaattrezzature.com/mantecatori-gelato.html">
 <meta name="theme-color" content="#3C7DB0">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" href="icon-192.png">
@@ -131,12 +131,18 @@
   .card{ background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 24px; margin-top: 22px; border: 1px solid var(--line); }
   .card h2{ margin: 0 0 16px; font-size: 1.08rem; font-weight:800; color: var(--hazelnut-dark); display:flex; align-items:center; gap:8px; letter-spacing:-0.01em; }
   .card p{ line-height:1.65; }
+  .info-note{ background: var(--cream-2); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; font-size: 0.82rem; line-height:1.6; margin-top: 14px; }
   footer.note{ max-width:1020px; margin: 26px auto 0; padding: 22px 18px; font-size:0.75rem; color: var(--ink-soft); text-align:center; line-height:1.65; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--line); }
   footer.note a{ color: var(--pistachio-dark); font-weight:700; text-decoration:none; }
   footer.note a:hover{ text-decoration:underline; }
   .legal-notice{ margin: 14px auto 0; max-width: 720px; background: var(--cream-2); border: 1px solid var(--amarena); border-radius: var(--radius-sm); padding: 12px 16px; font-size: 0.72rem; line-height:1.6; color: var(--ink); }
   .legal-notice strong{ color: var(--amarena-dark); display:block; margin-bottom:4px; font-size:0.78rem; }
   .back-link{ display:inline-block; margin-top:6px; }
+  .demo-video-wrap{ margin-top:14px; border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow); background:#000; }
+  .demo-video-wrap video{ width:100%; display:block; max-height:520px; background:#000; }
+  .demo-video-caption{ font-size:0.78rem; color:var(--ink-soft); margin-top:8px; }
+  .guide-list{ margin:10px 0 0; padding-left:22px; line-height:1.65; }
+  .guide-list li{ margin-bottom:8px; }
 
   .bg-photo{
     position: fixed;
@@ -177,411 +183,60 @@
     <button class="lang-btn" id="btnLangDE" onclick="setLang('de')" type="button">🇩🇪 DE</button>
     <button class="lang-btn" id="btnLangEN" onclick="setLang('en')" type="button">🇬🇧 EN</button>
   </div>
-  <h1 data-i18n="aziendeTitle">🏢 Aziende</h1>
+  <h1 data-i18n="guideTitle">📖 Guida alla scelta del mantecatore</h1>
 </header>
 
 <nav class="quick-nav" id="quickNav" aria-label="Navigazione rapida">
   <div class="nav-row">
-    <a class='nav-archivio' data-i18n='navArchivio' href='/#archiveSection'>📚 Archivio</a>
-    <a class='nav-chisono' data-i18n='navChiSiamo' href='/chi-sono'>👤 Chi sono</a>
-    <a class='active nav-aziende' data-i18n='navAziende' href='/aziende'>🏢 Aziende</a>
-    <a class='nav-notizie' data-i18n='navNotizie' href='/notizie'>📰 Notizie</a>
-    <a class='nav-usato' data-i18n='navUsato' href='/usato'>♻️ Usato</a>
-    <a class='nav-usato-aziende' data-i18n='navUsatoAziende' href='/aziende-usato'>🏬 Rivenditori Usato</a>
-    <a class='nav-vetrine' href='/vetrine-gelato'>🧊 Vetrine</a>
-    <a class='nav-abbattitori' href='/abbattitori-gelato'>❄️ Abbattitori</a>
-    <a class='nav-video' href='/video-demo'>🎬 Video</a>
+    <a href="index.html#archiveSection" class="nav-archivio" data-i18n="navArchivio">📚 Archivio</a>
+    <a href="chi-sono.html" class="nav-chisono" data-i18n="navChiSiamo">👤 Chi sono</a>
+    <a href="aziende.html" class="nav-aziende" data-i18n="navAziende">🏢 Aziende</a>
+    <a href="notizie.html" class="nav-notizie" data-i18n="navNotizie">📰 Notizie</a>
+    <a href="usato.html" class="nav-usato" data-i18n="navUsato">♻️ Usato</a>
+    <a href="aziende-usato.html" class="nav-usato-aziende" data-i18n="navUsatoAziende">🏬 Rivenditori Usato</a>
+    <a href="vetrine-gelato.html" class="nav-vetrine">🧊 Vetrine</a>
+    <a href="abbattitori-gelato.html" class="nav-abbattitori">❄️ Abbattitori</a>
+    <a href="video-demo.html" class="nav-video">🎬 Video</a>
   </div>
   <div class="nav-row">
-    <a class='nav-arredamento' data-i18n='navArredamento' href='/arredamento-gelateria'>🪑 Arredamento</a>
-    <a class='nav-accessori' data-i18n='navAccessori' href='/accessori-gelateria'>🧰 Accessori</a>
+    <a href="arredamento-gelateria.html" class="nav-arredamento" data-i18n="navArredamento">🪑 Arredamento</a>
+    <a href="accessori-gelateria.html" class="nav-accessori" data-i18n="navAccessori">🧰 Accessori</a>
   </div>
 </nav>
 <p class="construction-note" data-i18n="constructionNote">🚧 Sito in costruzione</p>
 
 <main>
   <section class="card">
-    <p data-i18n="aziendeText">Le aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori presenti nell'archivio, con una breve scheda per ciascuna.</p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top:16px;">
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Bamix</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Svizzera · Svizzera</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1954 circa — marchio svizzero storico</div><div><b data-i18n="colCategorie">Categorie</b>: Mixer a immersione professionali (linea Gastro)</div><div style="margin-top:6px;">Marchio svizzero storico; motore garantito a vita con doppio isolamento; gamma Gastro (200W/350W) pensata per uso professionale intensivo, lavorazione fino a 20 litri</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — marchio di origine germanofona (Svizzera), ampiamente diffuso in area DACH<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://bamix.com/" target="_blank" rel="noopener">https://bamix.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Bravo</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Montecchio Maggiore (VI) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1967 (Genesio Bravo)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, Pastorizzatori, macchine per pasticceria, cioccolateria e ristorazione</div><div style="margin-top:6px;">Inventore nel 1974 della prima macchina multifunzione per gelato artigianale (&#x27;Trittico&#x27;); forte spinta sull&#x27;innovazione dei macchinari multifunzione</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Presente — filiale tedesca aperta nel 2015 (oltre a Francia 1982, Asia 2010, Nord America 2011, Emirati Arabi 2017)</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via della Tecnica, 5, Montecchio Maggiore (VI), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0444.707700</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0444.4993.33</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@bravo.it">info@bravo.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.bravo.it/" target="_blank" rel="noopener">https://www.bravo.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Carpigiani</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Anzola dell&#x27;Emilia (BO) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1944 (Bruto e Poerio Carlo Carpigiani); dal 1989 parte del gruppo ALI Group</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, Pastorizzatori, Abbattitori, macchine gelato soft</div><div style="margin-top:6px;">Leader mondiale del settore (circa 35% di quota di mercato globale); prima azienda del comparto certificata ISO 9001 (1993); gestisce la Gelato University con oltre 20 sedi nel mondo</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: ISO 9001</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — filiale diretta in Germania, presenza in oltre 10 paesi</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Emilia, 45, Anzola dell'Emilia (BO), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 051 6505 11</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 051 732178</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@carpigiani.it">info@carpigiani.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.carpigiani.com/it/" target="_blank" rel="noopener">https://www.carpigiani.com/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Cattabriga</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Anzola dell&#x27;Emilia (BO) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1927 (Otello Cattabriga); dal 2010 parte del gruppo Iceteam 1927 (con Coldelite, Promag, Ott-Freezer)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori</div><div style="margin-top:6px;">Prima azienda al mondo ad aver ideato, prodotto e commercializzato macchine per la produzione del gelato; inventore del meccanismo brevettato a &#x27;vite senza fine&#x27;; leader storico del settore</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — nessuna menzione diretta nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Emilia, 45/A, Anzola dell'Emilia (BO), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39.051.6505.330</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39.051.6505.331</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@cattabriga.com">info@cattabriga.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.iceteam1927.it/i-brand/cattabriga/" target="_blank" rel="noopener">https://www.iceteam1927.it/i-brand/cattabriga/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Coldline</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Italia · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Abbattitori, frigoriferi, fermalievitazione</div><div style="margin-top:6px;">Ampia gamma multifunzione — la linea Vision unisce abbattitore, frigorifero e fermalievitazione in un solo apparecchio; forte focus su design e tecnologia (&#x27;cultura del freddo&#x27;)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://coldline.it/" target="_blank" rel="noopener">https://coldline.it/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Frigomat</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Guardamiglio (LO) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Oltre 50 anni di storia (data di fondazione precisa non specificata nelle fonti consultate)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, Pastorizzatori, macchine gelato soft</div><div style="margin-top:6px;">Certificazione ISO 9001:2015; gamma ampia e personalizzabile; forte rete di distribuzione internazionale (sito disponibile in 7 lingue)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: ISO 9001:2015</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Presente — sito e distribuzione anche in lingua tedesca</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via 1° Maggio, 28, Guardamiglio (LO), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0377.4150.11</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0377.4510.79</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@frigomat.com">info@frigomat.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.frigomat.com/it" target="_blank" rel="noopener">https://www.frigomat.com/it</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Irinox</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Corbanese di Tarzo (TV) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Abbattitori (linee MultiFresh Next, EasyFresh Next, SimplyFresh)</div><div style="margin-top:6px;">Riferimento di settore per l&#x27;abbattimento di temperatura; tecnologia MultiSensor a 5 punti per il controllo della temperatura al cuore del prodotto; gas refrigerante naturale R-290 (propano) a basso impatto ambientale; range operativo da -35°C a +85°C</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.irinoxprofessional.com/" target="_blank" rel="noopener">https://www.irinoxprofessional.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Mondial Framec</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Borgo San Dalmazzo (CN) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Vetrine refrigerate, armadi frigoriferi e congelatori per gelaterie e pasticcerie</div><div style="margin-top:6px;">Specializzata in vetrine e frigoriferi dedicati al settore gelateria, pasticceria ed enoteca</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.mondialframec.com/" target="_blank" rel="noopener">https://www.mondialframec.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Robot Coupe</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Francia · Francia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mixer a immersione (gamme Mini, Compact, Large — serie MP e CMP)</div><div style="margin-top:6px;">Gamma molto ampia segmentata per numero di porzioni lavorabili (da 1-50 fino a oltre 1200 porzioni), con varianti a velocità variabile (V.V.)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.robot-coupe.com/ita/it" target="_blank" rel="noopener">https://www.robot-coupe.com/ita/it</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Sirman</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">San Zenone degli Ezzelini (TV) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mixer a immersione e macchine per la preparazione alimenti</div><div style="margin-top:6px;">Ampia gamma di frullatori a immersione professionali per gastronomia e gelateria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.sirman.com/" target="_blank" rel="noopener">https://www.sirman.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Tecnodom</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Italia · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Frigoriferi e congelatori ad armadio professionali</div><div style="margin-top:6px;">Ampia gamma di armadi frigo e congelatori professionali (temperatura positiva e negativa), molto diffusi nel canale HORECA</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate<div style="margin-top:6px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.tecnodomspa.com/" target="_blank" rel="noopener">https://www.tecnodomspa.com/</a></div></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Telme</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Colognola ai Colli (VR) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Pastorizzatori (linee Evopastò ed Ecomix T)</div><div style="margin-top:6px;">Due linee distinte: Evopastò (alimentazione a gravità, modelli 30/60/60A/120) ed Ecomix T (con pompa di pressurizzazione, modelli 60/60A/120/180/200) per gelateria, pasticceria e gastronomia</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via S. Pertini, 10, Codogno (LO), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0377.4666.60</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0377.4666.90</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:telme@telme.it">telme@telme.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.telme.it/" target="_blank" rel="noopener">https://www.telme.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Innova</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Cerete (BG) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d. (azienda descritta come realtà moderna e dinamica, attiva da anni nel settore)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori (banco e verticali), pastorizzatori, macchine combinate, macchine soft</div><div style="margin-top:6px;">Vendita diretta dal produttore al gelatiere, prezzo uniforme e trasparente su tutti i canali di vendita, garanzia estendibile fino a 5 anni; macchine interamente progettate e costruite in Italia</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Made in Italy</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Sito disponibile anche in tedesco; presenza sui mercati europei non specificata nel dettaglio nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Lentino, Loc. Cedrini, Cerete (BG), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0346.634.97</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0346.640.838</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@innovaitalia.com">info@innovaitalia.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.innovaitalia.com/" target="_blank" rel="noopener">http://www.innovaitalia.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Valmar D.O.O.</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Volčja Draga · Slovenia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Macchine per gelato artigianale e industriale</div><div style="margin-top:6px;">Produttore sloveno di macchinari per la produzione di gelato, con linee dedicate sia alla gelateria artigianale sia alla produzione industriale</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Dombrava, 1A, Volčja Draga, Slovenia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +386 53311777</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +386 53311778</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@valmar.eu">info@valmar.eu</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://valmar.eu/it/" target="_blank" rel="noopener">http://valmar.eu/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Kälte Rudi</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Keltern · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1964</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori (linea DICOM Diagonal Freezer), pastorizzatori (DIBASE), mantecatori tradizionali</div><div style="margin-top:6px;">Marchio tedesco storico (&#x27;Quality made in Germany since 1964&#x27;); gamma dedicata sia alla gelateria artigianale sia alla produzione più intensiva</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — azienda con sede in Germania</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Dieselstrasse, 5/7, Keltern, Germania</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +49 (0)7236/9829-0</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +49 (0)7236/9829-22</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@kaelte-rudi.de">info@kaelte-rudi.de</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.kaelte-rudi.de/home/" target="_blank" rel="noopener">https://www.kaelte-rudi.de/home/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Lawer</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Cossato (BI) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Sistemi di dosaggio ed erogazione automatica di polveri e ingredienti alimentari</div><div style="margin-top:6px;">Specializzata in sistemi di dosaggio automatico per l&#x27;industria alimentare, applicabili anche alla preparazione di basi e ingredienti per gelateria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Amendola, 12/14, Cossato (BI), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 015 9899511</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 015 984221</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:sales@lawer.com">sales@lawer.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.lawer.com/" target="_blank" rel="noopener">https://www.lawer.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Safac</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Alte di Montecchio Maggiore (VI) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Macchinari e attrezzature per gelateria e pasticceria</div><div style="margin-top:6px;">Fornitore di macchinari e attrezzature per il settore gelateria e pasticceria fresca</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: V.le Pietro Ceccato, 27, Alte di Montecchio Maggiore (VI), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 0444 69 68 46</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 0444 49 05 97</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@safac.it">info@safac.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.safac.it/" target="_blank" rel="noopener">http://www.safac.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Staff Ice System</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Rimini (RN) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 1959</div><div><b data-i18n="colCategorie">Categorie</b>: Apparecchiature per il freddo, macchine per gelato e pasticceria</div><div style="margin-top:6px;">Punto di riferimento sul mercato delle apparecchiature per il freddo, per le macchine del gelato e della pasticceria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Anna Frank, 8, Rimini (RN), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 0541 373250</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 0541 371376</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:office@staff1959.com">office@staff1959.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.staff1959.com/" target="_blank" rel="noopener">https://www.staff1959.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Friulinox</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Taiedo di Chions (PN) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Vetrine refrigerate, abbattitori e soluzioni combinate per gelateria (linea Storage Ice Cream)</div><div style="margin-top:6px;">Produttore di soluzioni professionali di refrigerazione e conservazione, con vetrine e armadi dedicati alla gelateria oltre ad abbattitori e sistemi multifunzione</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Treviso, 4, Taiedo di Chions (PN), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0434 6354 11</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39.0434.635414</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@friulinox.com">info@friulinox.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.friulinox.com/" target="_blank" rel="noopener">http://www.friulinox.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Icetech</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Azzano San Paolo (BG) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Macchine per gelato artigianale professionali (linea "La Gelatiera")</div><div style="margin-top:6px;">Produttore di macchine professionali per il gelato artigianale, con gamma dedicata anche a grandi impianti e accessori</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Piemonte, 2, Azzano San Paolo (BG), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 035.320.400</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 035.3203.80</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@icetechitaly.it">info@icetechitaly.it</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.icetechitaly.it/" target="_blank" rel="noopener">http://www.icetechitaly.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Bovo</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Dosson di Casier (TV) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Anni &#x27;40 (fondatore Bruno Pillon)</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, pastorizzatori, cuocicreme, mulini a sfere per gelateria e pasticceria</div><div style="margin-top:6px;">Storico marchio italiano nato negli anni &#x27;40; partecipò all&#x27;apertura della Fiera del Gelato di Longarone nel 1959; oggi propone anche soluzioni Industria 4.0</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Viale della Liberazione, 46, Dosson di Casier (TV), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: 0422.38.22.85</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: 0422.38.00.02</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@bovogelati.com">info@bovogelati.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.bovogelati.com/" target="_blank" rel="noopener">http://www.bovogelati.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Martellato</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Vigonza (PD) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Stampi per semifreddi, torte gelato e pasticceria</div><div style="margin-top:6px;">Produttore italiano di stampi professionali per semifreddi, torte gelato e pasticceria, oltre ad attrezzature e prodotti per la pasticceria in generale</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Rovigo, 1/B, Vigonza (PD), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 049 7800155</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 049 8087744</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@martellato.com">info@martellato.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.martellato.com/" target="_blank" rel="noopener">https://www.martellato.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Silikomart</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Mellaredo di Pianiga (VE) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Stampi in silicone per semifreddi, torte gelato e pasticceria</div><div style="margin-top:6px;">Specializzata in stampi in silicone professionali per pasticceria, gelateria e semifreddi, con gamma molto ampia di forme e formati</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Tagliamento, 78, Mellaredo di Pianiga (VE), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 041 5190550</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 041 5190290</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:enzo.danieletto@silikomart.com">enzo.danieletto@silikomart.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.silikomart.com/home_silikomart_it.html" target="_blank" rel="noopener">https://www.silikomart.com/home_silikomart_it.html</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Pavoni Italia</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Suisio (BG) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Stampi per semifreddi, torte gelato e pasticceria</div><div style="margin-top:6px;">Produttore italiano di stampi professionali per pasticceria e gelateria, con gamma dedicata a semifreddi e torte gelato</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via E. Fermi, s.n., Suisio (BG), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 035 493 4111</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 035 494 8200</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@pavonitalia.com">info@pavonitalia.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://pavoniitalia.com/it/" target="_blank" rel="noopener">https://pavoniitalia.com/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Gel Matic</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Grassobbio (BG) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Macchine a mantecazione espressa per gelato soft, frozen yogurt, smoothie, sundae e frappè</div><div style="margin-top:6px;">Specializzata in macchine professionali a mantecazione espressa per gelato soft e prodotti frozen affini (smoothie, sundae, frappè/blend)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Via Zanica, 6/C, Grassobbio (BG), Italia</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 035.525138</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: +39 035.452239</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@gelmatic.com">info@gelmatic.com</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.gelmatic.com/it/" target="_blank" rel="noopener">https://www.gelmatic.com/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">4Gel</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori</div><div style="margin-top:6px;">Produttore di mantecatori professionali (gamma "Evomantecatore"), nato dall'esperienza del proprio staff nel settore gelateria e pasticceria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://4gel.it/" target="_blank" rel="noopener">https://4gel.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Nemox</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">n.d.</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori, Abbattitori</div><div style="margin-top:6px;">Produttore di mantecatori e abbattitori per gelateria (gamma "i-Green")</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.nemox.com/" target="_blank" rel="noopener">https://www.nemox.com/</a></div>
-        </div>
-        <div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:8px;">
-          <a class="source-link" href="https://www.nemox.com/prodotti/macchine-da-gelato/#banco" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">🍨 Macchine da banco</a>
-          <a class="source-link" href="https://www.nemox.com/prodotti/macchine-da-gelato/#ruote" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">🛞 Macchine a ruote</a>
-          <a class="source-link" href="https://www.nemox.com/prodotti/vetrine-per-gelato/" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">🖼️ Vetrine gelato</a>
-          <a class="source-link" href="https://www.nemox.com/prodotti/abbattitori-di-temperatura/" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">❄️ Abbattitori</a>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Iceteam 1927</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">n.d.</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Non specificata nelle fonti consultate</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori</div><div style="margin-top:6px;">Produttore di mantecatori per gelateria (modello Stargel 4)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Non specificata nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colFax">Fax</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: n.d.</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.iceteam1927.it/" target="_blank" rel="noopener">https://www.iceteam1927.it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Miles (Hangzhou Gelato Tech Co., Ltd.)</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Hangzhou, Zhejiang · Cina</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: 2020</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori da banco e a ciclo continuo, macchine gelato soft, carretti gelato; linea Galaxy (mantecatore professionale e vetrina a pozzetti in un unico blocco, modelli EV / Pro V4 / Pro-Max V8)</div><div style="margin-top:6px;">Produttore cinese (brand Miles) con oltre 18.000 macchine/anno prodotte; esporta il 71-90% della produzione in Nord e Sud America, Europa, Sud-Est asiatico, Medio Oriente e Oceania; clientela gelaterie, pasticcerie, hotel, parchi a tema</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: ISO 9001; marcatura CE su modelli selezionati</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — nessuna filiale europea diretta nota; distribuzione tramite rivenditori</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: No. 585 Shushangwang, Jinhua Town, Xiaoshan District, Hangzhou, Zhejiang, Cina</div><div style="margin-top:2px;">Referente/distributore Italia: Miles S.R.L., Via Enrico Cialdini 37, Milano, Italia (P.IVA 13912560961)</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://milestac.en.alibaba.com/" target="_blank" rel="noopener">https://milestac.en.alibaba.com/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">YC Italia</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Venezia · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d. — ragione sociale F.A.R.H. Snc di Bottacin Antonio &amp; C.</div><div><b data-i18n="colCategorie">Categorie</b>: Mantecatori da banco compatti; attrezzature professionali per ristorazione in generale</div><div style="margin-top:6px;">Mantecatori da banco compatti, descritti dal produttore come silenziosi e veloci, pensati per ristoranti, hotel e gelaterie con spazi limitati</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — nessuna menzione diretta nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Venezia, Italia (sede F.A.R.H. Snc di Bottacin Antonio &amp; C.)</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +39 041 437118</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://ycitalia.com/it/" target="_blank" rel="noopener">https://ycitalia.com/it/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Plastitalia Group</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d.</div><div><b data-i18n="colCategorie">Categorie</b>: Vetrine refrigerate per gelato a pozzetti/carapine</div><div style="margin-top:6px;">Vetrine a pozzetti con raffreddamento rapido (temperatura di regime in meno di un'ora) e controllo indipendente per pozzetto, per evitare stratificazioni del gelato</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — nessuna menzione diretta nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: n.d. — verificare sede legale</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.plastitalia.it/" target="_blank" rel="noopener">https://www.plastitalia.it/</a></div>
-        </div>
-      </div>
-    </div>
+    <h2><span data-i18n="s1Title">🍨 Cos'è un mantecatore e perché la scelta conta</span></h2>
+    <p data-i18n="s1Text">Il mantecatore (o "macchina per gelato", batch freezer) è il cuore di ogni laboratorio: trasforma la miscela liquida in gelato, incorporando aria e raffreddando rapidamente per ottenere la giusta struttura cremosa. Sceglierlo bene significa produttività, qualità costante del gelato e costi di gestione sotto controllo per anni — le differenze tra un modello e l'altro, spesso invisibili su una scheda tecnica, si sentono ogni giorno in laboratorio.</p>
   </section>
 
   
 
   <section class="card">
-    <h3 style="margin:0 0 6px; font-size:1.05rem;">🏢 Rivenditori e grossisti (attrezzature e materie prime per gelateria)</h3>
-    <p style="font-size:0.9rem; color:var(--ink-soft); margin:0 0 16px;">A differenza delle aziende elencate sopra (produttori di macchinari), queste sono attività di commercio all'ingrosso/rivendita: distribuiscono macchine, materie prime e forniture di più marchi, spesso con consulenza e progettazione locale. Utili soprattutto per chi cerca un unico fornitore B2B in Germania o Austria.</p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;">
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Gelato24</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Neuenkirchen · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Oltre 35 anni di attività — nata come gelateria di famiglia</div><div><b data-i18n="colCategorie">Categorie</b>: Rivenditore/grossista — macchine per gelato, pastorizzatori, vetrine refrigerate, accessori e materie prime</div><div style="margin-top:6px;">Offre anche consulenza, progettazione del locale e assistenza tecnica/ricambi; vende esclusivamente a professionisti/imprenditori (B2B, non a privati)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede in Germania</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://gelato24.de/" target="_blank" rel="noopener">https://gelato24.de/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">EISUNION GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Germania (6 filiali)</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d.</div><div><b data-i18n="colCategorie">Categorie</b>: Grossista specializzato — materie prime (paste e basi gelato), macchine per gelato, vetrine frigorifere, pastorizzatori, banchi in acciaio inox, arredo gelateria, oltre a caffè/snack/prodotti da forno</div><div style="margin-top:6px;">Si presenta come il principale grossista di gelato tedesco, con circa 4.000 articoli a catalogo, partner B2B per l'equipaggiamento professionale della gelateria</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — 6 filiali sul territorio tedesco</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.eisrohstoffhandel.de" target="_blank" rel="noopener">https://www.eisrohstoffhandel.de</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Merten &amp; Pusch GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Dortmund · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Azienda familiare, specializzata nel gelato dagli anni '70</div><div><b data-i18n="colCategorie">Categorie</b>: Grossista (Eisgroßhandel) — materie prime per la produzione di gelato, dolci surgelati, macchine da caffè e per gelato, forniture gastro</div><div style="margin-top:6px;">Rivolta a gelaterie, panetterie, pasticcerie e operatori di luna park; anche articoli promozionali personalizzati (coppette, tovaglioli)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede a Dortmund più filiale a Gau-Algesheim</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="http://www.eisgrosshandel.de" target="_blank" rel="noopener">http://www.eisgrosshandel.de</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">NordCap GmbH &amp; Co. KG</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d.</div><div><b data-i18n="colCategorie">Categorie</b>: Produttore/fornitore di attrezzature professionali per ristorazione — refrigerazione/congelamento, cottura, lavaggio, soluzioni per gelateria e pizza</div><div style="margin-top:6px;">Portafoglio completo per raffreddare, congelare, presentare, cuocere e lavare; forte rete di assistenza a livello nazionale, garanzia estesa e supporto post-vendita</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede in Germania</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.nordcap.de" target="_blank" rel="noopener">https://www.nordcap.de</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">GroßHandel EIS GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Kirchstetten · Austria</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: n.d.</div><div><b data-i18n="colCategorie">Categorie</b>: Grossista specializzato — macchine per gelato, basi e paste (latte/frutta), topping e salse, decorazioni, coni e coppette, attrezzature di vendita, materiale pubblicitario</div><div style="margin-top:6px;">Partner di aziende che producono, decorano, vendono o pubblicizzano gelato; possiede il marchio "Eis &amp; Gelati" per prodotti di qualità professionale</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Da verificare — azienda austriaca, presenza diretta in Germania non nota</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Aschberg 11, 3062 Kirchstetten, Austria</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.eisgmbh.at/" target="_blank" rel="noopener">https://www.eisgmbh.at/</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <img src="gennaro-eis-logo.png" alt="Logo Gennaro Eis GmbH" style="max-width:150px; height:auto; display:block; margin-bottom:8px;">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Gennaro Eis GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Külsheim · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Oltre 20 anni di attività nel settore; sede attuale di 1.200&nbsp;m² dal 2021</div><div><b data-i18n="colCategorie">Categorie</b>: Rivenditore — mantecatori, pastorizzatori, macchine combinate, abbattitori, vetrine e banchi gelato, macchine gelato soft, distributori automatici, macchine da caffè, ricambi e accessori</div><div style="margin-top:6px;">Rivenditore tedesco specializzato in attrezzature nuove e usate per gelaterie, con focus su marchi tedeschi e italiani; officina di assistenza interna, ampio magazzino ricambi (shop dedicato gelatoparts.de) e mezzi mobili per la vendita ambulante (carretti, bici, veicoli)</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — azienda con sede in Germania</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Wolferstetter Weg 23, 97900 Külsheim, Germania</div><div style="margin-top:2px;"><b data-i18n="colTelefono">Telefono</b>: +49 (0) 9345 – 927 687 4</div><div style="margin-top:2px;"><b data-i18n="colEmail">Email</b>: <a href="mailto:info@gennaro-eis.de">info@gennaro-eis.de</a></div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.gennaro-eis.de" target="_blank" rel="noopener">https://www.gennaro-eis.de</a></div>
-        </div>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <img src="geppetto-eis-logo.png" alt="Logo Geppetto Eis GmbH" style="max-width:150px; height:auto; display:block; margin-bottom:8px;">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Geppetto Eis GmbH</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Wildeshausen · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Attiva dal 1994 (famiglia Ienco)</div><div><b data-i18n="colCategorie">Categorie</b>: Produttore/grossista — compressori, macchine gelato e soft ice, spaghetti-eispressen, affettatrici e attrezzature ausiliarie (anche ricondizionate)</div><div style="margin-top:6px;">Produttore tedesco di attrezzature per gelateria, con catalogo completo di macchine nuove (incluse le presse per spaghetti eis) e una linea dedicata di macchine usate revisionate (Carpigiani, VALMAR, JunAir, Stöckel).</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede in Germania</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Visbeker Straße 51, 27793 Wildeshausen, Germania</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://www.geppetto-eis.de/geppetto/" target="_blank" rel="noopener">https://www.geppetto-eis.de/geppetto/</a></div>
-        </div>
-        <p style="margin:12px 0 0;"><a class="source-link" href="https://www.geppetto-eis.de/produktkategorie/spaghetti-eispressen/" target="_blank" rel="noopener" style="display:inline-block; background:var(--pistachio); color:#fff; font-weight:700; padding:8px 16px; border-radius:999px; text-decoration:none; font-size:0.85rem;">🍝 Spaghetti Eis</a></p>
-      </div>
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Fontana GmbH &amp; Co. KG</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Neuenkirchen · Germania</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b data-i18n="colFondazione">Fondazione</b>: Decenni di esperienza nel settore (data precisa non specificata)</div><div><b data-i18n="colCategorie">Categorie</b>: Rivenditore/fornitore completo — macchinari per gelato, attrezzature per eislaboratori, macchinari a norma UE, ricambi e servizi</div><div style="margin-top:6px;">Si definisce "fornitore completo, risolutore di problemi, generatore di idee": consulenza, progettazione, finanziamento (leasing) ed esecuzione chiavi in mano; marchio "Melkeis" dedicato alle aziende agricole che vogliono produrre gelato proprio</div><div style="margin-top:6px;"><b data-i18n="colCertificazioni">Certificazioni</b>: Non specificate nelle fonti consultate</div><div style="margin-top:6px;"><b data-i18n="colPresenzaDE">Presenza in Germania</b>: Alta — sede in Germania</div><div style="margin-top:6px;"><b data-i18n="colIndirizzo">Indirizzo</b>: Dieselstraße 15, 48485 Neuenkirchen, Germania</div><div style="margin-top:2px;"><b data-i18n="colSito">Sito web</b>: <a href="https://fontana-equipment.de/" target="_blank" rel="noopener">https://fontana-equipment.de/</a></div>
-        </div>
-      </div>
-    </div>
+    <h2><span data-i18n="s3Title">🧭 Le principali tipologie</span></h2>
+    <div data-i18n-html="s3List"><ul class="guide-list">
+      <li><strong>Verticali a cilindro singolo</strong> — la scelta più diffusa per gelaterie artigianali di piccole-medie dimensioni; producono un ciclo alla volta, sono compatti e relativamente economici.</li>
+      <li><strong>Orizzontali "sottozero" a doppio cilindro</strong> — pensati per produzioni più elevate e gelato molto cremoso da vetrina di alta gamma; cicli più lunghi ma resa maggiore.</li>
+      <li><strong>Continui</strong> — tipici della produzione industriale o di grandi volumi, lavorano senza interruzione tra un ciclo e l'altro; poco diffusi in laboratorio artigianale.</li>
+      <li><strong>Con o senza produzione autonoma di freddo</strong> — alcuni modelli hanno il gruppo frigorifero incorporato (più semplici da installare), altri richiedono un impianto di raffreddamento centralizzato (più efficienti su larga scala, ma con costi di impianto maggiori).</li>
+    </ul></div>
   </section>
+
   <section class="card">
-    <h3 style="margin:0 0 6px; font-size:1.05rem;">♻️ Rivenditori di attrezzature usate per gelateria</h3>
-    <p style="font-size:0.9rem; color:var(--ink-soft); margin:0 0 16px;">Aziende specializzate in acquisto, revisione e rivendita di macchinari usati (mantecatori, vetrine, pastorizzatori, abbattitori) per gelaterie e pasticcerie — utili per chi cerca attrezzature ricondizionate a prezzi più contenuti.</p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;">
+    <h2><span data-i18n="s4Title">🔧 Caratteristiche tecniche da confrontare</span></h2>
+    <div data-i18n-html="s4List"><ul class="guide-list">
+      <li><strong>Capacità del cilindro e resa oraria</strong> — quanto gelato riesci a produrre per ciclo e in un turno di lavoro.</li>
+      <li><strong>Potenza installata e alimentazione</strong> (mono o trifase) — incide su consumi e sull'impianto elettrico necessario in laboratorio.</li>
+      <li><strong>Tipo di gas refrigerante</strong> — i modelli più recenti usano gas a basso impatto ambientale (es. R290), spesso richiesto anche dalle normative più recenti.</li>
+      <li><strong>Ingombro e peso</strong> — fondamentali se lo spazio in laboratorio è limitato.</li>
+      <li><strong>Rumorosità e manutenzione</strong> — da verificare soprattutto per laboratori a vista o in centri storici con vincoli di orario.</li>
+    </ul></div>
+  </section>
 
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Good Gelato</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Puglia · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Acquisto, revisione e rivendita di attrezzature professionali usate per gelaterie e pasticcerie</div>
-          <div style="margin-top:6px;"><b>Note</b>: Showroom in Puglia; servizio di valutazione e ritiro rapido dell'usato</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://www.goodgelato.com/en" target="_blank" rel="noopener">https://www.goodgelato.com/en</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">I MORI</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Coriano (RN) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Vendita e acquisto di macchinari usati per gelaterie, pasticcerie, panetterie, cucine, bar e supermercati</div>
-          <div style="margin-top:6px;"><b>Note</b>: Oltre 40 anni di esperienza dei fondatori nel settore; noleggio stagionale/eventi; consulenza sulla scelta dell'attrezzatura; catalogo con macchine usate di marchi come Carpigiani, ISA, FB</div>
-          <div style="margin-top:2px;"><b>Indirizzo</b>: Via Maranello, 19, 47853 Coriano (RN), Italia</div>
-          <div style="margin-top:2px;"><b>Telefono</b>: +39 345 0369943</div>
-          <div style="margin-top:2px;"><b>Email</b>: info@imoristock.com</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://imoristock.com/" target="_blank" rel="noopener">https://imoristock.com/</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Ice-Berg Bergamo</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Bergamo · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Divisione dedicata all'usato: vetrine gelato, pastomaster, agemaster, mantecatori (es. Maestro 2** HCD Carpigiani), montapanna</div>
-          <div style="margin-top:6px;"><b>Note</b>: Selezione attenta di attrezzature usate, revisionate, certificate e garantite; preventivo su richiesta</div>
-          <div style="margin-top:2px;"><b>Indirizzo</b>: Via Pandini, 6, 24126 Bergamo, Italia</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://www.icebergamo.it/usato/" target="_blank" rel="noopener">https://www.icebergamo.it/usato/</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Carpigiani — Programma Refurbished</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Anzola dell'Emilia (BO) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Macchine ricondizionate ufficiali del produttore, con processo di restauro rigoroso (parte refrigerante, componenti meccanici ed elettrici) e ricambi originali</div>
-          <div style="margin-top:6px;"><b>Note</b>: Garanzia standard di 1 anno; unico canale ufficiale del produttore per macchine usate certificate</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://carpigiani.com/en/page/refurbished" target="_blank" rel="noopener">https://carpigiani.com/en/page/refurbished</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Marco srl (Marco Italia)</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Pisa · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Consulenza e progettazione per gelaterie, pasticcerie, ristoranti e pizzerie; vendita attrezzature nuove e usate (vetrine refrigerate, macchine soft, gelatiere, forni, abbattitori, arredo bar)</div>
-          <div style="margin-top:6px;"><b>Note</b>: Attrezzature usate revisionate da tecnici specializzati prima della vendita; oltre 80 articoli usati a catalogo</div>
-          <div style="margin-top:2px;"><b>Indirizzo</b>: Via Capiteta, 56104 Pisa, Italia</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://www.marcoitalia.it/macchine-gelati-carpigiani/macchine-usate-per-pasticcerie-gelaterie/" target="_blank" rel="noopener">https://www.marcoitalia.it/</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Gonella Ice Cream</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">Portogruaro (VE) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Categorie</b>: Rivendita attrezzature usate per gelateria: vetrine, mantecatori, pastorizzatori, abbattitori/celle, macchine combinate, macchine soft, granitori, miscelatori, accessori</div>
-          <div style="margin-top:6px;"><b>Note</b>: Revisione completa con smontaggio, analisi e sostituzione componenti usurati con ricambi originali, test funzionali; garanzia 12 mesi e assistenza post-vendita</div>
-          <div style="margin-top:2px;"><b>Indirizzo</b>: Via Sardegna, 1, Portogruaro (VE), Italia</div>
-          <div style="margin-top:6px;"><b>Sito web</b>: <a href="https://gonellaicecream.com/prodotti/usato/" target="_blank" rel="noopener">https://gonellaicecream.com/prodotti/usato/</a></div>
-        </div>
-      </div>
-
-      <div style="border:1px solid var(--line); border-radius:var(--radius); padding:14px; background:var(--cream-2);">
-        <h3 style="margin:0 0 6px; font-size:1rem;">Antiga</h3>
-        <div style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px;">San Pietro di Feletto (TV) · Italia</div>
-        <div style="font-size:0.85rem; line-height:1.5;">
-          <div><b>Fondazione</b>: 1925</div>
-          <div><b>Categorie</b>: Arredamento outdoor per gelaterie, bar, ristoranti e hotel: sedie e poltroncine, panche e divani, sgabelli, fioriere, basi e piani tavolo, accessori</div>
-          <div style="margin-top:6px;"><b>Note</b>: Dalla lavorazione di sedie in vimini e rattan all'alluminio con tessuti tecnici (Batyline); colori del telaio, rivestimenti e stampa del logo personalizzabili</div>
-          <div style="margin-top:6px;"><b>Indirizzo</b>: Via Antiga 14, San Pietro di Feletto (TV), Italia</div>
-          <div style="margin-top:2px;"><b>Telefono</b>: +39 0438 486803</div>
-          <div style="margin-top:2px;"><b>Email</b>: <a href="mailto:antiga@antiga.it">antiga@antiga.it</a></div>
-          <div style="margin-top:2px;"><b>Sito web</b>: <a href="https://www.antiga.it/" target="_blank" rel="noopener">https://www.antiga.it/</a></div>
-        </div>
-      </div>
-
-    </div>
+  <section class="card">
+    <h2><span data-i18n="s5Title">💶 Prezzo indicativo</span></h2>
+    <p data-i18n-html="s5Text">I prezzi variano molto in base a tipologia, capacità e marca: un mantecatore verticale compatto nuovo parte generalmente da qualche migliaio di euro, mentre i modelli orizzontali sottozero per produzioni elevate possono superare abbondantemente i 10.000-15.000&nbsp;€. Sul mercato dell'usato — nella sezione <a href="usato.html" style="color:var(--pistachio-dark); font-weight:700;">♻️ Usato</a> di questo sito — è possibile risparmiare sensibilmente, a patto di verificare con attenzione lo stato di manutenzione e l'anno di produzione.</p>
   </section>
 
 </main>
@@ -591,7 +246,7 @@
   <p style="margin:0;"><span data-i18n="contatti">✉️ Contatti:</span> <a href="mailto:marcolestan@gelateriaingredienti.com">marcolestan@gelateriaingredienti.com</a></p>
   <p style="margin:6px 0 0;"><a href="https://www.instagram.com/gelateriaingredienti/" target="_blank" rel="noopener" data-i18n="instagramLink">📷 Seguici su Instagram</a></p>
   <p style="margin:6px 0 0;"><a href="https://gelateriaingredienti.com" data-i18n="sisterSiteLink">🍨 Confronto ingredienti gelato — gelateriaingredienti.com</a></p>
-  <p class="back-link"><a data-i18n='backToApp' href='/'>← Torna al Confronto Attrezzature</a></p>
+  <p class="back-link"><a href="index.html" data-i18n="backToApp">← Torna al Confronto Attrezzature</a></p>
   <div class="legal-notice">
     <strong>© <span id="copyYear"></span> Tutti i diritti riservati.</strong>
     <span data-i18n="legalText">Contenuti conformi alla normativa europea vigente (incl. Regolamento UE 2016/679 – GDPR). Il presente portale ha finalità esclusivamente informativa e consultiva: non è consentito alcun uso commerciale, riproduzione, distribuzione o sfruttamento dei contenuti senza autorizzazione scritta del titolare.</span>
@@ -612,17 +267,21 @@ const I18N = {
     navUsatoAziende: "🏬 Rivenditori Usato",
     navArredamento: "🪑 Arredamento",
     navAccessori: "🧰 Accessori",
-    aziendeTitle: "🏢 Aziende",
-    aziendeText: "Le aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori presenti nell'archivio, con una breve scheda per ciascuna.",
-    colFondazione: "Fondazione",
-    colCategorie: "Categorie",
-    colCertificazioni: "Certificazioni",
-    colPresenzaDE: "Presenza in Germania",
-    colIndirizzo: "Indirizzo",
-    colTelefono: "Telefono",
-    colFax: "Fax",
-    colEmail: "Email",
-    colSito: "Sito web",
+    guideTitle: "📖 Guida alla scelta del mantecatore",
+    s1Title: "🍨 Cos'è un mantecatore e perché la scelta conta",
+    s1Text: "Il mantecatore (o \"macchina per gelato\", batch freezer) è il cuore di ogni laboratorio: trasforma la miscela liquida in gelato, incorporando aria e raffreddando rapidamente per ottenere la giusta struttura cremosa. Sceglierlo bene significa produttività, qualità costante del gelato e costi di gestione sotto controllo per anni — le differenze tra un modello e l'altro, spesso invisibili su una scheda tecnica, si sentono ogni giorno in laboratorio.",
+    s2Title: "🎬 Vedere per credere",
+    s2Text: "Una rapida panoramica di alcuni mantecatori disponibili sul mercato, per farsi un'idea prima di addentrarsi nei dettagli tecnici.",
+    s2Caption: "Video dimostrativo — le attrezzature mostrate provengono da rivenditori terzi, a scopo illustrativo.",
+    s3Title: "🧭 Le principali tipologie",
+    s3List: '<ul class="guide-list"><li><strong>Verticali a cilindro singolo</strong> — la scelta più diffusa per gelaterie artigianali di piccole-medie dimensioni; producono un ciclo alla volta, sono compatti e relativamente economici.</li><li><strong>Orizzontali "sottozero" a doppio cilindro</strong> — pensati per produzioni più elevate e gelato molto cremoso da vetrina di alta gamma; cicli più lunghi ma resa maggiore.</li><li><strong>Continui</strong> — tipici della produzione industriale o di grandi volumi, lavorano senza interruzione tra un ciclo e l\'altro; poco diffusi in laboratorio artigianale.</li><li><strong>Con o senza produzione autonoma di freddo</strong> — alcuni modelli hanno il gruppo frigorifero incorporato (più semplici da installare), altri richiedono un impianto di raffreddamento centralizzato (più efficienti su larga scala, ma con costi di impianto maggiori).</li></ul>',
+    s4Title: "🔧 Caratteristiche tecniche da confrontare",
+    s4List: '<ul class="guide-list"><li><strong>Capacità del cilindro e resa oraria</strong> — quanto gelato riesci a produrre per ciclo e in un turno di lavoro.</li><li><strong>Potenza installata e alimentazione</strong> (mono o trifase) — incide su consumi e sull\'impianto elettrico necessario in laboratorio.</li><li><strong>Tipo di gas refrigerante</strong> — i modelli più recenti usano gas a basso impatto ambientale (es. R290), spesso richiesto anche dalle normative più recenti.</li><li><strong>Ingombro e peso</strong> — fondamentali se lo spazio in laboratorio è limitato.</li><li><strong>Rumorosità e manutenzione</strong> — da verificare soprattutto per laboratori a vista o in centri storici con vincoli di orario.</li></ul>',
+    s5Title: "💶 Prezzo indicativo",
+    s5Text: 'I prezzi variano molto in base a tipologia, capacità e marca: un mantecatore verticale compatto nuovo parte generalmente da qualche migliaio di euro, mentre i modelli orizzontali sottozero per produzioni elevate possono superare abbondantemente i 10.000-15.000&nbsp;€. Sul mercato dell\'usato — nella sezione <a href="usato.html" style="color:var(--pistachio-dark); font-weight:700;">♻️ Usato</a> di questo sito — è possibile risparmiare sensibilmente, a patto di verificare con attenzione lo stato di manutenzione e l\'anno di produzione.',
+    s6Title: "⚖️ Confronta i mantecatori disponibili",
+    s6Text: "Lo strumento di confronto di questo sito ti permette di mettere a confronto fianco a fianco due mantecatori (o qualsiasi altra attrezzatura): seleziona la categoria \"Mantecatori\" e cerca i modelli che ti interessano.",
+    s6Link: "⚖️ Vai al confronto",
     contatti: "✉️ Contatti:",
     instagramLink: "📷 Seguici su Instagram",
     sisterSiteLink: "🍨 Confronto ingredienti gelato — gelateriaingredienti.com",
@@ -630,8 +289,8 @@ const I18N = {
     legalText: "Contenuti conformi alla normativa europea vigente (incl. Regolamento UE 2016/679 – GDPR). Il presente portale ha finalità esclusivamente informativa e consultiva: non è consentito alcun uso commerciale, riproduzione, distribuzione o sfruttamento dei contenuti senza autorizzazione scritta del titolare.",
     disclaimerText: "Avviso: i dati contenuti in questo portale sono riportati solo a scopo di conoscenza. Il confronto è puramente teorico e si basa sui dati rilasciati dalle aziende o disponibili sul web. Non sono indicati costi né altri parametri economici.",
     backToApp: "← Torna al Confronto Attrezzature",
-    metaTitle: "Aziende produttrici di attrezzature per gelateria | Confronto Attrezzature Gelateria",
-    metaDesc: "Schede delle aziende produttrici di mantecatori, pastorizzatori, mixer, frigoriferi e abbattitori per gelateria: fondazione, categorie, certificazioni e presenza sul mercato."
+    metaTitle: "Guida alla scelta del mantecatore – Confronto Attrezzature Gelateria",
+    metaDesc: "Come scegliere il mantecatore giusto per la tua gelateria: tipologie, caratteristiche tecniche da confrontare e fasce di prezzo indicative."
   },
   de: {
     constructionNote: "🚧 Website im Aufbau",
@@ -644,17 +303,21 @@ const I18N = {
     navUsatoAziende: "🏬 Gebraucht-Händler",
     navArredamento: "🪑 Einrichtung",
     navAccessori: "🧰 Zubehör",
-    aziendeTitle: "🏢 Firmen",
-    aziendeText: "Die Hersteller von Rührmaschinen, Pasteurisierern, Mixern, Kühlschränken und Schockfrostern im Archiv, mit einem kurzen Profil für jede.",
-    colFondazione: "Gegründet",
-    colCategorie: "Kategorien",
-    colCertificazioni: "Zertifizierungen",
-    colPresenzaDE: "Präsenz in Deutschland",
-    colIndirizzo: "Adresse",
-    colTelefono: "Telefon",
-    colFax: "Fax",
-    colEmail: "E-Mail",
-    colSito: "Webseite",
+    guideTitle: "📖 Leitfaden zur Wahl der Rührmaschine",
+    s1Title: "🍨 Was ist eine Rührmaschine und warum ist die Wahl wichtig",
+    s1Text: "Die Rührmaschine (Batch Freezer) ist das Herzstück jedes Eislabors: Sie verwandelt die flüssige Mischung in Eis, indem sie Luft einarbeitet und schnell kühlt, um die richtige cremige Struktur zu erzielen. Die richtige Wahl bedeutet Produktivität, gleichbleibende Qualität und über Jahre kontrollierte Betriebskosten — die Unterschiede zwischen den Modellen, oft auf dem Datenblatt unsichtbar, spürt man jeden Tag im Labor.",
+    s2Title: "🎬 Sehen und überzeugen",
+    s2Text: "Ein kurzer Überblick über einige auf dem Markt erhältliche Rührmaschinen, um sich vor den technischen Details ein Bild zu machen.",
+    s2Caption: "Demonstrationsvideo — die gezeigten Geräte stammen von Drittanbietern und dienen nur zur Veranschaulichung.",
+    s3Title: "🧭 Die wichtigsten Typen",
+    s3List: '<ul class="guide-list"><li><strong>Vertikale Rührmaschinen mit einem Zylinder</strong> — die häufigste Wahl für kleine bis mittlere Handwerksbetriebe; produzieren einen Zyklus nach dem anderen, kompakt und vergleichsweise günstig.</li><li><strong>Horizontale "Sottozero"-Maschinen mit Doppelzylinder</strong> — für höhere Produktionsmengen und besonders cremiges Eis aus der Vitrine; längere Zyklen, aber höhere Ausbeute.</li><li><strong>Kontinuierliche Maschinen</strong> — typisch für die industrielle Produktion großer Mengen, arbeiten ohne Unterbrechung zwischen den Zyklen; im handwerklichen Labor selten.</li><li><strong>Mit oder ohne eigene Kälteerzeugung</strong> — manche Modelle haben ein eingebautes Kälteaggregat (einfacher zu installieren), andere benötigen eine zentrale Kälteanlage (effizienter bei großen Mengen, aber mit höheren Anlagekosten).</li></ul>',
+    s4Title: "🔧 Technische Merkmale im Vergleich",
+    s4List: '<ul class="guide-list"><li><strong>Zylinderkapazität und Stundenleistung</strong> — wie viel Eis pro Zyklus und pro Arbeitsschicht produziert werden kann.</li><li><strong>Installierte Leistung und Stromversorgung</strong> (ein- oder dreiphasig) — wirkt sich auf Verbrauch und die nötige Elektroinstallation im Labor aus.</li><li><strong>Kältemitteltyp</strong> — neuere Modelle nutzen umweltfreundlichere Kältemittel (z. B. R290), oft auch gesetzlich vorgeschrieben.</li><li><strong>Platzbedarf und Gewicht</strong> — entscheidend bei begrenztem Platz im Labor.</li><li><strong>Geräuschpegel und Wartung</strong> — besonders wichtig bei offen einsehbaren Laboren oder Standorten mit zeitlichen Auflagen.</li></ul>',
+    s5Title: "💶 Richtpreis",
+    s5Text: 'Die Preise variieren stark je nach Typ, Kapazität und Marke: eine neue kompakte vertikale Rührmaschine kostet in der Regel ab wenigen tausend Euro, während horizontale Sottozero-Modelle für hohe Produktionsmengen deutlich über 10.000-15.000&nbsp;€ liegen können. Auf dem Gebrauchtmarkt — im Bereich <a href="usato.html" style="color:var(--pistachio-dark); font-weight:700;">♻️ Gebraucht</a> dieser Website — lässt sich spürbar sparen, sofern Wartungszustand und Baujahr sorgfältig geprüft werden.',
+    s6Title: "⚖️ Verfügbare Rührmaschinen vergleichen",
+    s6Text: "Mit dem Vergleichstool dieser Website kannst du zwei Rührmaschinen (oder jedes andere Gerät) direkt nebeneinander vergleichen: wähle die Kategorie \"Rührmaschinen\" und suche die Modelle, die dich interessieren.",
+    s6Link: "⚖️ Zum Vergleich",
     contatti: "✉️ Kontakt:",
     instagramLink: "📷 Folge uns auf Instagram",
     sisterSiteLink: "🍨 Eissorten-Zutatenvergleich — gelateriaingredienti.com",
@@ -662,8 +325,8 @@ const I18N = {
     legalText: "Inhalte gemäß geltendem EU-Recht (einschl. Verordnung (EU) 2016/679 – DSGVO). Dieses Portal dient ausschließlich zu Informations- und Beratungszwecken: Jede kommerzielle Nutzung, Vervielfältigung, Verbreitung oder Verwertung der Inhalte ohne schriftliche Genehmigung des Inhabers ist untersagt.",
     disclaimerText: "Hinweis: Die auf diesem Portal enthaltenen Daten dienen ausschließlich der Information. Der Vergleich ist rein theoretisch und beruht auf den von den Unternehmen veröffentlichten bzw. im Web verfügbaren Daten. Es werden weder Kosten noch andere wirtschaftliche Parameter angegeben.",
     backToApp: "← Zurück zum Attrezzaturen-Vergleich",
-    metaTitle: "Hersteller von Eismaschinen und Zubehör | Eismaschinen-Vergleich",
-    metaDesc: "Profile der Hersteller von Rührmaschinen, Pasteurisierern, Mixern, Kühlschränken und Schockfrostern für Eisdielen: Gründung, Kategorien, Zertifizierungen und Marktpräsenz."
+    metaTitle: "Leitfaden zur Wahl der Rührmaschine – Eismaschinen-Vergleich",
+    metaDesc: "So wählst du die richtige Rührmaschine für deine Eisdiele: Typen, zu vergleichende technische Merkmale und Richtpreise."
   },
   en: {
     constructionNote: "🚧 Site under construction",
@@ -676,17 +339,21 @@ const I18N = {
     navUsatoAziende: "🏬 Used Dealers",
     navArredamento: "🪑 Furnishings",
     navAccessori: "🧰 Accessories",
-    aziendeTitle: "🏢 Companies",
-    aziendeText: "The manufacturers of batch freezers, pasteurizers, mixers, refrigerators and blast chillers in the archive, with a short profile for each.",
-    colFondazione: "Founded",
-    colCategorie: "Categories",
-    colCertificazioni: "Certifications",
-    colPresenzaDE: "Presence in Germany",
-    colIndirizzo: "Address",
-    colTelefono: "Phone",
-    colFax: "Fax",
-    colEmail: "Email",
-    colSito: "Website",
+    guideTitle: "📖 Guide to choosing a batch freezer",
+    s1Title: "🍨 What a batch freezer is and why the choice matters",
+    s1Text: "The batch freezer is the heart of every gelato lab: it turns the liquid mix into gelato, incorporating air and cooling quickly to reach the right creamy structure. Choosing well means productivity, consistent gelato quality, and running costs under control for years — the differences between models, often invisible on a spec sheet, are felt every day in the lab.",
+    s2Title: "🎬 Seeing is believing",
+    s2Text: "A quick overview of some batch freezers available on the market, to get an idea before diving into the technical details.",
+    s2Caption: "Demo video — the equipment shown comes from third-party dealers, for illustrative purposes only.",
+    s3Title: "🧭 The main types",
+    s3List: '<ul class="guide-list"><li><strong>Vertical, single-cylinder</strong> — the most common choice for small to medium artisan gelaterias; produce one batch at a time, compact and relatively affordable.</li><li><strong>Horizontal "sottozero" double-cylinder</strong> — built for higher output and extra-creamy display-case gelato; longer cycles but higher yield.</li><li><strong>Continuous freezers</strong> — typical of industrial or high-volume production, running without interruption between batches; uncommon in artisan labs.</li><li><strong>With or without self-contained refrigeration</strong> — some models have a built-in cooling unit (simpler to install), others need a centralized cooling system (more efficient at scale, but with higher installation costs).</li></ul>',
+    s4Title: "🔧 Technical specs to compare",
+    s4List: '<ul class="guide-list"><li><strong>Cylinder capacity and hourly output</strong> — how much gelato you can produce per batch and per shift.</li><li><strong>Installed power and supply</strong> (single- or three-phase) — affects consumption and the electrical setup needed in the lab.</li><li><strong>Refrigerant gas type</strong> — newer models use lower-impact refrigerants (e.g. R290), often required by current regulations too.</li><li><strong>Footprint and weight</strong> — key when lab space is limited.</li><li><strong>Noise level and maintenance</strong> — worth checking especially for open-view labs or locations with time restrictions.</li></ul>',
+    s5Title: "💶 Indicative pricing",
+    s5Text: 'Prices vary widely by type, capacity and brand: a new compact vertical batch freezer generally starts at a few thousand euros, while horizontal sottozero models for high output can comfortably exceed €10,000-15,000. On the used market — in the <a href="usato.html" style="color:var(--pistachio-dark); font-weight:700;">♻️ Used</a> section of this site — significant savings are possible, provided maintenance history and production year are checked carefully.',
+    s6Title: "⚖️ Compare available batch freezers",
+    s6Text: "This site's comparison tool lets you put two batch freezers (or any other equipment) side by side: select the \"Batch Freezers\" category and search for the models you're interested in.",
+    s6Link: "⚖️ Go to comparison",
     contatti: "✉️ Contact:",
     instagramLink: "📷 Follow us on Instagram",
     sisterSiteLink: "🍨 Gelato ingredients comparison — gelateriaingredienti.com",
@@ -694,8 +361,8 @@ const I18N = {
     legalText: "Content compliant with applicable European regulations (incl. EU Regulation 2016/679 – GDPR). This portal is for informational and reference purposes only: no commercial use, reproduction, distribution or exploitation of the content is permitted without the written authorization of the owner.",
     disclaimerText: "Notice: the data on this portal is provided for informational purposes only. The comparison is purely theoretical and is based on data released by the companies or available on the web. No costs or other economic parameters are included.",
     backToApp: "← Back to Equipment Comparison",
-    metaTitle: "Manufacturers of ice cream equipment | Gelato Equipment Comparison",
-    metaDesc: "Profiles of manufacturers of batch freezers, pasteurizers, mixers, refrigerators and blast chillers for gelato shops: founding, categories, certifications and market presence."
+    metaTitle: "Guide to choosing a batch freezer – Gelato Equipment Comparison",
+    metaDesc: "How to choose the right batch freezer for your gelateria: types, technical specs to compare, and indicative price ranges."
   }
 };
 
@@ -703,6 +370,7 @@ let LANG = 'it';
 function t(k){ return (I18N[LANG] && I18N[LANG][k]) || I18N.it[k] || k; }
 function translateStatic(){
   document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => { el.innerHTML = t(el.getAttribute('data-i18n-html')); });
   document.title = t('metaTitle');
   const md = document.querySelector('meta[name="description"]');
   if (md) md.setAttribute('content', t('metaDesc'));
