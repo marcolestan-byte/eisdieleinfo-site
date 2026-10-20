@@ -524,6 +524,7 @@
     <a class="nav-ricette-gelato" href="/ricette-gelato.html" data-i18n="navRicetteGelato">🍨 Ricette gelato</a>
   </div>
   <div class="nav-secondary">
+    <a class="nav-documenti" href="#documentiCard" onclick="openExtraToolsIfNeeded('documentiCard')" data-i18n="navDocumenti">📄 Documenti</a>
     <a class='nav-chisono' data-i18n='navChiSiamo' href='/chi-sono.html'>👤 Chi sono</a>
     <a class='nav-cat' href='/basi-latte.html'>🥛 Milchbasen</a>
     <a class='nav-cat' href='/basi-frutta.html'>🍓 Fruchtbasen</a>
@@ -865,7 +866,70 @@
 
   </section>
 
+  <!-- DOCUMENTI UTILI -->
+  <section class="card" id="documentiCard">
+    <h2 data-i18n="docTitle">📄 Regole di igiene per la produzione di gelato</h2>
+    <p class="hint" style="margin-top:0;" data-i18n="docHint">Regole per la prevenzione dei batteri nella produzione di gelato artigianale — disponibile in italiano e in tedesco.</p>
+    <div class="actions-row">
+      <button class="btn outline" id="btnDocDE" onclick="toggleDocPanel()">📄 Anzeigen / Ausblenden</button>
+    </div>
 
+    <div class="doc-panel" id="docPanelDE">
+      <h3>1. Sichere Rohstoffe verwenden</h3>
+      <ul>
+        <li>Milch, Sahne, Eier und andere Zutaten nur von zertifizierten Lieferanten beziehen.</li>
+        <li>Verfallsdaten und Lagerbedingungen regelmäßig kontrollieren.</li>
+        <li>Keine verdorbenen Zutaten oder beschädigten Verpackungen verwenden.</li>
+      </ul>
+      <h3>2. Korrekte Pasteurisierung der Eismischung</h3>
+      <ul>
+        <li>Die vorgeschriebenen Pasteurisierungszeiten und -temperaturen einhalten.</li>
+        <li>Die Pasteurisierung reduziert die Keimbelastung erheblich und ist einer der wichtigsten Schritte.</li>
+      </ul>
+      <h3>3. Schnelles Abkühlen</h3>
+      <ul>
+        <li>Die Mischung nach der Pasteurisierung schnell auf etwa 4 °C herunterkühlen.</li>
+        <li>Vermeiden, dass das Produkt längere Zeit im Temperaturbereich zwischen 5 °C und 60 °C bleibt.</li>
+      </ul>
+      <h3>4. Kühlkette einhalten</h3>
+      <ul>
+        <li>Eismischungen und fertiges Speiseeis stets bei den vorgeschriebenen Temperaturen lagern.</li>
+        <li>Temperaturen regelmäßig kontrollieren und dokumentieren.</li>
+      </ul>
+      <h3>5. Persönliche Hygiene des Personals</h3>
+      <ul>
+        <li>Hände regelmäßig und gründlich waschen.</li>
+        <li>Saubere Arbeitskleidung und Kopfbedeckung tragen.</li>
+        <li>Erkrankte Mitarbeiter dürfen nicht mit Lebensmitteln arbeiten.</li>
+      </ul>
+      <h3>6. Reinigung und Desinfektion der Geräte</h3>
+      <ul>
+        <li>Geräte täglich reinigen und desinfizieren.</li>
+        <li>HACCP-Reinigungspläne einhalten.</li>
+      </ul>
+      <h3>7. Kreuzkontamination vermeiden</h3>
+      <ul>
+        <li>Rohe Zutaten von verzehrfertigen Produkten getrennt halten.</li>
+        <li>Separate Utensilien verwenden.</li>
+        <li>Allergene getrennt lagern.</li>
+      </ul>
+      <h3>8. Wasserqualität kontrollieren</h3>
+      <ul>
+        <li>Ausschließlich Trinkwasser verwenden.</li>
+        <li>Leitungen und Filter regelmäßig warten.</li>
+      </ul>
+      <h3>9. Mikrobiologische Kontrollen durchführen</h3>
+      <ul>
+        <li>Regelmäßige Laboruntersuchungen von Speiseeis, Oberflächen, Geräten und Wasser.</li>
+      </ul>
+      <h3>10. HACCP-System anwenden</h3>
+      <ul>
+        <li>Kritische Kontrollpunkte überwachen.</li>
+        <li>Temperaturen, Reinigungen und Kontrollen dokumentieren.</li>
+        <li>Mitarbeiter regelmäßig schulen.</li>
+      </ul>
+    </div>
+  </section>
 
   </div>
 
