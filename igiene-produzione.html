@@ -41,6 +41,16 @@ li{margin-bottom:6px;}
 .related-links a:hover{text-decoration:underline;}
 footer{font-size:0.8rem; color:var(--ink-soft); text-align:center; margin-top:30px;}
 footer a{color:var(--brand);}
+.actions-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; align-items:center;}
+.btn{display:inline-flex; align-items:center; gap:6px; border-radius:10px; font-weight:700; font-size:0.9rem; cursor:pointer; padding:10px 18px; font-family:inherit;}
+.btn.outline{background:transparent; color:var(--brand); border:1.5px solid var(--brand);}
+.btn.outline:hover{background:var(--brand-soft);}
+.doc-panel{display:none; margin-top:16px; background:#fffdfa; border-radius:12px; padding:16px 18px; border:1px solid var(--line);}
+.doc-panel.open{display:block;}
+.doc-panel h3{font-size:0.95rem; color:var(--brand); margin:14px 0 4px;}
+.doc-panel h3:first-child{margin-top:0;}
+.doc-panel ul{margin:4px 0 0; padding-left:20px;}
+.doc-panel li{font-size:0.85rem; line-height:1.5; margin-bottom:2px;}
 </style>
 </head>
 <body>
@@ -81,21 +91,85 @@ footer a{color:var(--brand);}
     <p>Keines dieser Zubehörteile ersetzt ein strukturiertes Hygienekonzept (HACCP), aber ein Einsatz von wenigen Dutzend Euro für die richtigen Hilfsmittel verringert deutlich die Fälle, in denen Verunreinigung aus einem vernachlässigten praktischen Detail entsteht und nicht aus mangelnder Aufmerksamkeit.</p>
   </section>
 
+    <section class="card" id="regole-igiene">
+    <h2>📄 Hygieneregeln für die Speiseeisherstellung</h2>
+    <p class="hint" style="margin-top:0;">Regeln zur Vermeidung von Bakterien bei der handwerklichen Speiseeisherstellung.</p>
+    <div class="actions-row">
+      <button class="btn outline" id="btnDocDE" onclick="toggleDocPanel()">📄 Anzeigen / Ausblenden</button>
+    </div>
+
+    <div class="doc-panel" id="docPanelDE">
+      <h3>1. Sichere Rohstoffe verwenden</h3>
+      <ul>
+        <li>Milch, Sahne, Eier und andere Zutaten nur von zertifizierten Lieferanten beziehen.</li>
+        <li>Verfallsdaten und Lagerbedingungen regelmäßig kontrollieren.</li>
+        <li>Keine verdorbenen Zutaten oder beschädigten Verpackungen verwenden.</li>
+      </ul>
+      <h3>2. Korrekte Pasteurisierung der Eismischung</h3>
+      <ul>
+        <li>Die vorgeschriebenen Pasteurisierungszeiten und -temperaturen einhalten.</li>
+        <li>Die Pasteurisierung reduziert die Keimbelastung erheblich und ist einer der wichtigsten Schritte.</li>
+      </ul>
+      <h3>3. Schnelles Abkühlen</h3>
+      <ul>
+        <li>Die Mischung nach der Pasteurisierung schnell auf etwa 4 °C herunterkühlen.</li>
+        <li>Vermeiden, dass das Produkt längere Zeit im Temperaturbereich zwischen 5 °C und 60 °C bleibt.</li>
+      </ul>
+      <h3>4. Kühlkette einhalten</h3>
+      <ul>
+        <li>Eismischungen und fertiges Speiseeis stets bei den vorgeschriebenen Temperaturen lagern.</li>
+        <li>Temperaturen regelmäßig kontrollieren und dokumentieren.</li>
+      </ul>
+      <h3>5. Persönliche Hygiene des Personals</h3>
+      <ul>
+        <li>Hände regelmäßig und gründlich waschen.</li>
+        <li>Saubere Arbeitskleidung und Kopfbedeckung tragen.</li>
+        <li>Erkrankte Mitarbeiter dürfen nicht mit Lebensmitteln arbeiten.</li>
+      </ul>
+      <h3>6. Reinigung und Desinfektion der Geräte</h3>
+      <ul>
+        <li>Geräte täglich reinigen und desinfizieren.</li>
+        <li>HACCP-Reinigungspläne einhalten.</li>
+      </ul>
+      <h3>7. Kreuzkontamination vermeiden</h3>
+      <ul>
+        <li>Rohe Zutaten von verzehrfertigen Produkten getrennt halten.</li>
+        <li>Separate Utensilien verwenden.</li>
+        <li>Allergene getrennt lagern.</li>
+      </ul>
+      <h3>8. Wasserqualität kontrollieren</h3>
+      <ul>
+        <li>Ausschließlich Trinkwasser verwenden.</li>
+        <li>Leitungen und Filter regelmäßig warten.</li>
+      </ul>
+      <h3>9. Mikrobiologische Kontrollen durchführen</h3>
+      <ul>
+        <li>Regelmäßige Laboruntersuchungen von Speiseeis, Oberflächen, Geräten und Wasser.</li>
+      </ul>
+      <h3>10. HACCP-System anwenden</h3>
+      <ul>
+        <li>Kritische Kontrollpunkte überwachen.</li>
+        <li>Temperaturen, Reinigungen und Kontrollen dokumentieren.</li>
+        <li>Mitarbeiter regelmäßig schulen.</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="card">
     <h2>Unternehmen</h2>
     <p>Hersteller und Händler von Reinigungs- und Hygieneprodukten für den Profibereich.</p>
     <div class="company-grid">
+    <div class="company-card featured">
+      <div class="company-name">Diversey (Solenis)</div>
+      <div class="company-meta">Sitz in den Quellen nicht angegeben</div>
+      <div class="company-usp">Marke für Reinigungs- und Hygieneprodukte, heute Teil von Solenis (Übernahme im Juli 2023 abgeschlossen).</div>
+      <div class="company-link">🌐 <a href="https://products.solenis.com/it/" target="_blank" rel="noopener">products.solenis.com</a></div>
+    </div>
     <div class="company-card">
       <div class="company-name">Ecolab</div>
       <div class="company-meta">St. Paul (Minnesota), USA — 1923</div>
       <div class="company-usp">US-amerikanischer Anbieter für professionelle Hygiene und Reinigung.</div>
       <div class="company-link">🌐 <a href="https://www.ecolab.com/" target="_blank" rel="noopener">ecolab.com</a></div>
-    </div>
-    <div class="company-card">
-      <div class="company-name">Diversey (Solenis)</div>
-      <div class="company-meta">Sitz in den Quellen nicht angegeben</div>
-      <div class="company-usp">Marke für Reinigungs- und Hygieneprodukte, heute Teil von Solenis (Übernahme im Juli 2023 abgeschlossen).</div>
-      <div class="company-link">🌐 <a href="https://products.solenis.com/it/" target="_blank" rel="noopener">products.solenis.com</a></div>
     </div>
     <div class="company-card">
       <div class="company-name">HWR-Chemie GmbH</div>
@@ -140,5 +214,13 @@ footer a{color:var(--brand);}
   <footer>Eisdielen Zutatenvergleich — unabhängige Plattform, ohne Sponsoring. <a href="/">Zurück zur Startseite</a>.<span class="disclaimer" style="display:block;margin-top:6px;font-size:.9em;">Das Portal bündelt in einer einzigen Suche alles, was die Eisdiele braucht, mit direkten Links zu den Herstellern. Hinweis: Die auf diesem Portal enthaltenen Daten dienen ausschließlich der Information. Der Vergleich ist rein theoretisch und beruht auf den von den Unternehmen veröffentlichten bzw. im Web verfügbaren Daten. Es werden weder Kosten noch andere wirtschaftliche Parameter angegeben.</span><p class="copyright-line" style="margin:12px 0 0;font-size:.85em;text-align:center;">© 2026 Marco Lestan, alle Rechte vorbehalten · <a href="/nutzungsbedingungen.html">Nutzungsbedingungen</a></p>
 </footer>
 </div>
+<script>
+function toggleDocPanel(lang){
+  var panel=document.getElementById(lang==='it'?'docPanelIT':'docPanelDE');
+  var other=document.getElementById(lang==='it'?'docPanelDE':'docPanelIT');
+  if(other) other.classList.remove('open');
+  if(panel){ panel.classList.toggle('open'); if(panel.classList.contains('open')) panel.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+}
+</script>
 </body>
 </html>
