@@ -10,6 +10,14 @@
 <link rel="alternate" hreflang="de" href="https://eisdieleinfo.com/mercatino.html">
 <link rel="alternate" hreflang="x-default" href="https://gelateriaingredienti.com/mercatino.html">
 <style>
+.flow{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:22px;padding:0;margin:14px 0 8px;counter-reset:f}
+.flow li{position:relative;background:#fffdfa;border:2px solid var(--line);border-radius:12px;padding:12px 12px 14px;margin:0;font-size:0.86rem;line-height:1.4}
+.flow li:not(:last-child)::after{content:'\2192';position:absolute;right:-19px;top:50%;transform:translateY(-50%);color:var(--brand);font-weight:900;font-size:1.2rem}
+.flow .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;font-size:0.85rem;margin-bottom:6px}
+.flow .who{display:block;font-weight:800;font-size:0.9rem;margin-bottom:4px}
+.flow .a0 .who{color:#2e7d32}.flow .a1 .who{color:var(--brand)}.flow .a2 .who{color:#1f5fa8}.flow .a3 .who{color:#6b4aa0}
+.demo{margin-top:auto;font-size:0.8rem;color:var(--ink-soft);background:#f1e8dc;border-radius:8px;padding:8px 10px;text-align:center}
+@media(max-width:760px){.flow{grid-template-columns:1fr;gap:26px}.flow li:not(:last-child)::after{content:'\2193';right:auto;left:50%;top:auto;bottom:-24px;transform:translateX(-50%)}}
 :root{--ink:#2b2320; --ink-soft:#6b5f58; --paper:#fffaf3; --line:#e7dccd;--brand:#c0392b; --brand-soft:#f7e9df; --ok:#2e7d32;}
 *{box-sizing:border-box;}
 body{margin:0; font-family:"Segoe UI", system-ui, -apple-system, sans-serif; background:var(--paper); color:var(--ink); line-height:1.55;}
@@ -34,7 +42,7 @@ button,.btn{background:var(--brand); color:#fff; border:0; border-radius:10px; p
 button:hover,.btn:hover{filter:brightness(1.08);}
 .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; margin-top:10px;}
 .ad{border:1px solid var(--line); border-radius:12px; padding:14px 16px; background:#fffdfa; display:flex; flex-direction:column;}
-.ad .ph{width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:8px; background:#f1e8dc;}
+.ad .ph{width:100%; height:200px; object-fit:contain; border-radius:8px; margin-bottom:8px; background:#f1e8dc;}
 .ad .code{font-size:0.72rem; color:var(--ink-soft); font-weight:700; letter-spacing:0.04em;}
 .ad .name{font-weight:800; font-size:1.02rem; margin:2px 0 6px;}
 .ad .tag{display:inline-block; background:var(--brand-soft); color:var(--brand); border-radius:6px; padding:2px 8px; font-size:0.72rem; font-weight:700; margin-bottom:8px; align-self:flex-start;}
@@ -56,6 +64,8 @@ footer{font-size:0.8rem; color:var(--ink-soft); text-align:center; margin-top:30
     <div class="imp"><strong>Wichtig: Der Kauf erfolgt ausschließlich zwischen Verkäufer und Käufer. Dieses Portal dient nur als Kontaktvermittlung zwischen den Parteien: Es ist nicht Vertragspartei, kassiert den Kaufpreis nicht, versendet nicht und prüft die Ware nicht.</strong></div>
     <h2>So funktioniert es</h2>
     <ol><li><strong>Du registrierst dich und gibst die Anzeige auf</strong>, indem du das Formular unten ausfüllst (E-Mail, Produkt, Menge, Haltbarkeit).</li><li>Ich prüfe die Angaben und <strong>veröffentliche die Anzeige anonym</strong>, nur mit Produkt, Menge, Haltbarkeit und Region.</li><li>Wer interessiert ist, schreibt mir über den Button „Ich bin interessiert“. Ich <strong>informiere den Verkäufer</strong> und teile ihm die Zahlungsdaten für den Beitrag mit.</li><li>Wenn du fortfahren möchtest, zahlst du einen <strong>Vermittlungsbeitrag von 5 €</strong> (PayPal oder Überweisung). Nach Eingang des Beitrags <strong>stelle ich den Kontakt zwischen beiden Parteien her</strong>, die den Kauf direkt untereinander abwickeln.</li></ol>
+    <h2>Der Ablauf in Kürze</h2>
+    <ol class="flow"><li class="a0"><span class="n">1</span><span class="who">Verkäufer</span>Füllt das Formular mit Produkt, Menge und Haltbarkeit aus. Das ist kostenlos.</li><li class="a1"><span class="n">2</span><span class="who">Portal</span>Prüft die Angaben und veröffentlicht die anonyme Anzeige.</li><li class="a2"><span class="n">3</span><span class="who">Käufer</span>Wählt die Anzeige und schreibt „Ich bin interessiert“.</li><li class="a1"><span class="n">4</span><span class="who">Portal</span>Informiert den Verkäufer und stellt den Kontakt her.</li><li class="a3"><span class="n">5</span><span class="who">Verkäufer und Käufer</span>Wickeln den Kauf direkt untereinander ab.</li></ol>
     <div class="fee">Der Beitrag von 5 € geht zu Lasten des Verkäufers und fällt nur an, wenn ich dir einen interessierten Käufer vermittle. Das Einstellen der Anzeige ist kostenlos.</div>
     <p class="hint">Du suchst auch Ideen für die Vitrine? Ausgewogenheit, Hygiene und Rezepte auf <a href="https://bilanciamentovetrina.com/de.html" target="_blank" rel="noopener">bilanciamentovetrina.com</a>.</p>
   </section>
@@ -142,7 +152,7 @@ footer{font-size:0.8rem; color:var(--ink-soft); text-align:center; margin-top:30
 <script src="mercatino-annunci.js"></script>
 <script>
 (function(){
-  var MIN_DAYS=30, L={"empty": "Derzeit keine Anzeigen. Du hast ungenutzte Produkte? Gib unten deine Anzeige auf.", "empty_filter": "Keine Anzeige entspricht den Filtern.", "count_one": "1 Anzeige", "count_many": "{n} Anzeigen", "c_brand": "Marke", "c_qty": "Menge", "c_exp": "Haltbarkeit", "c_where": "Ort", "c_seller": "Verkäufer", "c_price": "Preis", "c_note": "Hinweise", "seller_company": "Unternehmen", "seller_private": "Privatperson", "price_swap": "Tausch", "price_ask": "Verhandelbar", "days_left": "noch {n} Tage", "btn_int": "Ich bin interessiert", "sel_ann": "Gewählte Anzeige:", "f_cat": "Alle Kategorien", "f_paese": "Alle Länder", "lang": "de", "contact_hint": "Gib mindestens E-Mail oder WhatsApp an.", "sending": "Wird gesendet…", "send_err": "Senden fehlgeschlagen. Bitte versuche es gleich noch einmal oder schreibe mir an info@gelateriaingredienti.com.", "too_big": "Die Fotos sind zu groß: Entferne eines oder wähle kleinere."};
+  var MIN_DAYS=30, L={"empty": "Derzeit keine Anzeigen. Du hast ungenutzte Produkte? Gib unten deine Anzeige auf.", "empty_filter": "Keine Anzeige entspricht den Filtern.", "count_one": "1 Anzeige", "count_many": "{n} Anzeigen", "c_brand": "Marke", "c_qty": "Menge", "c_exp": "Haltbarkeit", "c_where": "Ort", "c_seller": "Verkäufer", "c_price": "Preis", "c_note": "Hinweise", "seller_company": "Unternehmen", "seller_private": "Privatperson", "price_swap": "Tausch", "price_ask": "Verhandelbar", "days_left": "noch {n} Tage", "btn_int": "Ich bin interessiert", "sel_ann": "Gewählte Anzeige:", "f_cat": "Alle Kategorien", "f_paese": "Alle Länder", "demo": "Beispielanzeige: Sie zeigt nur, wie die Börse funktioniert.", "lang": "de", "contact_hint": "Gib mindestens E-Mail oder WhatsApp an.", "sending": "Wird gesendet…", "send_err": "Senden fehlgeschlagen. Bitte versuche es gleich noch einmal oder schreibe mir an info@gelateriaingredienti.com.", "too_big": "Die Fotos sind zu groß: Entferne eines oder wähle kleinere."};
   var ALL=(window.MERCATINO_ANNUNCI||[]);
   var today=new Date(); today.setHours(0,0,0,0);
   function daysLeft(s){ var d=new Date(s+'T00:00:00'); return Math.ceil((d-today)/86400000); }
@@ -167,10 +177,10 @@ footer{font-size:0.8rem; color:var(--ink-soft); text-align:center; margin-top:30
       var dl=el('dl'); row(dl,L.c_brand,a.marca); row(dl,L.c_qty,[a.quantita,a.unita].filter(Boolean).join(' '));
       row(dl,L.c_exp,fmtDate(a.scadenza)+' ('+L.days_left.replace('{n}',daysLeft(a.scadenza))+')');
       row(dl,L.c_where,[a.regione,a.paese].filter(Boolean).join(', '));
-      row(dl,L.c_seller,a.tipo==='privato'?L.seller_private:L.seller_company);
+      row(dl,L.c_seller,a.tipo? (a.tipo==='privato'?L.seller_private:L.seller_company):'');
       row(dl,L.c_price,a.scambio? (a.prezzo? a.prezzo+' · ':'')+L.price_swap : (a.prezzo||L.price_ask));
       row(dl,L.c_note,a.note); card.appendChild(dl);
-      var b=el('a','btn',L.btn_int); b.href='#richiesta'; b.addEventListener('click',function(){ choose(a); }); card.appendChild(b);
+      if(a.esempio){ card.appendChild(el('div','demo',L.demo)); } else { var b=el('a','btn',L.btn_int); b.href='#richiesta'; b.addEventListener('click',function(){ choose(a); }); card.appendChild(b); }
       grid.appendChild(card); });
     count.textContent= list.length===1? L.count_one : L.count_many.replace('{n}',list.length);
     empty.hidden = list.length>0; empty.textContent = items.length? L.empty_filter : L.empty;
