@@ -1,0 +1,26 @@
+{
+ "id": "/app-ricetta.html",
+ "name": "Eisrezept",
+ "short_name": "Eisrezept",
+ "description": "Berechne dein Eisrezept passend zu Vitrine, Temperatur und Luftfeuchtigkeit.",
+ "start_url": "/app-ricetta.html",
+ "scope": "/app-ricetta",
+ "display": "standalone",
+ "background_color": "#fffaf3",
+ "theme_color": "#c2563a",
+ "lang": "de",
+ "icons": [
+  {
+   "src": "/app-ricetta-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "/app-ricetta-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}

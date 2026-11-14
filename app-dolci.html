@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Desserts und Tiramisu</title><meta name="description" content="Tiramisu-Rezepte und Desserts für die Eisvitrine."><link rel="manifest" href="/app-dolci.webmanifest"><meta name="theme-color" content="#5c3520"><link rel="apple-touch-icon" href="/app-dolci-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><style>
+:root{--ink:#3b2a20;--soft:#7a6455;--paper:#fffaf3;--brand:#c2563a;--brand-soft:#fbe9e2;--line:#ecdfd2;}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;max-width:1000px;margin:0 auto;padding:14px 16px}
+.brand{font-weight:700;letter-spacing:.02em;color:var(--ink);text-decoration:none}
+.lang a{color:var(--brand);text-decoration:none;font-weight:600;border:1px solid var(--line);border-radius:20px;padding:4px 14px;background:#fff}
+nav.menu{max-width:1000px;margin:0 auto;padding:0 16px 10px;display:flex;flex-wrap:wrap;gap:8px}
+nav.menu a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:20px;padding:5px 14px;font-size:.95rem}
+nav.menu a.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.hero{max-width:1000px;margin:0 auto;padding:0 16px}
+.hero img{display:block;width:100%;height:auto;border-radius:14px}
+main{max-width:760px;margin:0 auto;padding:28px 16px 8px}
+h1{font-size:2.1rem;line-height:1.2;margin:0 0 12px}
+.lead{font-size:1.2rem;margin:0 0 12px}
+h2{font-size:1.3rem;margin:34px 0 10px;padding-top:6px}
+h3{font-size:1.05rem;margin:0 0 4px;color:var(--brand)}
+ul.topics{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+ul.topics li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:8px;padding:10px 14px}
+ul.topics li a{color:var(--ink);text-decoration:none;display:block}
+ul.topics li a:hover{color:var(--brand)}
+ul.plain{margin:8px 0 12px;padding-left:22px}
+ul.plain li{margin:4px 0}
+.cards{display:grid;gap:12px;margin:12px 0}
+.card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:8px;padding:12px 16px}
+.card p{margin:0}
+.note{margin:18px 0;padding:14px 18px;background:var(--brand-soft);border-radius:10px}
+.note p{margin:0}
+.src{font-size:.9rem;color:var(--soft);margin-top:6px}
+.src a{color:var(--brand)}
+.close{margin:26px 0 0;padding:16px 18px;background:var(--brand-soft);border-radius:10px}
+.pages{margin-top:30px}
+.links{margin-top:26px}
+.links a{display:block;color:var(--brand);margin:4px 0}
+footer{max-width:1000px;margin:28px auto 0;padding:18px 16px 28px;border-top:1px solid var(--line);color:var(--soft);font-size:.9rem}
+main p a,main li a,.card p a,.note a{color:var(--brand)}
+.fig{margin:14px 0}.fig img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}.fig figcaption{font-size:.85rem;color:var(--soft);margin-top:4px}
+h3.sub{margin:22px 0 6px}ol.steps{margin:8px 0 12px;padding-left:24px}ol.steps li{margin:6px 0}.idea{margin:20px 0}.idea ul{margin:6px 0}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}.gal .fig{margin:0}.gal .fig img{max-width:480px;margin:0 auto}.gal h3{margin:8px 0 2px;font-size:1rem}.gal p{margin:0 0 4px;font-size:.92rem}@media(max-width:640px){.gal{grid-template-columns:1fr}}
+@media(max-width:640px){ul.topics{grid-template-columns:1fr}h1{font-size:1.7rem}}
+
+.dl{margin:12px 0 22px}
+.dl .dlbtn{display:none;background:var(--brand);color:#fff;border:0;border-radius:24px;padding:10px 20px;font:inherit;font-weight:600;cursor:pointer}
+.js .dl .dlbtn{display:inline-block}
+.js .dl form{display:none}.js .dl.open form{display:block}
+.dl form{margin-top:10px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:8px;padding:14px 16px}
+.dl label{display:block;font-size:.95rem;margin:6px 0}
+.dl input[type=email]{display:block;width:100%;max-width:380px;margin-top:4px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;font:inherit}
+.dl .chk{display:flex;gap:8px;align-items:flex-start;font-size:.85rem;color:var(--soft)}
+.dl .chk input{margin-top:4px}
+.dl .go{margin-top:8px;background:var(--brand);color:#fff;border:0;border-radius:24px;padding:9px 20px;font:inherit;font-weight:600;cursor:pointer}
+.dl .msg{margin:8px 0 0;font-weight:600}.dl .msg a{color:var(--brand)}
+.dl .hp{display:none}
+.social{margin:26px 0 0}.social a{color:var(--brand);font-weight:600}
+.what{font-size:.9rem;color:var(--soft);margin:4px 0 0}
+.gl{margin:10px 0 14px;padding:8px 14px;border-radius:8px;font-size:.95rem;border-left:6px solid}
+.gl strong{text-transform:uppercase;letter-spacing:.02em}
+.gl.yes{background:#fde2d8;border-color:#c2563a;color:#6e2410}
+.gl.no{background:#e3f3e3;border-color:#3f8f55;color:#1b4d29}
+.gl.var{background:#fff3cd;border-color:#d9a400;color:#5e4500}
+.glt{display:inline-block;font-size:.8rem;font-weight:700;padding:1px 9px;border-radius:12px;margin-left:6px;vertical-align:1px}
+.glt.yes{background:#fde2d8;color:#6e2410;border:1px solid #c2563a}.glt.no{background:#e3f3e3;color:#1b4d29;border:1px solid #3f8f55}.glt.var{background:#fff3cd;color:#5e4500;border:1px solid #d9a400}
+table.tbl{border-collapse:collapse;width:100%;margin:10px 0 16px;background:#fff;font-size:.95rem}
+table.tbl th,table.tbl td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+table.tbl th{background:var(--brand-soft)}
+.fn{font-size:.88rem;color:var(--soft);margin:6px 0 14px}
+
+.nv{margin:14px 0 6px;padding:14px 18px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px}
+.nvh{margin:0 0 8px;font-weight:700}
+.nvbtn{font:inherit;font-weight:600;color:#fff;background:var(--brand);border:0;border-radius:24px;padding:10px 22px;cursor:pointer}
+.nvbtn:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.nvn{font-size:.85rem;color:var(--soft);margin:8px 0 0}
+.nv iframe{display:block;width:100%;max-width:340px;aspect-ratio:9/16;border:0;border-radius:12px;background:#000}
+</style>
+<style>.apphead{background:#5c3520;color:#fff;padding:14px 16px;font-weight:700;font-size:1.15rem;display:flex;align-items:center;gap:10px}.apphead img{border-radius:8px}</style></head>
+<body><div class="apphead"><img src="/app-dolci-192.png" width="32" height="32" alt="">Desserts und Tiramisu</div>
+<main>
+<h1>Eisdesserts: Tiramisu und Torten</h1>
+<p>Neben dem Eis in der Vitrine lassen sich Desserts zum Servieren oder Mitnehmen anbieten: Tiramisu und Eistorten.</p>
+<h2>Handwerkliches Tiramisu</h2>
+<p class="gl yes">🌾 <strong>Enthält Gluten</strong> — Löffelbiskuit (Weizen). Für eine glutenfreie Version braucht es glutenfreie Löffelbiskuits und keinen Kontakt mit glutenhaltigen Zutaten.</p>
+<p>In Kaffee getränkte Löffelbiskuits, samtige Mascarponecreme und eine großzügige Schicht bitterer Kakao obenauf. Es wird in zwei Formaten zubereitet.</p>
+<div class="cards"><div class="card"><h3>Einzelportion (für 1 Person)</h3><p>Ein praktischer, edler, durchsichtiger Einzelbecher, perfekt, um alle cremigen Schichten des handwerklichen Tiramisu zu genießen. Siehe auch die Seite <a href="https://bilanciamentovetrina.com/einzelportionen.html">Einzelportionen</a>.</p></div><div class="card"><h3>Familienformat (für 4 Personen)</h3><p>Eine größere rechteckige Schale, ideal für vier Portionen, die die perfekte Schichtung des Desserts unversehrt bewahrt und sich bestens dazu eignet, bei einem geselligen Anlass auf den Tisch gebracht zu werden.</p></div></div>
+<figure class="fig"><img src="/tiramisu-formato-famiglia.jpg" alt="Handwerkliches Tiramisu in einer rechteckigen Schale auf einer Eisdielen-Theke" width="1200" height="655" loading="lazy"><figcaption>Illustration, mit künstlicher Intelligenz erstellt: kein Foto des echten Produkts.</figcaption></figure>
+<div class="note"><p>Milch, Gluten und, je nach Rezept, Eier sind Allergene, die Zutat für Zutat geprüft und dem Kunden angegeben werden müssen: siehe die Seite <a href="https://bilanciamentovetrina.com/etiketten-allergene.html">Sorten und Allergene</a>.</p></div>
+<h2>Tiramisu mit gesalzenem Karamell und Waldbeersauce</h2>
+<p class="gl yes">🌾 <strong>Enthält Gluten</strong> — Löffelbiskuit (Weizen).</p>
+<p>Das gesalzene Karamell sorgt für eine umhüllende Süße, die von der frischen Säure der Waldbeeren ausgeglichen wird. Zutaten für eine Form mit 6-8 Portionen.</p>
+<figure class="fig"><img src="/tiramisu-caramello-frutti-di-bosco.jpg" alt="Dessert mit Löffelbiskuits, rotem Band und frischen sowie gefrorenen Waldbeeren obenauf" width="452" height="678" loading="lazy" style="max-width:360px;margin:0 auto"><figcaption>Beispielbild: kein Foto dieses Rezepts.</figcaption></figure>
+<h3 class="sub">Mascarpone-Karamell-Creme</h3><ul class="plain"><li>Mascarpone: 500 g</li><li>Eier: 4 Eigelb (ganz frisch und aufgeschlagen, oder pasteurisiert)</li><li>Zucker: 100 g</li><li>Gesalzenes Karamell: 120 g (etwas für die Creme, der Rest für die Schichten und die Dekoration)</li></ul><h3 class="sub">Tränke und Waldbeersauce</h3><ul class="plain"><li>Waldbeeren, frisch oder tiefgekühlt: 300 g</li><li>Puderzucker: 30 g</li><li>Zitronensaft: einige Tropfen</li><li>Wasser oder leichter Sirup: nach Bedarf, um die Sauce zu verdünnen und die Tränke für die Löffelbiskuits zuzubereiten</li></ul><h3 class="sub">Aufbau</h3><ul class="plain"><li>Löffelbiskuits: 250-300 g</li><li>Frische Waldbeeren: nach Bedarf für die Dekoration</li></ul><h3 class="sub">Zubereitung</h3><ol class="steps"><li><strong>Waldbeersauce.</strong> Die Waldbeeren mit Puderzucker und Zitronensaft in einen kleinen Topf geben. Bei mittlerer Hitze 5-7 Minuten kochen, bis sie Saft abgeben und weich werden. Die Hälfte pürieren und durch ein Sieb streichen, um die Kerne zu entfernen: So entsteht eine glatte Coulis. Die andere Hälfte mit den ganzen Früchten belassen.</li><li><strong>Tränke.</strong> Einen Teil der Coulis mit etwas lauwarmem Wasser (oder einem Schuss Fruchtlikör, wenn gewünscht) verdünnen, um die Löffelbiskuits zu tränken.</li><li><strong>Creme.</strong> Das Eigelb mit dem Zucker schaumig und hell aufschlagen. Den Mascarpone nach und nach bei niedriger Geschwindigkeit unterrühren. Das gesalzene Karamell vorsichtig unterheben und die Menge nach gewünschter Süße anpassen.</li><li><strong>Schichten.</strong> Eine erste Schicht Löffelbiskuits kurz in die Waldbeertränke tauchen und auslegen. Mit einer großzügigen Schicht Creme bedecken. Hier und da einen Löffel Sauce mit ganzen Früchten verteilen, für einen frischen, säuerlichen Kontrast. Mit einer zweiten Schicht Löffelbiskuits, Creme und einem weiteren Faden Karamell wiederholen.</li><li><strong>Ruhen und Dekorieren.</strong> Mindestens 4 Stunden im Kühlschrank fest werden lassen (ideal ist bis zum nächsten Tag). Vor dem Servieren mit reichlich frischen Waldbeeren und einem letzten Faden Karamell dekorieren.</li></ol>
+<div class="note"><p>Für den Verkauf an Kunden pasteurisiertes Eigelb verwenden. Milch, Gluten und Eier sind Allergene, die dem Kunden angegeben werden müssen: siehe die Seite <a href="https://bilanciamentovetrina.com/etiketten-allergene.html">Sorten und Allergene</a>.</p></div>
+<h2>Pistazien-Tiramisu mit karamellisierter Orange</h2>
+<p class="gl yes">🌾 <strong>Enthält Gluten</strong> — Löffelbiskuit (Weizen).</p>
+<p>Die Cremigkeit der Pistazie trifft auf den Duft der Zitrusfrüchte und die knusprige, karamellisierte Orange. Zutaten für 6-8 Portionen; Servieren in der Form oder in Einzelportionsgläsern.</p>
+<figure class="fig"><img src="/tiramisu-pistacchio-arancia.jpg" alt="Pistazien-Tiramisu im Glas mit karamellisierter Orangenscheibe, Minze und Pistazien" width="1200" height="655" loading="lazy"><figcaption>Illustrationsbild: kein Foto des echten Produkts.</figcaption></figure>
+<h3 class="sub">Mascarpone-Pistazien-Creme</h3><ul class="plain"><li>Mascarpone: 500 g</li><li>Reine Pistazienpaste (ohne Zucker) oder Pistaziencreme zum Streichen: 120 g</li><li>Eigelb (ganz frisch oder pasteurisiert): 4</li><li>Zucker: 90 g</li><li>Frische Schlagsahne (optional, für eine noch luftigere Creme): 100 ml</li></ul><h3 class="sub">Karamellisierte Orangen und Tränke</h3><ul class="plain"><li>Bio-Orangen: 2 große (Saft und Schale)</li><li>Rohrzucker: 80 g</li><li>Butter: 15 g</li><li>Wasser: 100 ml</li><li>Orangenlikör (Cointreau, Grand Marnier oder Triple Sec, optional): 2 Esslöffel</li></ul><h3 class="sub">Aufbau und Dekoration</h3><ul class="plain"><li>Löffelbiskuits: 250-300 g</li><li>Gehackte Pistazien: nach Bedarf</li><li>Ganze geschälte Pistazien: nach Bedarf</li></ul><h3 class="sub">1. Karamellisierte Orangen und Tränke</h3><ol class="steps"><li><strong>Scheiben und Schale.</strong> Die Orangen gründlich waschen. Eine halbe Orange in dünne Scheiben schneiden (für die Dekoration). Von der restlichen Orange die Schale in feinen Streifen abschneiden, nur den orangefarbenen Teil, und den Saft auspressen.</li><li><strong>Karamell.</strong> In einer beschichteten Pfanne den Rohrzucker mit der Butter und 2 Esslöffeln Wasser bei niedriger Hitze schmelzen, bis ein goldfarbenes Karamell entsteht.</li><li><strong>Orangen im Karamell.</strong> Die Orangenscheiben und Schalenstreifen in das Karamell geben. 3-4 Minuten garen und die Scheiben vorsichtig wenden, bis sie glänzend und weich sind. Herausnehmen und auf Backpapier beiseitelegen.</li><li><strong>Tränke.</strong> In derselben Pfanne mit dem restlichen Karamell den Orangensaft und das Wasser (und eventuell den Likör) angießen. 2-3 Minuten bei niedriger Hitze köcheln, bis sich die Karamellreste lösen und ein duftender Sirup entsteht. Ausschalten und abkühlen lassen.</li></ol><h3 class="sub">2. Mascarpone-Pistazien-Creme</h3><ol class="steps"><li><strong>Eigelb.</strong> Das Eigelb mit dem Zucker mit dem Handrührgerät hell und schaumig aufschlagen.</li><li><strong>Mascarpone und Pistazie.</strong> Den Mascarpone nach und nach bei niedriger Geschwindigkeit unterrühren. Dann die Pistazienpaste oder -creme gut einarbeiten.</li><li><strong>Sahne (optional).</strong> Die gut gekühlte Sahne steif schlagen und von unten nach oben vorsichtig unterheben, für eine luftigere Creme.</li></ol><h3 class="sub">3. Aufbau</h3><ol class="steps"><li><strong>Erste Schicht.</strong> Die Löffelbiskuits kurz in die Orangen-Karamell-Tränke tauchen und auf dem Boden einer Form oder von Einzelportionsgläsern auslegen.</li><li><strong>Creme.</strong> Die Hälfte der Pistaziencreme auf den Löffelbiskuits verstreichen und mit etwas gehackten Pistazien und einigen Tropfen Orangensirup bestreuen.</li><li><strong>Zweite Schicht.</strong> Mit weiteren getränkten Löffelbiskuits wiederholen und mit der restlichen Creme abschließen.</li></ol><h3 class="sub">4. Ruhen und Dekorieren</h3><ol class="steps"><li><strong>Ruhen.</strong> Mit Frischhaltefolie abdecken und mindestens 4 Stunden im Kühlschrank ruhen lassen (ideal ist über Nacht, damit sich die Aromen verbinden).</li><li><strong>Dekoration.</strong> Vor dem Servieren mit reichlich gehackten Pistazien, den karamellisierten Orangenscheiben, den glänzenden Schalenstreifen und einigen ganzen Pistazien garnieren.</li></ol>
+<div class="note"><p>Für den Verkauf an Kunden pasteurisiertes Eigelb verwenden. Milch, Gluten, Eier und Schalenfrüchte (Pistazien) sind Allergene, die dem Kunden angegeben werden müssen, ebenso ein eventuell verwendeter Likör: siehe die Seite <a href="https://bilanciamentovetrina.com/etiketten-allergene.html">Sorten und Allergene</a>.</p></div>
+<h2>Winter-Tiramisu: Pistazie, Orange und Gianduja</h2>
+<p class="gl yes">🌾 <strong>Enthält Gluten</strong> — kleine Löffelbiskuits Typ Pavesini (Weizen).</p>
+<p>Ein Tiramisu ohne Kaffee und ohne rohe Eier, gemacht für den Winter: Mascarpone-Pistaziencreme, in Orange getränkte Biskuits und eine doppelte Decke aus weißer Schokolade und Gianduja mit Erdnüssen. Zutaten für eine Form mit 6-8 Portionen.</p>
+<figure class="fig"><img src="/tiramisu-invernale.jpg" alt="Winter-Tiramisu in einer Glasform mit Pistaziencreme, Gianduja und Erdnüssen, daneben eine halbe Orange" width="1200" height="670" loading="lazy"><figcaption>KI-generiertes Bild: kein Foto des echten Produkts.</figcaption></figure>
+<h3 class="sub">Mascarpone-Pistaziencreme</h3><ul class="plain"><li>Mascarpone: 500 g</li><li>Schlagsahne: 120 g</li><li>Puderzucker: 40 g</li><li>Pistaziencreme: nach Geschmack (ca. 80-100 g)</li></ul><h3 class="sub">Orangen-Tränke</h3><ul class="plain"><li>Orangensaft: ca. 200 ml</li><li>Orangencreme: nach Geschmack (ca. 50 g)</li></ul><h3 class="sub">Aufbau und Decke</h3><ul class="plain"><li>Kleine Löffelbiskuits (Typ Pavesini): ca. 200 g</li><li>Weiße Schokolade: ca. 100 g</li><li>Gianduja-Creme: ca. 150 g</li><li>Gehackte Erdnüsse: ca. 40 g</li></ul><h3 class="sub">Zubereitung</h3><ol class="steps"><li><strong>Sahne.</strong> Die Sahne mit dem Puderzucker steif schlagen.</li><li><strong>Creme.</strong> Die Pistaziencreme nach Geschmack unter den Mascarpone rühren, dann die Sahne vorsichtig unterheben.</li><li><strong>Tränke.</strong> In einer Schüssel Orangensaft und Orangencreme nach Geschmack verrühren.</li><li><strong>Schichten.</strong> Die Biskuits kurz in die Orange tauchen, in die Form legen und mit einer Schicht Creme bedecken. Noch zweimal wiederholen.</li><li><strong>Kühlen.</strong> Das Tiramisu im Kühlschrank fest werden lassen. Inzwischen die weiße Schokolade schmelzen und die Gianduja mit den gehackten Erdnüssen mischen.</li><li><strong>Decke.</strong> Eine dünne Schicht weiße Schokolade über das Tiramisu gießen und fest werden lassen. Mit einer dünnen Schicht Gianduja und Erdnüssen abschließen.</li><li><strong>Aufbewahrung.</strong> Im Kühlschrank aufbewahren.</li></ol>
+<div class="note"><p>Milch, Gluten, Eier (Biskuits), Erdnüsse, Schalenfrüchte (Pistazie, Haselnüsse in der Gianduja) und eventuell Soja (Lecithin in der Schokolade) sind Allergene, die dem Kunden angegeben werden müssen: Prüfe immer die Etiketten der verwendeten Produkte und siehe die Seite <a href="https://bilanciamentovetrina.com/etiketten-allergene.html">Sorten und Allergene</a>.</p></div>
+<h2>Wie eine Eistorte aufgebaut ist</h2>
+<p class="gl var">🌾 <strong>Gluten prüfen</strong> — hängt von Boden und Einlagen ab: Keks, Biskuit, Waffeln und Krokant enthalten Gluten. Schreibe immer an die Torte, ob sie Gluten enthält oder nicht.</p>
+<p>Eine Eistorte ist eine Komposition: Jeder Teil hat seine Aufgabe, und das Ergebnis hängt davon ab, wie die Teile zusammenpassen.</p>
+<div class="cards"><div class="card"><h3>Boden</h3><p>Er kann aus Keks, Biskuit oder etwas anderem bestehen: Er trägt die Torte und prägt ihren Charakter.</p></div><div class="card"><h3>Eisschichten</h3><p>Eine oder mehrere Sorten, je nach Form in Schichten oder anders angeordnet.</p></div><div class="card"><h3>Einlagen und Variegato</h3><p>Soßen, Cremes, Krokant oder Früchte zwischen den Schichten sorgen für Kontrast in Geschmack und Konsistenz.</p></div><div class="card"><h3>Überzug und Dekoration</h3><p>Glasuren, Sahne, Schokolade, Früchte: Das ist der Teil, den der Kunde zuerst sieht.</p></div></div>
+<figure class="fig"><img src="/torte-gelato-vetrina.jpg" alt="Gekühlte Vitrine einer Eisdiele mit Eistorten in verschiedenen Sorten und Dekorationen" width="1024" height="559" loading="lazy"><figcaption>Illustration, mit künstlicher Intelligenz erstellt: kein Foto des echten Produkts.</figcaption></figure>
+<h2>Patisserie-Ideen für die Vitrine</h2>
+<p class="gl var">🌾 <strong>Gluten prüfen</strong> — Tartelettes enthalten Gluten (Mürbeteig); bei den Entremets hängt es von Böden und Keksen ab.</p>
+<p>Das sind keine Eisdesserts: Es sind Törtchen und Entremets aus der Patisserie, die man vorbereiten und in der gekühlten Vitrine neben dem Eis anbieten kann. Vier Ideen, um das Angebot abwechslungsreich zu gestalten:</p>
+<ul class="plain"><li><strong>Brombeer-Törtchen:</strong> dunkler Mürbeteigboden, Fruchtcremeux und frische Beeren obenauf.</li><li><strong>Apfelförmige Törtchen:</strong> Mürbeteig mit Apfel und Creme, mit glänzender roter Glasur.</li><li><strong>Pistazien-Entremet:</strong> geschichtetes Dessert mit Pistazie und roter Frucht, passend zur Weihnachtszeit.</li><li><strong>Rosenförmiges Entremet:</strong> geschichtetes Dessert mit Vanille und roter Frucht, mit rotem Velours-Überzug.</li></ul>
+<div class="note"><p>Milch, Gluten, Schalenfrüchte (Mandeln, Pistazien) und Eier sind Allergene, die Zutat für Zutat geprüft und dem Kunden angegeben werden müssen: siehe die Seite <a href="https://bilanciamentovetrina.com/etiketten-allergene.html">Sorten und Allergene</a>.</p></div>
+<div class="note"><p>Weitere Spaghettieis- und Löffeldesserts mit PDF-Rezepten auf der Website: <a href="https://bilanciamentovetrina.com/eisdesserts.html">bilanciamentovetrina.com</a></p></div>
+</main>
+<footer style="max-width:760px;margin:20px auto;padding:0 16px 90px;color:#7a6455;font-size:.9rem">© 2026 Marco Lestan · <a href="https://eisdieleinfo.com">eisdieleinfo.com</a></footer>
+<div id="instBar" style="display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;background:#fff;border:1px solid #ecdfd2;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.15);padding:12px 14px;font:15px/1.4 system-ui,sans-serif;color:#3b2a20;align-items:center;gap:10px">
+<img src="/app-dolci-192.png" alt="" width="40" height="40" style="border-radius:10px;flex:none"><span id="instTxt" style="flex:1"></span>
+<button id="instBtn" style="display:none;border:0;border-radius:20px;padding:9px 16px;background:#5c3520;color:#fff;font:inherit;font-weight:700;cursor:pointer">📲 App installieren</button>
+<button id="instX" aria-label="Schließen" style="border:0;background:none;font-size:22px;cursor:pointer;color:#7a6455">×</button></div>
+<script>
+(function(){
+ var bar=document.getElementById('instBar'),btn=document.getElementById('instBtn'),txt=document.getElementById('instTxt'),dp=null;
+ var standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+ var shut=false;try{shut=localStorage.getItem('inst-x-dolci')==='1'}catch(e){}
+ if(standalone||shut)return;
+ document.getElementById('instX').onclick=function(){bar.style.display='none';try{localStorage.setItem('inst-x-dolci','1')}catch(e){}};
+ window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;txt.textContent="Desserts und Tiramisu";btn.style.display='inline-block';bar.style.display='flex'});
+ btn.onclick=function(){if(!dp)return;dp.prompt();dp.userChoice.then(function(){bar.style.display='none';dp=null})};
+ if(/iphone|ipad|ipod/i.test(navigator.userAgent)){txt.innerHTML="Auf dem iPhone: <b>Teilen</b> tippen und dann <b>\u201eZum Home-Bildschirm\u201c</b>.";bar.style.display='flex'}
+})();
+</script></body></html>
